@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-family: "Raleway","Helvetica Neue", Helvetica, sans-serif;
+    background-color: #fafcff;
+    color: #666;
+    
+}
+
+a:link, a:visited, a:active {
+    color: inherit;
+}
+
+a:hover, .eddie-antonio {
+    color: #999;
+}
+
+.inline-nav > * > li {
+    display: inline-block;
+    margin-left: 0.6em;
+}
+
+
+.hero-unit {
+    bottom: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hero-unit > h1 {
+   word-spacing: -0.25em; /* Remove the space between words. */
+   font-weight: 100;
+   font-size: 400%;
+}
+
+.santos {
+    font-weight: normal;
+}
+
+.hero-unit {
+    text-transform: lowercase;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media {
+   margin-top: 1em;
+}

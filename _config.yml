@@ -1,0 +1,10 @@
+name: eddieantonio
+markdown: kramdown
+pygments: true
+
+baseurl: eddieantonio.ca
+
+# Some metadata... like my social media handles, etc.
+me:
+  github: https://github.com/eddieantonio
+  resume: /resume
