@@ -1,0 +1,145 @@
+---
+
+resume:
+  education:
+    - institution: University of Alberta
+      location: Edmonton, Alberta, Canada
+      program: BSc. Specialization in Computing Science
+      in_progress: yes
+      time: 2010-present
+
+  experience:
+    - title: Computer programmer/Knower of stuff
+      employer: Dr. Denlison Barbosa, University of Alberta
+      time: 2014-present
+      responsibilities:
+        - Write and test a [Storm][] application for massive document
+          processing.
+
+          [Storm]: http://storm.incubator.apache.org/
+
+        - Deploy and test distributed application both on virtualized
+          development clusters (using [Vagrant][]) and production clusters.
+
+          [Vagrant]: http://www.vagrantup.com/
+
+        - Maintain an abandoned Java codebase (that came without any explicit
+          build system or dependency management!), updating to use standard
+          practices, automated testing, stating explicit dependencies, and
+          general de-crufting.
+
+    - title: Teaching assistant, SCI 100 University of Alberta
+      employer: University
+      time: 2012-present
+      responsibilities:
+        - Assist students learning Python as their first programming language
+        - Evaluate student coursework
+
+    - title: Computer Programmer/Research Assistant
+      employer: [Cultr](http://cultr.business.ualberta.ca/), Alberta School of Business
+      time: 2013-2014
+      responsibilities:
+        - Write a robust and versatile web crawling service using a variety of
+          technologies including [Scrapy][], and [PhantomJS][] duck-taped
+          together using an Erlang load-balancer and [Redis][].
+        - Expose the web crawling daemon as a service with a Node.JS web
+          server.
+        - Assist in development of the
+
+    - title: Research Assistant/Web developer
+      employer: Denilson Barbosa
+      time: 2013
+      responsibilities:
+        - Create and maintain existing web demos for text processing tools
+          using JavaScript, jQuery, and [D3](http://d3js.org/)
+        - Develop a database abstraction library in Java for interoperation
+          between our various text processing tools and an assortment of
+          persistance tools (including MongoDB).
+        - Develop a simple CoffeeScript NodeJS app for bridging the web demos
+          to the text processing tools.
+
+    - title: Web developer
+      employer: [UAWater](http://waterdb.ualberta.ca)
+      time: 2012-2013
+      responsibilities:
+        - Evaluate the state of a legacy PHP web application and then promptly
+          chucking it out (incrementing a database cursor in the middle of
+          template code that generates HTML tables? Nobody wants to see that!)
+        - Create database migration tools to transition from one (horrible)
+          SQLite3 database schema to a more maintainable
+        - Employ the use of fulltext indices for measurably faster text search
+          queries.
+        - Design simple, clean stylesheets for the website.
+
+
+
+  skills:
+    languages:
+      # "Tier 1" -- the langauges I am stupidly adept at.
+      - [Python, CoffeeScript, JavaScript, C, Scala, Java, Erlang]
+      # "Tier 2" -- I don't program these often or have limited experience
+      - [Ruby, Perl, C#, Scheme, Haskell, PHP, Common Lisp, Go]
+      # Less useful, I don't really program them often or at all, but I have
+      # intimate knowledge because I'm a freak.
+      - [6502 Assembly, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
+
+    databases: [MongoDB, Redis, MySQL, Oracle]
+
+    editors: [Vim, Eclipse, Visual Studio]
+
+    os: [Mac OS X, Ubuntu/Debian Linux, Other miscellaneous Linux distros, OpenBSD]
+
+    other:
+      - title: Puppet Configuration Management
+        link: http://puppetlabs.com/
+      - title: Vagrant
+        link: http://www.vagrantup.com/
+
+---
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8' />
+    <title>Résumé &mdash; Eddie Antonio Santos</title>
+    <link media='all' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' type='text/css' rel='stylesheet' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class='container'>
+
+    <header class="main-header">
+      <h1> Eddie Antonio Santos </h1>
+      <h2> Résumé </h2>
+      <h3> Computer programmer based in Edmonton, Alberta </h3>
+    </header>
+
+    <article>
+
+      <section>
+        <header>
+          <h1> Experience </h1>
+        </header>
+      </section>
+
+      <section>
+        <header>
+          <h1> Education </h1>
+        </header>
+        <dl>
+          <dt> University of Alberta <span class="in-progress">In Progress</span></dt>
+          <dd> BSc. Specialization in Computing Science (2010&ndash;)</dd>
+        </dl>
+      </section>
+
+      <section>
+        <header>
+          <h1> Skills </h1>
+        </header>
+      </section>
+
+
+    </article>
+  </div>
+
+</body>
+</html>
