@@ -2,7 +2,7 @@ name: eddieantonio
 markdown: kramdown
 pygments: true
 
-baseurl: eddieantonio.github.io
+baseurl: http://eddieantonio.github.io
 
 # Some metadata... like my social media handles, etc.
 me:
