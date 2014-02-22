@@ -1,99 +1,113 @@
 ---
+# vim: set ft=liquid: #
 
-resume:
-  education:
-    - institution: University of Alberta
-      location: Edmonton, Alberta, Canada
-      program: BSc. Specialization in Computing Science
-      in_progress: yes
-      time: 2010-present
+education:
+  - institution: University of Alberta
+    location: Edmonton, Alberta, Canada
+    program: BSc. Specialization in Computing Science
+    in_progress: yes
+    time: { start: 2010, end: }
 
-  experience:
-    - title: Computer programmer/Knower of stuff
-      employer: Dr. Denlison Barbosa, University of Alberta
-      time: 2014-present
-      responsibilities:
-        - Write and test a [Storm][] application for massive document
-          processing.
+experience:
+  - title: Computer programmer/ General knower of stuff
+    employer: Dr. Denlison Barbosa, University of Alberta
+    time: 2014-present
+    responsibilities:
+      - Write and test a [Storm](http://storm.incubator.apache.org/)
+        application for massive document processing.
 
-          [Storm]: http://storm.incubator.apache.org/
+      - Deploy and test distributed application both on virtualized
+        development clusters (using [Vagrant](http://www.vagrantup.com/)) and
+        production clusters.
 
-        - Deploy and test distributed application both on virtualized
-          development clusters (using [Vagrant][]) and production clusters.
+      - Maintain an abandoned Java codebase (that came without any explicit
+        build system or dependency management -- original writers had an "it
+        works in my Eclipse" mentality), updating to use standard practices,
+        automated testing, stating explicit dependencies, and general
+        de-crufting.
 
-          [Vagrant]: http://www.vagrantup.com/
+  - title: Teaching assistant, SCI 100 University of Alberta
+    employer: University
+    time: 2012-present
+    responsibilities:
+      - Assist students learning Python as their first programming language
+      - Evaluate student coursework
 
-        - Maintain an abandoned Java codebase (that came without any explicit
-          build system or dependency management!), updating to use standard
-          practices, automated testing, stating explicit dependencies, and
-          general de-crufting.
+  - title: Computer Programmer/Research Assistant
+    employer: >
+      [Cultr](http://cultr.business.ualberta.ca/), Alberta School of Business
+    time: 2013-2014
+    responsibilities:
+      - Write a robust and versatile web crawling service using a variety of
+        technologies including [Scrapy](http://scrapy.org/), and
+        [PhantomJS](http://phantomjs.org/) duck-taped together using an Erlang
+        load-balancer and [Redis](http://redis.io/).
+      - Expose the web crawling daemon as a service with a Node.JS web
+        server.
+      - Assist in development of the
 
-    - title: Teaching assistant, SCI 100 University of Alberta
-      employer: University
-      time: 2012-present
-      responsibilities:
-        - Assist students learning Python as their first programming language
-        - Evaluate student coursework
+  - title: Research Assistant/Web developer
+    employer: Dr. Denilson Barbosa, University of Alberta
+    time: 2013
+    responsibilities:
+      - Create and maintain existing web demos for text processing tools
+        using JavaScript, jQuery, and [D3](http://d3js.org/)
+      - Develop a database abstraction library in Java for interoperation
+        between our various text processing tools and an assortment of
+        persistence tools (including MongoDB).
+      - Develop a simple CoffeeScript NodeJS app for bridging the web demos
+        to the text processing tools.
 
-    - title: Computer Programmer/Research Assistant
-      employer: [Cultr](http://cultr.business.ualberta.ca/), Alberta School of Business
-      time: 2013-2014
-      responsibilities:
-        - Write a robust and versatile web crawling service using a variety of
-          technologies including [Scrapy][], and [PhantomJS][] duck-taped
-          together using an Erlang load-balancer and [Redis][].
-        - Expose the web crawling daemon as a service with a Node.JS web
-          server.
-        - Assist in development of the
+  - title: Web developer
+    employer: >
+      [UAWater](http://waterdb.ualberta.ca), Dr. Greg Goss, University of
+      Alberta
+    time: 2012-2013
+    responsibilities:
+      - Evaluate the state of a legacy PHP web application and then promptly
+        chucking it out (incrementing a database cursor in the middle of
+        template code that generates HTML tables? Nobody wants to see that!)
+      - Create database migration tools to transition from one (horrible)
+        SQLite3 database schema to a more maintainable
+      - Employ the use of fulltext indices for measurably faster text search
+        queries.
+      - Design simple, clean stylesheets for the website.
 
-    - title: Research Assistant/Web developer
-      employer: Denilson Barbosa
-      time: 2013
-      responsibilities:
-        - Create and maintain existing web demos for text processing tools
-          using JavaScript, jQuery, and [D3](http://d3js.org/)
-        - Develop a database abstraction library in Java for interoperation
-          between our various text processing tools and an assortment of
-          persistance tools (including MongoDB).
-        - Develop a simple CoffeeScript NodeJS app for bridging the web demos
-          to the text processing tools.
-
-    - title: Web developer
-      employer: [UAWater](http://waterdb.ualberta.ca)
-      time: 2012-2013
-      responsibilities:
-        - Evaluate the state of a legacy PHP web application and then promptly
-          chucking it out (incrementing a database cursor in the middle of
-          template code that generates HTML tables? Nobody wants to see that!)
-        - Create database migration tools to transition from one (horrible)
-          SQLite3 database schema to a more maintainable
-        - Employ the use of fulltext indices for measurably faster text search
-          queries.
-        - Design simple, clean stylesheets for the website.
-
+  
+  #- title: Research Assistant/Web developer
+  #  employer: Dr. Davood Rafiei, University of Alberta
+  #  time: 2012
+  #  responsibilities:
+  #    - Develop a PHP web game (oh gosh!)
 
 
-  skills:
-    languages:
-      # "Tier 1" -- the langauges I am stupidly adept at.
-      - [Python, CoffeeScript, JavaScript, C, Scala, Java, Erlang]
-      # "Tier 2" -- I don't program these often or have limited experience
-      - [Ruby, Perl, C#, Scheme, Haskell, PHP, Common Lisp, Go]
-      # Less useful, I don't really program them often or at all, but I have
-      # intimate knowledge because I'm a freak.
-      - [6502 Assembly, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
 
-    databases: [MongoDB, Redis, MySQL, Oracle]
 
-    editors: [Vim, Eclipse, Visual Studio]
+skills:
+  # TODO: neat D3 word cloud for this?
+  languages:
+    # "Tier 1" -- the languages that I spend a bunch of time programming. 
+    - [Python, CoffeeScript, JavaScript, C, Scala, Java, Erlang]
+    # "Tier 2" -- I don't program these often or have limited experience
+    - [Ruby, Perl, C#, Scheme, Haskell, PHP, C++11, Common Lisp, Go]
+    # Less useful, I don't really program them often or at all, but I have
+    # intimate knowledge because I'm a freak.
+    - [6502 Assembly, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
 
-    os: [Mac OS X, Ubuntu/Debian Linux, Other miscellaneous Linux distros, OpenBSD]
+  small_categories:
+    Databases: [MongoDB, Redis, MySQL, Oracle SQL]
 
-    other:
-      - title: Puppet Configuration Management
-        link: http://puppetlabs.com/
-      - title: Vagrant
-        link: http://www.vagrantup.com/
+    Editors: [Vim, Eclipse]
+
+    OSs: [Mac OS X, Ubuntu/Debian Linux, OpenBSD, Other miscellaneous Linux distros]
+
+    Version Control: [Git, Mercurial, limited knowledge of SVN]
+
+    Micellaneous:
+     - >
+       [Puppet Configuration Management](http://puppetlabs.com/)
+     - >
+       [Vagrant](http://www.vagrantup.com/)
 
 ---
 <!DOCTYPE html>
@@ -107,34 +121,91 @@ resume:
 <body>
   <div class='container'>
 
-    <header class="main-header">
+    <header class="masthead">
       <h1> Eddie Antonio Santos </h1>
       <h2> Résumé </h2>
-      <h3> Computer programmer based in Edmonton, Alberta </h3>
+      <h3> Computer programmer based in Edmonton, Alberta, Canada </h3>
     </header>
 
     <article>
 
       <section>
         <header>
-          <h1> Experience </h1>
+          <h2> Experience </h2>
         </header>
-      </section>
 
-      <section>
-        <header>
-          <h1> Education </h1>
-        </header>
         <dl>
-          <dt> University of Alberta <span class="in-progress">In Progress</span></dt>
-          <dd> BSc. Specialization in Computing Science (2010&ndash;)</dd>
-        </dl>
+        {% for job in page.experience %}
+          <dt> <h3>{{ job.title }}
+            for {{ job.employer | markdownify }}
+           <small>{{ job.time }}</small>
+            </h3>
+          </dt>
+          <dd>
+            <h4> Responsibilities </h4>
+            <ul>
+            {% for item in job.responsibilities %}
+              <li> {{ item | markdownify }} </li>
+            {% endfor %}
+          </ul>
+          </dd>
+        {% endfor %}
+      </dl>
+
       </section>
+
 
       <section>
         <header>
-          <h1> Skills </h1>
+          <h2> Education </h2>
         </header>
+
+        <ol class="list-unstyled">
+        {% for ed in page.education %}
+          <li>
+            {{ ed.program }}&mdash;{{ ed.institution }}
+            {% if ed.in_progress %}
+            <span class="in-progress">In Progress</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ol>
+      </section>
+
+
+      <section>
+        <header>
+          <h2> Skills </h2>
+        </header>
+
+        <section>
+          <h3> Programming languages </h3>
+          <p> I love to learn programming languages. It's just one of my
+            hobbies. Roughly speaking, the languages near the beginning of the
+            list are the languages I have the most experience with, or have
+            just found myself programming recently. Towards the middle are
+            languages I have limited experience with, but non-trivial
+            experience nonetheless -- they're languages I'd love to expand my
+            knowledge of. Then, towards the end are more "fringe" languages
+            and the strange assembly languages I have experience with. </p>
+
+          <ul class="list-inline">
+          {% for tier in page.skills.languages %}
+            {% for language in tier %}
+              <li> {{ language }} </li>
+            {% endfor %}
+          {% endfor %}
+          </ul>
+      </section>
+
+      <section>
+        <h3> Miscellaneous technologies </h3>
+        <dl>
+          {% for category in page.skills.small_categories %}
+            <dt> {{ category[0] }} </dt>
+            <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
+          {% endfor %}
+        </dl>
       </section>
 
 
