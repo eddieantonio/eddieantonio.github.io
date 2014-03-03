@@ -14,7 +14,7 @@ experience:
     time: 2014-present
     responsibilities:
       - Write and test a [Storm](http://storm.incubator.apache.org/)
-        application for massive document processing.
+        application for massively parallel document processing.
 
       - Deploy and test distributed application both on virtualized
         development clusters (using [Vagrant](http://www.vagrantup.com/)) and
@@ -44,7 +44,8 @@ experience:
         load-balancer and [Redis](http://redis.io/).
       - Expose the web crawling daemon as a service with a Node.JS web
         server.
-      - Assist in development of the
+      - Assist in development of the website front-end.
+      - Configure and maintain custom daemon processes on Ubuntu 12.04 servers.
 
   - title: Research Assistant/Web developer
     employer: Dr. Denilson Barbosa, University of Alberta
@@ -78,8 +79,10 @@ experience:
     employer: Dr. Davood Rafiei, University of Alberta
     time: 2012
     responsibilities:
-      - Develop a PHP web game for human computation
-
+      - Develop a PHP-backed web game for human computation.
+      - Created an MySQL backed real time system. It's not worth really worth
+        it.
+      - Linux system administration.
 
 
 
@@ -108,6 +111,28 @@ skills:
        [Puppet Configuration Management](http://puppetlabs.com/)
      - >
        [Vagrant](http://www.vagrantup.com/)
+
+hobbies:
+  - title: >
+      [Candadian Open Data Experience 2014 Hackathon](https://www.canadianopendataexperience.com/)
+
+    description: >
+      Developed [Forward](code-forward.meteor.com) in under 48 hours for the
+      hackathon with a team of myself and three other students. I was
+      primarily responsible for coding the front-end, developing templates,
+      and attaching the background data processing work to the front-end.
+      Based on my designer's mockups, I quickly crafted CSS stylesheets
+      designed for most common mobile phones.
+
+  - title: >
+      [Pal.JS](http://www.eddieantonio.ca/paljs/)
+    description:
+      A Pal (subset of Pascal) compiler written and targeting JavaScript. It's
+      not fully implemented. I wrote this after my compilers class,
+      implementing the same language.  This gave me a bit of distraction while
+      procrastinating on studying for finals, and I learned about [parsing
+      expression grammars](http://pegjs.majda.cz/) while writing it.
+
 
 ---
 <!DOCTYPE html>
@@ -194,18 +219,31 @@ skills:
             {% endfor %}
           {% endfor %}
           </ul>
+        </section>
+
+        <section>
+          <h3> Miscellaneous technologies </h3>
+          <dl>
+            {% for category in page.skills.small_categories %}
+              <dt> {{ category[0] }} </dt>
+              <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
+            {% endfor %}
+          </dl>
+        </section>
+
       </section>
 
-      <section>
-        <h3> Miscellaneous technologies </h3>
+      <section class='hobbies'>
+        <h2> Hobbies </h2>
+
         <dl>
-          {% for category in page.skills.small_categories %}
-            <dt> {{ category[0] }} </dt>
-            <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
+          {% for hobby in page.hobbies %}
+            <h3> {{ hobby.title | markdownify }} </h3>
+            {{ hobby.description | markdownify }}
           {% endfor %}
         </dl>
+      
       </section>
-
 
     </article>
   </div>
