@@ -74,11 +74,11 @@ experience:
       - Design simple, clean stylesheets for the website.
 
   
-  #- title: Research Assistant/Web developer
-  #  employer: Dr. Davood Rafiei, University of Alberta
-  #  time: 2012
-  #  responsibilities:
-  #    - Develop a PHP web game (oh gosh!)
+  - title: Research Assistant/Web developer
+    employer: Dr. Davood Rafiei, University of Alberta
+    time: 2012
+    responsibilities:
+      - Develop a PHP web game for human computation
 
 
 
@@ -115,8 +115,8 @@ skills:
 <head>
     <meta charset='UTF-8' />
     <title>Résumé &mdash; Eddie Antonio Santos</title>
-    <link media='all' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' type='text/css' rel='stylesheet' />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media='all' href='//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css' type='text/css' rel='stylesheet' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <div class='container'>
@@ -136,11 +136,9 @@ skills:
 
         <dl>
         {% for job in page.experience %}
-          <dt> <h3>{{ job.title }}
-            for {{ job.employer | markdownify }}
-           <small>{{ job.time }}</small>
-            </h3>
-          </dt>
+          {% capture job_header %} {{ job.title }} for {{ job.employer }} {% endcapture %} 
+          <dt> <h3>{{ job_header | markdownify }}</h3>
+            <small>{{ job.time }}</small> </h3> </dt>
           <dd>
             <h4> Responsibilities </h4>
             <ul>
