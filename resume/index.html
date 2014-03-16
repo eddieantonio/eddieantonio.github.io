@@ -91,11 +91,13 @@ skills:
   languages:
     # "Tier 1" -- the languages that I spend a bunch of time programming. 
     - [Python, CoffeeScript, JavaScript, C, Scala, Java, Erlang]
-    # "Tier 2" -- I don't program these often or have limited experience
-    - [Ruby, Perl, C#, Scheme, Haskell, PHP, C++11, Common Lisp, Go]
-    # Less useful, I don't really program them often or at all, but I have
-    # intimate knowledge because I'm a freak.
-    - [6502 Assembly, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
+    # "Tier 2" -- I don't program these often as often as the others but can
+    # just "pick 'em up" and start programming.
+    - [Ruby, Perl, C#, Scheme, PHP, C++11, Common Lisp, Go]
+    # Less useful, or far less proficient; I don't really program them often
+    # or haven't recently, but I have # intimate knowledge because I'm a
+    # freak.
+    - [6502 Assembly, Haskell, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
 
   small_categories:
     Databases: [MongoDB, Redis, MySQL, Oracle SQL]
@@ -106,7 +108,7 @@ skills:
 
     Version Control: [Git, Mercurial, limited knowledge of SVN]
 
-    Micellaneous:
+    Miscellaneous:
      - >
        [Puppet Configuration Management](http://puppetlabs.com/)
      - >
@@ -203,14 +205,9 @@ hobbies:
 
         <section>
           <h3> Programming languages </h3>
-          <p> I love to learn programming languages. It's just one of my
-            hobbies. Roughly speaking, the languages near the beginning of the
-            list are the languages I have the most experience with, or have
-            just found myself programming recently. Towards the middle are
-            languages I have limited experience with, but non-trivial
-            experience nonetheless -- they're languages I'd love to expand my
-            knowledge of. Then, towards the end are more "fringe" languages
-            and the strange assembly languages I have experience with. </p>
+          <p> I love to learn programming languages. Here's a list of
+            programming languages I've written code in, ordered in descending
+            order of proficiency. </p>
 
           <ul class="list-inline">
           {% for tier in page.skills.languages %}
