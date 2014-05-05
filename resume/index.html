@@ -9,7 +9,7 @@ education:
     time: { start: 2010, end: }
 
 experience:
-  - title: Computer programmer/ General knower of stuff
+  - title: Computer programmer/General knower of stuff
     employer: Dr. Denlison Barbosa, University of Alberta
     time: 2014
     responsibilities:
@@ -27,7 +27,7 @@ experience:
 
   - title: Teaching assistant, SCI 100 University of Alberta
     employer: University
-    time: 2012-present
+    time: 2012-2014
     responsibilities:
       - Assist students learning Python as their first programming language
       - Evaluate student coursework
@@ -94,7 +94,7 @@ skills:
     # just "pick 'em up" and start programming.
     - [Ruby, Perl, C#, Scheme, PHP, C++11, Common Lisp, Go]
     # Less useful, or far less proficient; I don't really program them often
-    # or haven't recently, but I have # intimate knowledge because I'm a
+    # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
     - [6502 Assembly, Haskell, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
 
@@ -108,10 +108,8 @@ skills:
     Version Control: [Git, Mercurial, limited knowledge of SVN]
 
     Miscellaneous:
-     - >
-       [Puppet Configuration Management](http://puppetlabs.com/)
-     - >
-       [Vagrant](http://www.vagrantup.com/)
+     - "[Puppet Configuration Management](http://puppetlabs.com/)"
+     - "[Vagrant](http://www.vagrantup.com/)"
 
 hobbies:
   - title: >
@@ -205,14 +203,15 @@ hobbies:
         <section>
           <h3> Programming languages </h3>
           <p> I love to learn programming languages. Here's a list of
-            programming languages I've written code in, ordered in descending
-            order of proficiency. </p>
+            programming languages I have experience in. The closer to the top
+            of the list, the more experience I have in it.</p>
 
-          <ul class="list-inline">
+          {%comment%} Ugh. hacky markup... {%endcomment%}
+          <ul class="lang-list">
           {% for tier in page.skills.languages %}
-            {% for language in tier %}
-              <li> {{ language }} </li>
-            {% endfor %}
+            <li class="lang-tier lang-tier-{{ forloop.index }}">
+              {{ tier | join:", " }}
+            </li>
           {% endfor %}
           </ul>
         </section>
