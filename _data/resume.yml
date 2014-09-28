@@ -20,8 +20,8 @@ experience:
       - Develop a simple CoffeeScript NodeJS app for bridging the web demos
         to the text processing tools.
 
-  - title: Teaching assistant, SCI 100 University of Alberta
-    employer: University
+  - title: Teaching assistant, SCI 100
+    employer: University of Alberta
     time: 2012-2014
     responsibilities:
       - Assist students learning Python as their first programming language
@@ -29,7 +29,7 @@ experience:
 
   - title: Computer Programmer/Research Assistant
     employer: >
-      [Cultr](http://cultr.business.ualberta.ca/), Alberta School of Business
+      "Cultr":http://cultr.business.ualberta.ca, Alberta School of Business
     time: 2013-2014
     responsibilities:
       - Write a robust and versatile web crawling service using a variety of
@@ -55,8 +55,7 @@ experience:
 
   - title: Web developer
     employer: >
-      [UAWater](http://waterdb.ualberta.ca), Dr. Greg Goss, University of
-      Alberta
+      "UAWater":http://waterdb.ualberta.ca, Dr. Greg Goss, University of Alberta
     time: 2012-2013
     responsibilities:
       - Evaluate the state of a legacy PHP web application and then promptly
@@ -68,7 +67,7 @@ experience:
         queries.
       - Design simple, clean stylesheets for the website.
 
-  
+
   - title: Research Assistant/Web developer
     employer: Dr. Davood Rafiei, University of Alberta
     time: 2012
@@ -82,7 +81,7 @@ experience:
 
 skills:
   languages:
-    # "Tier 1" -- the languages that I spend a bunch of time programming. 
+    # "Tier 1" -- the languages that I spend a bunch of time programming.
     - [Python, CoffeeScript, JavaScript, C, Scala, Java, Erlang]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
@@ -107,7 +106,7 @@ skills:
 
 hobbies:
   - title: >
-      Mentor: Ladies Learning Code
+      Mentor: "Ladies Learning Code":http://ladieslearningcode.com/
     description: >
       Mentored students in [learning Python][1] as their introduction to the
       world of programming.
@@ -122,7 +121,7 @@ hobbies:
       [2]: http://ladieslearningcode.com/codeday/
 
   - title: >
-      [Canadian Open Data Experience 2014 Hackathon](https://www.canadianopendataexperience.com/)
+      "Canadian Open Data Experience 2014 Hackathon":https://www.canadianopendataexperience.com/
 
     description: >
       Developed [Forward](http://code-forward.meteor.com) in under 48 hours
@@ -133,7 +132,7 @@ hobbies:
       designed for most common mobile phones.
 
   - title: >
-      [Pal.JS](http://www.eddieantonio.ca/paljs/)
+      "Pal.JS":http://www.eddieantonio.ca/paljs/
     description:
       A Pal (subset of Pascal) compiler written and targeting JavaScript. It's
       not fully implemented. I wrote this after my compilers class,

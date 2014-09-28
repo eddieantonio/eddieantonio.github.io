@@ -1,0 +1,99 @@
+@charset: "UTF-8";
+
+/* LaTeX-inspired theme. */
+
+/* TODO: Use Jeyll include for this? */
+@import "./fonts/latin-modern-roman/stylesheet.css";
+
+/* Global stuff. */
+body { font-family: "Latin Modern Roman", serif }
+.container { text-align: center; }
+.container > article {
+   text-align: left;
+   margin: 0 auto;
+   max-width: 32em;
+}
+
+/* Weird link stuff. */
+@media print {
+   a {
+      text-decoration: none;
+      text-decoration-skip: all;
+      color: inherit;
+   }
+   a:after {
+      text-decoration: underline;
+      color: #666;
+      content: "<" attr(href) ">";
+      margin-left: 0.5em;
+   }
+   h1 a:after, h2 a:after, h3 a:after { display: none }
+}
+
+h1 a, h2 a, h3 a {
+   color: inherit;
+   transition: color 3s ease;
+}
+h1 a:hover, h1 a:active,
+h2 a:hover, h2 a:active,
+h3 a:hover, h3 a:active {
+   color: rgb(75,124,171);
+   transition: color 0.25s ease;
+}
+
+/* Header stuff. */
+.masthead {
+   text-align: center;
+   padding: 6em 0 2em;
+}
+.masthead h1, .masthead h2, .masthead h3 { font-weight: normal }
+.masthead .tagline { font-size: 1em }
+
+
+/* Get rid of weird gap. */
+li > p:first-child { margin: 0 inherit; }
+
+/* Get rid of unnecessary margin. */
+.experience dd {
+   margin: auto auto 2em 0;
+}
+
+/* Language list thing. */
+.lang-list {
+   list-style: none;
+   font-size: 1.5em;
+   text-align: center;
+}
+.lang-list > li {
+   display: inline-block;
+}
+.lang-tier-1 {
+   font-size: 1em;
+   font-weight: bold;
+}
+.lang-tier-2 {
+   font-size: 0.8em;
+}
+.lang-tier-3 {
+   font-size: 0.6em;
+}
+.lang-list > li:not(:last-child):after {
+   content: ", ";
+}
+
+/* Corner nav */
+.corner-nav {
+   font: 10pt sans-serif;
+   position: fixed;
+   top: 1em;
+   opacity: 0.3;
+   transition: opacity 0.25s ease;
+}
+.corner-nav:hover {
+   opacity: 1;
+}
+@media print {
+   .corner-nav { display: none }
+}
+a.back:before { content: "↩︎ " }
+

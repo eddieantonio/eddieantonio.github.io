@@ -7,46 +7,25 @@ title: Résumé
 <head>
     <meta charset='UTF-8' />
     <title>Résumé &mdash; Eddie Antonio Santos</title>
-    <link media='all' href='//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css' type='text/css' rel='stylesheet' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-      ul.lang-list {
-          list-style: none;
-          font-size: 1.5em;
-      }
-      ul.lang-list > li {
-          display: inline-block;
-      }
-      li.lang-tier-1 {
-          font-size: 1em;
-          font-weight: bold;
-      }
-      li.lang-tier-2 {
-          font-size: 0.8em;
-          /* font-weight: bold; */
-      }
-      li.lang-tier-3 {
-          font-size: 0.6em;
-      }
-      ul.lang-list > li:not(:last-child):after {
-          content: "⁃";
-          font-weight: normal;
-
-      }
-    </style>
+    <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+  <nav class="corner-nav">
+    <a class="back" href="{{ baseurl }}/">Back to home</a>
+  </nav>
+
   <div class='container'>
 
-    <header class="masthead">
-      <h1> Eddie Antonio Santos </h1>
-      <h2> Résumé </h2>
-      <h3> Computer programmer based in Edmonton, Alberta, Canada </h3>
-    </header>
-
     <article>
+      <header class="masthead">
+        <h1 class="author"> Eddie Antonio Santos </h1>
+        <h2 class="title"> Résumé </h2>
+        <h3 class="tagline"> Computer programmer based in Edmonton, Alberta,
+          Canada </h3>
+      </header>
 
-      <section>
+      <section class="experience">
         <header>
           <h2> Experience </h2>
         </header>
@@ -54,7 +33,7 @@ title: Résumé
         <dl>
         {% for job in site.data.resume.experience %}
           {% capture job_header %} {{ job.title }} for {{ job.employer }} {% endcapture %}
-          <dt> <h3>{{ job_header | markdownify }}</h3>
+          <dt> <h3>{{ job_header | textilize }}
             <small>{{ job.time }}</small> </h3> </dt>
           <dd>
             <h4> Responsibilities </h4>
@@ -69,12 +48,12 @@ title: Résumé
 
       </section>
 
-      <section>
+      <section class="education">
         <header>
           <h2> Education </h2>
         </header>
 
-        <ol class="list-unstyled">
+        <ul class="ed-list">
         {% for ed in site.data.resume.education %}
           <li>
             {{ ed.program }}&mdash;{{ ed.institution }}
@@ -83,11 +62,11 @@ title: Résumé
             {% endif %}
           </li>
         {% endfor %}
-        </ol>
+        </ul>
       </section>
 
 
-      <section>
+      <section class="skills">
         <header>
           <h2> Skills </h2>
         </header>
@@ -103,7 +82,7 @@ title: Résumé
             {% assign tier_no = forloop.index %}
             {% for lang in tier %}
             <li class="lang-tier-{{ tier_no }}
-              lang-{{ lang | replace:' ','-' | downcase }}"> {{ lang }} </li>
+              lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
             {% endfor %}
           {% endfor %}
           </ul>
@@ -118,7 +97,6 @@ title: Résumé
             {% endfor %}
           </dl>
         </section>
-
       </section>
 
       <section class='hobbies'>
@@ -126,11 +104,10 @@ title: Résumé
 
         <dl>
           {% for hobby in site.data.resume.hobbies %}
-            <h3> {{ hobby.title | markdownify }} </h3>
+            <h3> {{ hobby.title | textilize }} </h3>
             {{ hobby.description | markdownify }}
           {% endfor %}
         </dl>
-
       </section>
 
     </article>
