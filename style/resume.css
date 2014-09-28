@@ -13,14 +13,20 @@ body { font-family: "Latin Modern Roman", serif }
    margin: 0 auto;
    max-width: 32em;
 }
+@media print {
+   body { font-size: 11pt; }
+}
 
 /* Weird link stuff. */
+a:link, a:visited {
+   color: #00E;
+}
 @media print {
    a {
       text-decoration: none;
       text-decoration-skip: all;
-      color: inherit;
    }
+   a:link, a:visited { color: inherit; }
    a:after {
       text-decoration: underline;
       color: #666;
@@ -30,14 +36,17 @@ body { font-family: "Latin Modern Roman", serif }
    h1 a:after, h2 a:after, h3 a:after { display: none }
 }
 
-h1 a, h2 a, h3 a {
+/* De-emphasize links in headings. */
+h1 a:link, h1 a:visited,
+h2 a:link, h2 a:visited,
+h3 a:link, h3 a:visited {
    color: inherit;
    transition: color 3s ease;
 }
 h1 a:hover, h1 a:active,
 h2 a:hover, h2 a:active,
 h3 a:hover, h3 a:active {
-   color: rgb(75,124,171);
+   color: #37A;
    transition: color 0.25s ease;
 }
 
@@ -63,6 +72,7 @@ li > p:first-child { margin: 0 inherit; }
    list-style: none;
    font-size: 1.5em;
    text-align: center;
+   padding: 0 0.25em;
 }
 .lang-list > li {
    display: inline-block;
@@ -97,3 +107,7 @@ li > p:first-child { margin: 0 inherit; }
 }
 a.back:before { content: "↩︎ " }
 
+/* Explict page styles. */
+@page {
+   margin: 72pt 55pt 36pt;
+}
