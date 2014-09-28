@@ -1,0 +1,136 @@
+# vim: set ft=liquid: #
+
+education:
+  - institution: University of Alberta
+    location: Edmonton, Alberta, Canada
+    program: BSc. Specialization in Computing Science
+    in_progress: yes
+    time: { start: 2010, end: }
+
+experience:
+  - title: Computer programmer/General knower of stuff
+    employer: Dr. Denlison Barbosa, University of Alberta
+    time: 2014
+    responsibilities:
+      - Develop a RESTful database abstraction library in Apache Wink (JAX-RS
+        implementation) for interoperation between our various text processing
+        tools and an assortment of persistence tools (including MongoDB).
+      - Integrate build automation using Apache Maven to compile, test, and
+        deploy web services to a servlet container (Apache Tomcat).
+      - Create and maintain existing web demos for text processing tools
+        using JavaScript, jQuery, and [D3](http://d3js.org/)
+      - Develop a simple CoffeeScript NodeJS app for bridging the web demos
+        to the text processing tools.
+
+  - title: Teaching assistant, SCI 100 University of Alberta
+    employer: University
+    time: 2012-2014
+    responsibilities:
+      - Assist students learning Python as their first programming language
+      - Evaluate student coursework
+
+  - title: Computer Programmer/Research Assistant
+    employer: >
+      [Cultr](http://cultr.business.ualberta.ca/), Alberta School of Business
+    time: 2013-2014
+    responsibilities:
+      - Write a robust and versatile web crawling service using a variety of
+        technologies including [Scrapy](http://scrapy.org/), and
+        [PhantomJS](http://phantomjs.org/) duck-taped together using an Erlang
+        load-balancer and [Redis](http://redis.io/).
+      - Expose the web crawling daemon as a service with a Node.JS web
+        server.
+      - Assist in development of the website front-end.
+      - Configure and maintain custom daemon processes on Ubuntu 12.04 servers.
+
+  - title: Research Assistant/Web developer
+    employer: Dr. Denilson Barbosa, University of Alberta
+    time: 2013
+    responsibilities:
+      - Create and maintain existing web demos for text processing tools
+        using JavaScript, jQuery, and [D3](http://d3js.org/)
+      - Develop a database abstraction library in Java for interoperation
+        between our various text processing tools and an assortment of
+        persistence tools (including MongoDB).
+      - Develop a simple CoffeeScript NodeJS app for bridging the web demos
+        to the text processing tools.
+
+  - title: Web developer
+    employer: >
+      [UAWater](http://waterdb.ualberta.ca), Dr. Greg Goss, University of
+      Alberta
+    time: 2012-2013
+    responsibilities:
+      - Evaluate the state of a legacy PHP web application and then promptly
+        chucking it out (incrementing a database cursor in the middle of
+        template code that generates HTML tables? Nobody wants to see that!)
+      - Create database migration tools to transition from one (horrible)
+        SQLite3 database schema to a more maintainable
+      - Employ the use of fulltext indices for measurably faster text search
+        queries.
+      - Design simple, clean stylesheets for the website.
+
+  
+  - title: Research Assistant/Web developer
+    employer: Dr. Davood Rafiei, University of Alberta
+    time: 2012
+    responsibilities:
+      - Develop a PHP-backed web game for human computation.
+      - Created an MySQL backed real time system. It's not worth really worth
+        it.
+      - Linux system administration.
+
+
+
+skills:
+  languages:
+    # "Tier 1" -- the languages that I spend a bunch of time programming. 
+    - [Python, CoffeeScript, JavaScript, C, Scala, Java, Erlang]
+    # "Tier 2" -- I don't program these often as often as the others but can
+    # just "pick 'em up" and start programming.
+    - [Ruby, Perl, C#, Scheme, PHP, C++11, Common Lisp, Go, 6502 Assembly]
+    # Less useful, or far less proficient; I don't really program them often
+    # or haven't recently, but I have intimate knowledge of 'em because I'm a
+    # freak.
+    - [Haskell, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
+
+  small_categories:
+    Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis]
+
+    Editors: [Vim, Eclipse]
+
+    OSs: [Mac OS X, Ubuntu/Debian Linux, OpenBSD, Other miscellaneous Linux distros]
+
+    Version Control: [Git, Mercurial, limited knowledge of SVN]
+
+    Miscellaneous:
+     - "[Puppet Configuration Management](http://puppetlabs.com/)"
+     - "[Vagrant](http://www.vagrantup.com/)"
+
+hobbies:
+  - title: >
+      [Ladies Learning Code: Introduction to Python](http://learninglabs.org/meet-mentors-intro-python-edmonton/)
+    description:
+      Mentored students in learning Python as their introduction to the world
+      of programming.
+
+  - title: >
+      [Canadian Open Data Experience 2014 Hackathon](https://www.canadianopendataexperience.com/)
+
+    description: >
+      Developed [Forward](http://code-forward.meteor.com) in under 48 hours
+      for the hackathon with a team of myself and three other students. I was
+      primarily responsible for coding the front-end, developing templates,
+      and attaching the background data processing work to the front-end.
+      Based on my designer's mockups, I quickly crafted CSS stylesheets
+      designed for most common mobile phones.
+
+  - title: >
+      [Pal.JS](http://www.eddieantonio.ca/paljs/)
+    description:
+      A Pal (subset of Pascal) compiler written and targeting JavaScript. It's
+      not fully implemented. I wrote this after my compilers class,
+      implementing the same language.  This gave me a bit of distraction while
+      procrastinating on studying for finals, and I learned about [parsing
+      expression grammars](http://pegjs.majda.cz/) while writing it.
+
