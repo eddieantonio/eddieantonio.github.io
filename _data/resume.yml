@@ -1,5 +1,3 @@
-# vim: set ft=liquid: #
-
 education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
@@ -109,10 +107,19 @@ skills:
 
 hobbies:
   - title: >
-      [Ladies Learning Code: Introduction to Python](http://learninglabs.org/meet-mentors-intro-python-edmonton/)
-    description:
-      Mentored students in learning Python as their introduction to the world
-      of programming.
+      Mentor: Ladies Learning Code
+    description: >
+      Mentored students in [learning Python][1] as their introduction to the
+      world of programming.
+
+
+      Mentored students in learning HTML/CSS for [National Learn How to Code
+      Day][2].
+
+
+      [1]: http://learninglabs.org/meet-mentors-intro-python-edmonton/
+
+      [2]: http://ladieslearningcode.com/codeday/
 
   - title: >
       [Canadian Open Data Experience 2014 Hackathon](https://www.canadianopendataexperience.com/)
