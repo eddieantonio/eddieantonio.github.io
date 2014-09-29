@@ -1,9 +1,7 @@
-@charset: "UTF-8";
+@charset "UTF-8";
 
 /* LaTeX-inspired theme. */
 
-/* TODO: Use Jeyll include for this? */
-@import "./fonts/latin-modern-roman/stylesheet.css";
 
 /* Global stuff. */
 body { font-family: "Latin Modern Roman", serif }
@@ -105,7 +103,7 @@ li > p:first-child { margin: 0 inherit; }
 @media print {
    .corner-nav { display: none }
 }
-a.back:before { content: "↩︎ " }
+.back:before { content: "\21A9  " }
 
 /* Explict page styles. */
 @page {

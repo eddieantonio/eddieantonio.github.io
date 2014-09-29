@@ -73,8 +73,7 @@ experience:
     time: 2012
     responsibilities:
       - Develop a PHP-backed web game for human computation.
-      - Created an MySQL backed real time system. It's not worth really worth
-        it.
+      - Created an MySQL backed real time system. It's not really worth it.
       - Linux system administration.
 
 
@@ -139,4 +138,3 @@ hobbies:
       implementing the same language.  This gave me a bit of distraction while
       procrastinating on studying for finals, and I learned about [parsing
       expression grammars](http://pegjs.majda.cz/) while writing it.
-
