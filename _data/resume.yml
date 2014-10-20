@@ -40,6 +40,9 @@ experience:
         server.
       - Assist in development of the website front-end.
       - Configure and maintain custom daemon processes on Ubuntu 12.04 servers.
+      - Patched a memory leak in an open source library ([MongoDB Erlang
+        Driver](https://github.com/eddieantonio/mongodb-erlang)) used in a
+        server program.
 
   - title: Research Assistant/Web developer
     employer: Dr. Denilson Barbosa, University of Alberta
