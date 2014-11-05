@@ -1,12 +1,20 @@
 ---
 # vim: set ft=liquid:
-title: Résumé
+title: Résumé—Eddie Antonio Santos
+date: 2014-09-30
 ---
 <!DOCTYPE html>
 <html lang='en'>
 <head>
     <meta charset='UTF-8' />
-    <title>Résumé &mdash; Eddie Antonio Santos</title>
+    <title>{{ page.title }}</title>
+
+    <meta name="author" content="Eddie Antonio Santos">
+    <meta name="date" content="{{ page.date }}">
+    <meta name="designer" content="Eddie Antonio Santos">
+    <meta name="description" content="Résumé of Eddie Antonio Santos, Computer Programmer">
+    <meta name="twitter:creator " content="@_eddieantonio">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link media="all" href="{{ baseurl }}/style/fonts/latin-modern-roman/stylesheet.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
@@ -75,9 +83,8 @@ title: Résumé
         <section>
           <h3> Programming languages </h3>
           <p> I love to learn programming languages. Here's a list of
-            programming languages I have experience in. </p>
+              programming languages I have experience in: </p>
 
-          {%comment%} Ugh. Ugly markup... {%endcomment%}
           <ul class="lang-list">
           {% for tier in site.data.resume.skills.languages %}
             {% assign tier_no = forloop.index %}
