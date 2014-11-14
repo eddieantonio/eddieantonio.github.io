@@ -4,8 +4,14 @@ highlighter: pygments
 
 baseurl: http://www.eddieantonio.ca
 
+blog_title: >
+  The Great Pilgrimage to the Splendiferous Wall of Cheese: The Blog of Eddie Antonio Santos
+description: A blog about programming, cats, and jazz fusion.
+
+
 # Some metadata... like my social media handles, etc.
 me:
   github: https://github.com/eddieantonio
+  blog: /blog
   resume: /resume
   twitter: https://twitter.com/_eddieantonio
