@@ -101,7 +101,7 @@ date: 2014-09-30
           <dl>
             {% for category in site.data.resume.skills.small_categories %}
               <dt> {{ category[0] }} </dt>
-              <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
+              <dd> {{ category[1] | join: ', ' | textilize }} </dd>
             {% endfor %}
           </dl>
         </section>

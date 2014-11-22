@@ -108,16 +108,30 @@ skills:
   small_categories:
     Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis]
 
-    Editors: [Vim, Eclipse]
+    Editors: [Vim, Eclipse, Atom]
 
     OSs: [Mac OS X, Ubuntu/Debian Linux, OpenBSD, Other miscellaneous Linux
       distributions]
 
     Version Control: [Git, Mercurial, limited knowledge of SVN]
 
+    HTML Template Languages:
+      - '"Jade":http://jade-lang.com/'
+      - '"Twig":http://twig.sensiolabs.org/'
+      - '"Django":https://docs.djangoproject.com/en/dev/topics/templates/'
+      - '"Jinja2":http://jinja.pocoo.org/docs/dev/'
+      - '"Swig":http://paularmstrong.github.io/swig/'
+      - '"Liquid":http://liquidmarkup.org/'
+      - '"Handlebars":http://handlebarsjs.com/'
+      - '"Dust":http://akdubya.github.io/dustjs/'
+
+    CSS Preprocessors:
+      - '"Less":http://lesscss.org/'
+      - '"Stylus":http://learnboost.github.io/stylus/'
+
     Miscellaneous:
-     - "[Puppet Configuration Management](http://puppetlabs.com/)"
-     - "[Vagrant](http://www.vagrantup.com/)"
+     - '"Puppet Configuration Management":http://puppetlabs.com/'
+     - '"Vagrant":http://www.vagrantup.com/'
 
 hobbies:
   - title: >
