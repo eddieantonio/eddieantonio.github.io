@@ -41,9 +41,9 @@ date: 2014-09-30
 
         <dl>
         {% for job in site.data.resume.experience %}
-          {% capture job_header %} {{ job.title }} for {{ job.employer }} {% endcapture %}
+          {% capture job_header %} {{ job.title }} {% if job.employer %} for {{ job.employer }} {% endif %}{% endcapture %}
           <dt> <h3>{{ job_header | textilize }}
-            <small>{{ job.time }}</small> </h3> </dt>
+            <small class="time">{{ job.time }}</small> </h3> </dt>
           <dd>
             <h4> Responsibilities </h4>
             <ul>

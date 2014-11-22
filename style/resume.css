@@ -80,6 +80,10 @@ li > p:first-child { margin: 0 inherit; }
    margin: auto auto 2em 0;
 }
 
+.experience .time {
+  color: #666;
+}
+
 /* Language list thing. */
 .lang-list {
    list-style: none;
