@@ -55,10 +55,14 @@ h2 a:hover, h2 a:active,
 h3 a:hover, h3 a:active {
    color: #37A;
 }
+/* Transition effects. */
 h1 a:hover, h1 a:active,
 h2 a:hover, h2 a:active,
 h3 a:hover, h3 a:active {
    transition: color 0.25s ease;
+}
+a:hover, a:active {
+  text-decoration: none;
 }
 
 /* Header stuff. */
