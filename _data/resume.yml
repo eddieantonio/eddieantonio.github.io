@@ -6,6 +6,18 @@ education:
     time: { start: 2010, end: }
 
 experience:
+  - title: Computing Science Tutor
+    employer: null
+    time: 2014
+    responsibilities:
+      - Tutor students in introductory computing science, primarily using
+        Python.
+      - Establish a relationship based on mutual trust and respect with the
+        student.
+      - Pro actively find resources that will help the student succeed
+      - Guide students to find the answer themselves
+      - Promote thinking rather than memorizing
+
   - title: Computer programmer/General knower of stuff
     employer: Dr. Denilson Barbosa, University of Alberta
     time: 2014
