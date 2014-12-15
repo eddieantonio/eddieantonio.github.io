@@ -137,11 +137,12 @@ hobbies:
       "Gamboge—Predictive code input":https://github.com/eddieantonio/atom-gamboge
     description: >
       A multi-token code suggestion engine written for the [Atom][] text editor.
+      It uses an _n_-gram language model to predict several code tokens ahead
+      of the cursor.
 
-      Uses _n_-gram language models to predict several code tokens ahead of
-      the cursor.
 
       Currently in development.
+
 
       [Atom]: http://atom.io/
 
