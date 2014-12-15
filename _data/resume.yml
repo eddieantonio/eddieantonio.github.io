@@ -134,6 +134,19 @@ skills:
 
 hobbies:
   - title: >
+      "Gamboge—Predictive code input":https://github.com/eddieantonio/atom-gamboge
+    description: >
+      A multi-token code suggestion engine written for the [Atom][] text editor.
+
+      Uses _n_-gram language models to predict several code tokens ahead of
+      the cursor.
+
+      Currently in development.
+
+      [Atom]: http://atom.io/
+
+      
+  - title: >
       "Ladies Learning Code":http://ladieslearningcode.com/ Mentor
     description: >
       Mentored students in [learning Python][1] as their introduction to the
