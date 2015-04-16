@@ -11,11 +11,11 @@ experience:
     time: 2014
     responsibilities:
       - Tutor students in introductory computing science, primarily using
-        Python.
+        C and Python.
       - Establish a relationship with the student based on mutual trust and respect.
       - Proactively find resources that will help the student succeed.
       - Guide students to find the answer for themselves.
-      - Promote active thinking rather than memorizing.
+      - Promote active thinking rather than rote memorization.
 
   - title: Computer programmer/General knower of stuff
     employer: Dr. Denilson Barbosa, University of Alberta
@@ -47,11 +47,10 @@ experience:
         technologies including [Scrapy](http://scrapy.org/), and
         [PhantomJS](http://phantomjs.org/) duck-taped together using an Erlang
         load-balancer and [Redis](http://redis.io/).
-      - Expose the web crawling daemon as a service with a Node.JS web
-        server.
+      - Expose the web crawling daemon as a service with a Node.JS web server.
       - Assist in development of the website front-end.
       - Configure and maintain custom daemon processes on Ubuntu 12.04 servers.
-      - Patched a memory leak in an open source library ([MongoDB Erlang
+      - Patch a memory leak in an open source library ([MongoDB Erlang
         Driver](https://github.com/eddieantonio/mongodb-erlang)) used in a
         server program.
 
@@ -73,12 +72,12 @@ experience:
     time: 2012-2013
     responsibilities:
       - Evaluate the state of a legacy PHP web application and promptly chuck
-        it out (incrementing a database cursor in the middle of a template
+        it out (incrementing a database cursor in the middle of template
         code that generates HTML tables? Ain't nobody got time for that).
-      - Create database migration tools to transition from one (horrible)
-        SQLite3 database schema to a more maintainable (normalized) schema.
-      - Employ the use of full-text indices for measurably faster text search
-        queries.
+      - Create database migration tools to transition from an SQLite3
+        database schema to a more maintainable (i.e., normalized) schema.
+      - Employ the use of full-text indices for measurably faster text
+        search queries.
       - Design simple, clean CSS for the website.
 
 
@@ -87,7 +86,7 @@ experience:
     time: 2012
     responsibilities:
       - Develop a PHP-backed web game for human computation.
-      - Created an MySQL backed real-time system. It's not really worth it.
+      - Created an MySQL backed real-time system (it's not really worth it).
       - Linux system administration.
 
 
@@ -134,14 +133,18 @@ skills:
 
 hobbies:
   - title: >
+      "Waterbear—Visual Programming Language":https://github.com/waterbearlang/waterbear
+    description:
+      Rewrote the execution model of this imperative visual "block"
+      programming language such that each thread would have an explicit,
+      re-entrant call stack. This enabled writing common debugging features.
+
+  - title: >
       "Gamboge—Predictive code input":https://github.com/eddieantonio/atom-gamboge
     description: >
       A multi-token code suggestion engine written for the [Atom][] text editor.
       It uses an _n_-gram language model to predict several code tokens ahead
       of the cursor.
-
-
-      Currently in development.
 
 
       [Atom]: http://atom.io/
