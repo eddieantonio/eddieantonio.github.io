@@ -33,7 +33,7 @@ body { font-family: "Latin Modern Roman", serif }
       text-decoration-skip: all;
    }
    a:link, a:visited { color: inherit; }
-   a:after {
+   a:not(.no-expand):after {
       text-decoration: underline;
       color: #666;
       content: "<" attr(href) ">";
@@ -123,4 +123,8 @@ li > p:first-child { margin: 0 inherit; }
 /* Explicit printed page styles. */
 @page {
    margin: 72pt 55pt 36pt;
+}
+
+.skills {
+  display: none;
 }

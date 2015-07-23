@@ -31,7 +31,25 @@ title: Résumé—Eddie Antonio Santos
         <h2 class="title"> Résumé </h2>
         <h3 class="tagline"> Computer programmer based in Edmonton, Alberta,
           Canada </h3>
+        <aside> See my unabridged résumé at <a class="no-expand" href="http://www.eddieantonio.ca/resume/"> eddieantonio.ca/resume </a></aside>
       </header>
+
+      <section class="education">
+        <header>
+          <h2> Education </h2>
+        </header>
+
+        <ul class="ed-list">
+        {% for ed in site.data.resume.education %}
+          <li>
+            {{ ed.program }}&mdash;{{ ed.institution }}
+            {% if ed.in_progress %}
+            <span class="in-progress">In Progress</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </section>
 
       <section class="experience">
         <header>
@@ -54,23 +72,6 @@ title: Résumé—Eddie Antonio Santos
         {% endfor %}
       </dl>
 
-      </section>
-
-      <section class="education">
-        <header>
-          <h2> Education </h2>
-        </header>
-
-        <ul class="ed-list">
-        {% for ed in site.data.resume.education %}
-          <li>
-            {{ ed.program }}&mdash;{{ ed.institution }}
-            {% if ed.in_progress %}
-            <span class="in-progress">In Progress</span>
-            {% endif %}
-          </li>
-        {% endfor %}
-        </ul>
       </section>
 
 
@@ -107,7 +108,7 @@ title: Résumé—Eddie Antonio Santos
       </section>
 
       <section class='hobbies'>
-        <h2> Hobbies </h2>
+        <h2> Research </h2>
 
         <dl>
           {% for hobby in site.data.resume.hobbies %}

@@ -16,31 +16,6 @@ experience:
       - Write a web application using PHP, JavaScript, Neo4j and MongoDB.
       - Support and maintain a legacy PHP web application.
 
-  - title: Computing Science Tutor
-    employer: null
-    time: 2014
-    responsibilities:
-      - Tutor students in introductory computing science, primarily using
-        C and Python.
-      - Establish a relationship with the student based on mutual trust and respect.
-      - Proactively find resources that will help the student succeed.
-      - Guide students to find the answer for themselves.
-      - Promote active thinking rather than rote memorization.
-
-  - title: Computer programmer/General knower of stuff
-    employer: Dr. Denilson Barbosa, University of Alberta
-    time: 2014
-    responsibilities:
-      - Develop a RESTful database abstraction library in Apache Wink (JAX-RS
-        implementation) for interoperation between our various text processing
-        tools and an assortment of persistence tools (including MongoDB).
-      - Integrate build automation using Apache Maven to compile, test, and
-        deploy web services to a servlet container (Apache Tomcat).
-      - Create and maintain existing web demos for text processing tools
-        using JavaScript, jQuery, and [D3](http://d3js.org/).
-      - Develop a simple CoffeeScript Node.js app for bridging the web demos
-        to the text processing tools.
-
   - title: Teaching assistant, SCI 100
     employer: University of Alberta
     time: 2012-2014
@@ -48,58 +23,18 @@ experience:
       - Assist students learning Python as their first programming language.
       - Evaluate student coursework.
 
-  - title: Computer Programmer/Research Assistant
+  - title: Lead Developer/Research Assistant
     employer: >
-      "Cultr":http://cultr.business.ualberta.ca, Alberta School of Business
+      "Cultr":http://cultr.business.ualberta.ca
     time: 2013-2014
     responsibilities:
       - Write a robust and versatile web crawling service using a variety of
         technologies including [Scrapy](http://scrapy.org/), and
         [PhantomJS](http://phantomjs.org/) duck-taped together using an Erlang
         load-balancer and [Redis](http://redis.io/).
-      - Expose the web crawling daemon as a service with a Node.JS web server.
-      - Assist in development of the website front-end.
-      - Configure and maintain custom daemon processes on Ubuntu 12.04 servers.
       - Patch a memory leak in an open source library ([MongoDB Erlang
         Driver](https://github.com/eddieantonio/mongodb-erlang)) used in a
         server program.
-
-  - title: Research Assistant/Web developer
-    employer: Dr. Denilson Barbosa, University of Alberta
-    time: 2013
-    responsibilities:
-      - Create and maintain existing web demos for text processing tools
-        using JavaScript, jQuery, and [D3](http://d3js.org/).
-      - Develop a database abstraction library in Java for interoperation
-        between our various text processing tools and an assortment of
-        persistence tools (including MongoDB).
-      - Develop a simple CoffeeScript Node.js app for bridging the web demos
-        to the text processing tools.
-
-  - title: Web developer
-    employer: >
-      "UAWater":http://waterdb.ualberta.ca, Dr. Greg Goss, University of Alberta
-    time: 2012-2013
-    responsibilities:
-      - Evaluate the state of a legacy PHP web application and promptly chuck
-        it out (incrementing a database cursor in the middle of template
-        code that generates HTML tables? Ain't nobody got time for that).
-      - Create database migration tools to transition from an SQLite3
-        database schema to a more maintainable (i.e., normalized) schema.
-      - Employ the use of full-text indices for measurably faster text
-        search queries.
-      - Design simple, clean CSS for the website.
-
-
-  - title: Research Assistant/Web developer
-    employer: Dr. Davood Rafiei, University of Alberta
-    time: 2012
-    responsibilities:
-      - Develop a PHP-backed web game for human computation.
-      - Created an MySQL backed real-time system (it's not really worth it).
-      - Linux system administration.
-
-
 
 skills:
   languages:
@@ -116,43 +51,20 @@ skills:
   small_categories:
     Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis, Neo4j]
 
-    Editors: [Vim, Eclipse, Atom, PHPStorm]
-
-    OSs:
-      - Mac OS X
-      - Ubuntu/Debian Linux
-      - OpenBSD
-      - Other Linux distributions
-
-    Version Control: [Git, Mercurial, limited knowledge of SVN]
-
     HTML Template Languages:
       - '"React/JSX":https://facebook.github.io/react/'
       - '"Jade":http://jade-lang.com/'
-      - '"Twig":http://twig.sensiolabs.org/'
       - '"Django":https://docs.djangoproject.com/en/dev/topics/templates/'
-      - '"Jinja2":http://jinja.pocoo.org/docs/dev/'
-      - '"Swig":http://paularmstrong.github.io/swig/'
-      - '"Liquid":http://liquidmarkup.org/'
       - '"Handlebars":http://handlebarsjs.com/'
-      - '"Dust":http://akdubya.github.io/dustjs/'
 
     CSS Preprocessors:
       - '"Less":http://lesscss.org/'
-      - '"Stylus":http://learnboost.github.io/stylus/'
 
     Miscellaneous:
      - '"Puppet Configuration Management":http://puppetlabs.com/'
      - '"Vagrant":http://www.vagrantup.com/'
 
 hobbies:
-  - title: >
-      "Waterbear—Visual Programming Language":https://github.com/waterbearlang/waterbear
-    description:
-      Rewrote the execution model of this imperative visual "block"
-      programming language such that each thread would have an explicit,
-      re-entrant call stack. This enabled writing common debugging features.
-
   - title: >
       "Gamboge—Predictive code input":https://github.com/eddieantonio/atom-gamboge
     description: >
@@ -163,38 +75,9 @@ hobbies:
 
       [Atom]: http://atom.io/
 
-
   - title: >
-      "Ladies Learning Code":http://ladieslearningcode.com/ Mentor
-    description: >
-      Mentored students in [learning Python][1] as their introduction to the
-      world of programming.
-
-
-      Mentored students in learning HTML/CSS for [National Learn How to Code
-      Day][2].
-
-
-      [1]: http://learninglabs.org/meet-mentors-intro-python-edmonton/
-
-      [2]: http://ladieslearningcode.com/codeday/
-
-  - title: >
-      "Canadian Open Data Experience 2014 Hackathon":https://www.canadianopendataexperience.com/
-
-    description: >
-      Developed [Forward](http://code-forward.meteor.com) in under 48 hours
-      for the hackathon with a team of myself and three other students. I was
-      primarily responsible for coding the front-end, developing templates,
-      and attaching the background data processing work to the front-end.
-      Based on my designer's mockups, I quickly crafted CSS style sheets
-      designed for most common mobile phones.
-
-  - title: >
-      "Pal.JS":http://www.eddieantonio.ca/paljs/
+      "Waterbear—Visual Programming Language":https://github.com/waterbearlang/waterbear
     description:
-      A Pal (subset of Pascal) compiler written and targeting JavaScript. It's
-      not fully implemented. I wrote this after my compilers class,
-      implementing the same language.  This gave me a bit of distraction while
-      procrastinating on studying for finals, and I learned about [parsing
-      expression grammars](http://pegjs.majda.cz/) while writing it.
+      Rewrote the execution model of this imperative visual "block"
+      programming language such that each thread would have an explicit,
+      re-entrant call stack. This enabled writing common debugging features.
