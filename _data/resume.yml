@@ -3,9 +3,19 @@ education:
     location: Edmonton, Alberta, Canada
     program: BSc. Specialization in Computing Science
     in_progress: yes
-    time: { start: 2010, end: }
+    time: { start: 2010, end: Winter 2015}
 
 experience:
+  - title: Lead Developer, Research Assistant
+    employer: Eleni Stroulia, Patrick von Hauff
+    time: May 2015—Current
+    responsibilities:
+      - Collaborate intensively with colleagues in Medicine on a virtual
+        patient simulation platform.
+      - Research, evaluate, and integrate medical ontologies.
+      - Write a web application using PHP, JavaScript, Neo4j and MongoDB.
+      - Support and maintain a legacy PHP web application.
+
   - title: Computing Science Tutor
     employer: null
     time: 2014
@@ -94,26 +104,30 @@ experience:
 skills:
   languages:
     # "Tier 1" -- the languages that I spend a bunch of time programming.
-    - [Python, CoffeeScript, JavaScript, C, Scala, Java, Erlang]
+    - [Python, JavaScript (ECMAScript 2015), C, Java, Erlang]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Ruby, Perl, C#, Scheme, PHP, C++11, Common Lisp, Go, 6502 Assembly]
+    - [PHP, Ruby, Scala, Perl, C#, Scheme, C++11, Common Lisp, Go, 6502 Assembly]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
     - [Haskell, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
 
   small_categories:
-    Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis]
+    Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis, Neo4j]
 
-    Editors: [Vim, Eclipse, Atom]
+    Editors: [Vim, Eclipse, Atom, PHPStorm]
 
-    OSs: [Mac OS X, Ubuntu/Debian Linux, OpenBSD, Other miscellaneous Linux
-      distributions]
+    OSs:
+      - Mac OS X
+      - Ubuntu/Debian Linux
+      - OpenBSD
+      - Other Linux distributions
 
     Version Control: [Git, Mercurial, limited knowledge of SVN]
 
     HTML Template Languages:
+      - '"React/JSX":https://facebook.github.io/react/'
       - '"Jade":http://jade-lang.com/'
       - '"Twig":http://twig.sensiolabs.org/'
       - '"Django":https://docs.djangoproject.com/en/dev/topics/templates/'
@@ -149,7 +163,7 @@ hobbies:
 
       [Atom]: http://atom.io/
 
-      
+
   - title: >
       "Ladies Learning Code":http://ladieslearningcode.com/ Mentor
     description: >
