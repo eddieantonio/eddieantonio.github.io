@@ -3,22 +3,23 @@ education:
     location: Edmonton, Alberta, Canada
     program: BSc. Specialization in Computing Science
     in_progress: yes
-    time: { start: 2010, end: Winter 2015}
+    time: { start: 2010, end: Fall 2015}
 
 experience:
   - title: Lead Developer, Research Assistant
-    employer: Eleni Stroulia, Patrick von Hauff
-    time: May 2015—Current
+    employer: Dr. Eleni Stroulia, Patrick von Hauff
+    time: May 2015–August 2015
     responsibilities:
-      - Collaborate intensively with colleagues in Medicine on a virtual
+      - Collaborate intensively with colleagues in medicine on a virtual
         patient simulation platform.
       - Research, evaluate, and integrate medical ontologies.
-      - Write a web application using PHP, JavaScript, Neo4j and MongoDB.
+      - Write a web application using PHP, JavaScript (with React.JS), Neo4j
+        and MongoDB.
       - Support and maintain a legacy PHP web application.
 
   - title: Computing Science Tutor
     employer: null
-    time: 2014
+    time: 2014–
     responsibilities:
       - Tutor students in introductory computing science, primarily using
         C and Python.
@@ -107,7 +108,7 @@ skills:
     - [Python, JavaScript (ECMAScript 2015), C, Java, Erlang]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [PHP, Ruby, Scala, Perl, C#, Scheme, C++11, Common Lisp, Go, 6502 Assembly]
+    - [PHP, Ruby, Scala, Perl, C#, Scheme, C++, Common Lisp, Go, 6502 Assembly]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
@@ -165,7 +166,7 @@ hobbies:
 
 
   - title: >
-      "Ladies Learning Code":http://ladieslearningcode.com/ Mentor
+      "Ladies Learning Code Mentor":http://ladieslearningcode.com/
     description: >
       Mentored students in [learning Python][1] as their introduction to the
       world of programming.
