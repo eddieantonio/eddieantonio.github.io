@@ -10,7 +10,7 @@ body {
 }
 
 body.home {
-    background: url(./bg/barco-atitlan.jpg) no-repeat 50% / cover;
+    background: url(./bg/bg2.jpg) no-repeat 50% / cover;
 }
 
 a:link, a:visited, a:active {
