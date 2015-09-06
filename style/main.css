@@ -10,7 +10,7 @@ body {
 }
 
 body.home {
-    background: url(./bg/bg2.jpg) no-repeat 50% / cover;
+    background: url(./bg/bg1.jpg) no-repeat 50% / cover;
 }
 
 a:link, a:visited, a:active {
@@ -38,8 +38,6 @@ a:hover, .eddie-antonio {
     bottom: 50%;
 
     text-transform: lowercase;
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 1em 0 1.5em;
 }
 
