@@ -21,34 +21,38 @@ body {
     font-size: 100%;
     color: #000000;
     background-color: #FFC266;
+    font-family: 'Lato',  sans-serif;
 }
 
 a {
     color: #acb7c0;
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
-h1,
-h2 {
-    font-family: "Open Sans", sans-serif;
+h1, h2 {
     font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
 }
-
 
 /* -------------------------------- 
 
 Modules - reusable parts of our design
 
 -------------------------------- */
+hr{
+   margin-bottom: 2em;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
 
 .cd-container {
-    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-    width: 75%;
+    width: 60%;
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -66,6 +70,10 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
+nav.corner-nav {
+    background-color: #222B31;
+    padding: 1em;
+}
 
 header {
     padding: 3em;
@@ -156,7 +164,7 @@ header h1 {
     margin-left: 60px;
     background: white;
     border-radius: 0.25em;
-    padding: 1em;
+    padding: 3em 4em;
     box-shadow: 0 3px 0 #d7e4ed;
 }
 
@@ -183,10 +191,11 @@ header h1 {
 }
 
 .cd-timeline-content p {
-    margin: 1em 0;
-    line-height: 1.6;
+    /* margin: 1em 0; */
+    line-height: 26px;
+    font-size: 19px;
+    font-weight: 300;
 }
-
 .cd-timeline-content .cd-read-more {
     float: right;
     padding: .8em 1em;
