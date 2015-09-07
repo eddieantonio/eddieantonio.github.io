@@ -18,14 +18,23 @@ body.home {
 a:link,
 a:visited,
 a:active {
-    color: inherit;
     text-decoration: none;
     font-weight: lighter;
+    color: #6D6561;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 a:hover,
 .eddie-antonio {
     color: #583404;
+}
+
+a:hover {
+    color: #B7A994;
 }
 
 .inline-nav > * > li {
@@ -35,6 +44,18 @@ a:hover,
 
 img.intro-icon {
     width: 20%;
+     transition: all 0.3s ease-in-out 0s;
+}
+
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+
+img.intro-icon:hover{
+    cursor: default;
+    -webkit-animation: spin 1s infinite linear;
+
 }
 
 .hero-unit {
