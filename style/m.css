@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+
+html, body { height: 100%; }
+
+body {
+    text-align: center;
+    font-family: "Raleway","Helvetica Neue", Helvetica, sans-serif;
+    background-color: #fafcff;
+    color: #666;
+}
+
+body.home {
+    background: url(./bg/barco-atitlan.jpg) no-repeat 50% / cover;
+}
+
+a:link, a:visited, a:active {
+    color: inherit;
+}
+
+a:hover, .eddie-antonio {
+    color: #999;
+}
+
+.inline-nav > * > li {
+    display: inline-block;
+    margin-left: 0.6em;
+}
+
+
+.hero-unit {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    /* Vertically centre the element. */
+    margin-bottom: -6em;
+    bottom: 50%;
+
+    text-transform: lowercase;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1em 0 1.5em;
+}
+
+.home > footer {
+   position: absolute;
+   bottom: 2px;
+   left: 2px;
+   color: white;
+   opacity: 0.4;
+}
+
+.hero-unit > h1 {
+   word-spacing: -0.25em; /* Remove the space between words. */
+   font-weight: 100;
+   font-size: 400%;
+}
+
+.santos {
+    font-weight: normal;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media {
+    margin-top: 1em;
+}
