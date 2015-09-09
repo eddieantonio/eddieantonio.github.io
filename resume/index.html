@@ -19,7 +19,6 @@ title: Résumé—Eddie Antonio Santos
     <link media="all" href="{{ baseurl }}/style/fonts/latin-modern-roman/stylesheet.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/animate.css" type="text/css" rel="stylesheet">
-
 </head>
 <script src="{{ baseurl }}/js/wow.min.js"></script>
 <script>
@@ -35,73 +34,69 @@ new WOW().init();
         <h1>Eddie Antonio Santos<h1>
           <p>Résumé Computer programmer based in Edmonton, Alberta, Canada</p>
     </header>
+
     <h1 >WORK EXPERIENCE</h1>
-    <section id="cd-timeline" class="cd-container ">
-        {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% if job.employer %} for {{ job.employer }} {% endif %}{% endcapture %}
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-movie"></div>
-            <div class="cd-timeline-content  wow bounceInUp">
-                <h2>{{ job_header | textilize }}</h2>
-                <hr>
-                <p>
-                    <ul>
-                        {% for item in job.responsibilities %}
-                        <li> {{ item | markdownify }} </li>
-                        {% endfor %}
-                        <div class="time">{{ job.time }}</div>
-                    </ul>
-                </p>
+        <section id="cd-timeline">
+            {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% if job.employer %} for {{ job.employer }} {% endif %}{% endcapture %}
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-movie"></div>
+                <div class="cd-timeline-content  wow bounceInUp">
+                    <h2>{{ job_header | textilize }}</h2>
+                    <hr>
+                    <p>
+                        <ul>
+                            {% for item in job.responsibilities %}
+                            <li> {{ item | markdownify }} </li>
+                            {% endfor %}
+                            <div class="time">{{ job.time }}</div>
+                        </ul>
+                    </p>
+                </div>
             </div>
-        </div>
-        {% endfor %}
-    </section>
-    <section class="education">
-        <header>
-            <h2> Education </h2>
-        </header>
-        <ul class="ed-list">
-            {% for ed in site.data.resume.education %}
-            <li>
-                {{ ed.program }}&mdash;{{ ed.institution }} {% if ed.in_progress %}
-                <span class="in-progress">In Progress</span> {% endif %}
-            </li>
             {% endfor %}
-        </ul>
-    </section>
-    <section class="skills">
-        <header>
-            <h2> Skills </h2>
-        </header>
-        <section>
-            <h3> Programming languages </h3>
-            <p> I love to learn programming languages. Here's a list of programming languages I have experience in: </p>
-            <ul class="lang-list">
-                {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
-                <li class="lang-tier-{{ tier_no }}
-              lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
-                {% endfor %} {% endfor %}
+        </section>
+        <section class="education">
+            <h2 style="color:white"> Education </h2>
+            <ul class="ed-list">
+                {% for ed in site.data.resume.education %}
+                <li>
+                    {{ ed.program }}&mdash;{{ ed.institution }} {% if ed.in_progress %}
+                    <span class="in-progress">In Progress</span> {% endif %}
+                </li>
+                {% endfor %}
             </ul>
         </section>
-        <section>
-            <h3> Miscellaneous technologies </h3>
+        <section class="skills">
+                <h2> Skills </h2>
+                <h3> Programming languages </h3>
+                <p> I love to learn programming languages. Here's a list of programming languages I have experience in: </p>
+                <ul class="lang-list">
+                    {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
+                    <li class="lang-tier-{{ tier_no }}
+              lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
+                    {% endfor %} {% endfor %}
+                </ul>
+                <h3> Miscellaneous technologies </h3>
+                <dl>
+                    {% for category in site.data.resume.skills.small_categories %}
+                    <dt> {{ category[0] }} </dt>
+                    <dd> {{ category[1] | join: ', ' | textilize }} </dd>
+                    {% endfor %}
+                </dl>
+            </section>
+        <section class='hobbies'>
+            <h2> Hobbies </h2>
             <dl>
-                {% for category in site.data.resume.skills.small_categories %}
-                <dt> {{ category[0] }} </dt>
-                <dd> {{ category[1] | join: ', ' | textilize }} </dd>
-                {% endfor %}
+                {% for hobby in site.data.resume.hobbies %}
+                <h3> {{ hobby.title | textilize }} </h3> {{ hobby.description | markdownify }} {% endfor %}
             </dl>
         </section>
-    </section>
-    <section class='hobbies'>
-        <h2> Hobbies </h2>
-        <dl>
-            {% for hobby in site.data.resume.hobbies %}
-            <h3> {{ hobby.title | textilize }} </h3> {{ hobby.description | markdownify }} {% endfor %}
-        </dl>
-    </section>
-    </article>
-    </div>
-    -->
+        </article>
+        </div>
+        </di>
+          <nav class="corner-nav">
+        <a class="back" href="{{ baseurl }}/">Back to home</a>
+    </nav>
 </body>
 
 </html>
