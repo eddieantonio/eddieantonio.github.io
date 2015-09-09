@@ -45,6 +45,7 @@ a {
 
 img {
     max-width: 100%;
+    padding: 10px;
 }
 
 nav.corner-nav {
@@ -52,12 +53,25 @@ nav.corner-nav {
     padding: 0.5em;
 }
 
-h1 {
-    color: #C03B44;
+header.profile h1 {
     font-size: 3em;
     text-align: center;
+    color:white;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+h1 {
+    color: #C03B44;
     padding-top: 1em;
     font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+}
+
+.profile p {
+    font-size: 17px;
+    line-height: 1.8em;
 }
 
 
