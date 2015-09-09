@@ -18,8 +18,13 @@ title: Résumé—Eddie Antonio Santos
     <link media="all" href="{{ baseurl }}/style/reset.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/fonts/latin-modern-roman/stylesheet.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
+    <link media="all" href="{{ baseurl }}/style/animate.css" type="text/css" rel="stylesheet">
 
 </head>
+<script src="{{ baseurl }}/js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 
 <body>
     <nav class="corner-nav">
@@ -27,15 +32,14 @@ title: Résumé—Eddie Antonio Santos
     </nav>
     <header>
         <img class="profile" src="{{ site.baseurl }}/style/img/profile.jpg">
-        <h1>Eddie Antonio Santos: Résumé
-      Computer programmer based in Edmonton, Alberta,
-          Canada</h1>
+        <p>Eddie Antonio Santos: Résumé Computer programmer based in Edmonton, Alberta, Canada</p>
     </header>
-    <section id="cd-timeline" class="cd-container">
+    <h1 >WORK EXPERIENCE</h1>
+    <section id="cd-timeline" class="cd-container ">
         {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% if job.employer %} for {{ job.employer }} {% endif %}{% endcapture %}
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-movie"></div>
-            <div class="cd-timeline-content">
+            <div class="cd-timeline-content  wow bounceInUp">
                 <h2>{{ job_header | textilize }}</h2>
                 <hr>
                 <p>
@@ -43,9 +47,9 @@ title: Résumé—Eddie Antonio Santos
                         {% for item in job.responsibilities %}
                         <li> {{ item | markdownify }} </li>
                         {% endfor %}
+                        <div class="time">{{ job.time }}</div>
                     </ul>
                 </p>
-                <span class="cd-date">{{ job.time }}</span>
             </div>
         </div>
         {% endfor %}
