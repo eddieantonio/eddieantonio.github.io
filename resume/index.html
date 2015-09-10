@@ -37,13 +37,14 @@ new WOW().init();
 
     <h1 >WORK EXPERIENCE</h1>
         <section id="cd-timeline">
-            {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% if job.employer %} for {{ job.employer }} {% endif %}{% endcapture %}
+            {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-movie"></div>
                 <div class="cd-timeline-content  wow bounceInUp">
                     <h2>{{ job_header | textilize }}</h2>
                     <hr>
                     <p>
+                      <strong>{% if job.employer %} {{ job.employer | textilize}} {% endif %}</strong>
                         <ul>
                             {% for item in job.responsibilities %}
                             <li> {{ item | markdownify }} </li>
@@ -93,10 +94,7 @@ new WOW().init();
         </section>
         </article>
         </div>
-        </di>
-          <nav class="corner-nav">
-        <a class="back" href="{{ baseurl }}/">Back to home</a>
-    </nav>
+        </div>
 </body>
 
 </html>

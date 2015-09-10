@@ -4,11 +4,13 @@ img {
     width: 12em;
 }
 
-h1,h2 {
+h1, h2 {
     font-weight: 700;
-    font-size: 21px;
-    line-height: 23px;
-
+    font-size: 25px;
+    line-height: 26px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    color: #F9C935;
 }
 
 /* -------------------------------- 
@@ -35,6 +37,12 @@ body {
     color: #fff;
     font-family: "Lato", Arial, serif;
 }
+
+strong {
+    font-weight:900; 
+                                  
+}
+
 
 a {
     color: rgba(255, 192, 0, 0.94);
@@ -84,7 +92,7 @@ header {
     text-align: center;
     background: #E0313C;
     height: auto;
-    padding: 2em;
+    padding: 1em;
 }
 
 #cd-timeline {
@@ -212,8 +220,8 @@ header {
 
 .cd-timeline-content p {
     margin: 13px 0;
-    line-height: 19px;
-    font-size: 16px;
+    line-height: 20px;
+    font-size: 15px;
     padding-top: 0em;
 }
 
@@ -248,7 +256,7 @@ header {
 @media only screen and (min-width: 1170px) {
     .cd-timeline-content {
         margin-left: 6em;
-        padding: 1.5em 3.5em;
+        padding: 34px 39px 9px;
         width: 38%;
     }
     .cd-timeline-content::before {
@@ -301,13 +309,13 @@ section.education {
     text-transform: uppercase;
 }
 
-section.education h2{
-   font-size: 3em;
-   text-transform: uppercase;
+section.education h2 {
+    font-size: 3em;
+    text-transform: uppercase;
 }
 
-.ed-list{
-   padding-top: 2em;
+.ed-list {
+    padding-top: 2em;
 }
 
 section.skills {
@@ -317,12 +325,14 @@ section.skills {
     padding: 2em;
 }
 
-section.skills h2{
-   font-size: 3em;
+section.skills h2 {
+    font-size: 3em;
+    padding: 8px;
 }
 
-section.skills h3{
-   font-size: 1em;
+section.skills h3 {
+    font-size: 1em;
+    padding: 1em;
 }
 
 section.hobbies {
