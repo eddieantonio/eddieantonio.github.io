@@ -339,31 +339,3 @@ section.hobbies {
     background-color: #38383A;
     padding: 3em 10%;
 }
-
-/*=-----------
-Chart
------------*/
-
-.chart {
-  position: relative;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-}
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.percent {
-  display: inline-block;
-  line-height: 150px;
-  z-index: 2;
-  font-size: 2em;
-}
-.percent:after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: .8em;
-}

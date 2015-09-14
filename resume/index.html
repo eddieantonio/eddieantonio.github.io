@@ -19,32 +19,10 @@ title: Résumé—Eddie Antonio Santos
     <link media="all" href="{{ baseurl }}/style/fonts/latin-modern-roman/stylesheet.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/animate.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ baseurl }}/js/jquery.easypiechart.js"></script>
 </head>
 <script src="{{ baseurl }}/js/wow.min.js"></script>
 <script>
 new WOW().init();
-</script>
-<script>
-$(function() {
-    $('.chart').easyPieChart({
-        easing: 'easeOutElastic',
-        delay: 3000,
-        barColor: '#E0313C',
-        scaleColor: false,
-        lineWidth: 10,
-        trackWidth: 7,
-        size: 150,
-        lineCap: 'butt',
-        onStep: function(from, to, percent) {
-            this.el.children[0].innerHTML = Math.round(percent);
-        }
-    });
-    document.querySelector('.js_update').addEventListener('click', function(e) {
-        chart.update(Math.random() * 200 - 100);
-    });
-});
 </script>
 
 <body>
@@ -92,12 +70,10 @@ $(function() {
         <section class="skills">
             <h2> Skills </h2>
             <ul class="lang-list">
-                {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
-                <span class="chart" data-percent="86">
-        <span class="percent"></span>
+                {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %}
+                {% for lang in tier %}
                 <li class="lang-tier-{{ tier_no }}
-
-              lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
+                lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
                 {% endfor %} {% endfor %}
             </ul>
             <h3> Miscellaneous technologies </h3>
