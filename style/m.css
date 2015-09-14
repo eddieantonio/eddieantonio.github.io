@@ -7,7 +7,7 @@ body {
 body {
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    background-color: #fafcff;
+    background-image: url("img/bg1.png");
     color: #666;
 }
 
@@ -44,18 +44,21 @@ a:hover {
 
 img.intro-icon {
     width: 20%;
-     transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 @-webkit-keyframes spin {
-    0%   {-webkit-transform: rotate(0deg)}
-    100% {-webkit-transform: rotate(1500deg)}
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(1500deg)
+    }
 }
 
-img.intro-icon:hover{
+img.intro-icon:hover {
     cursor: default;
     -webkit-animation: spin 1s infinite linear;
-
 }
 
 .hero-unit {
@@ -66,7 +69,7 @@ img.intro-icon:hover{
     bottom: 25%;
     text-transform: lowercase;
     background-color: white;
-    background-color: rgba(255, 255, 255, 0.9);
+    background: linear-gradient( rgba(230, 222, 190, 0.45), rgba(239, 213, 187, 0.65)), url("img/bg3.png");
     padding: 1em 0 1.5em;
 }
 
@@ -88,7 +91,7 @@ img.intro-icon:hover{
 
 .santos {
     font-weight: normal;
-    color: #B7A994;
+    color: #927C52;
 }
 
 .site-title a {
