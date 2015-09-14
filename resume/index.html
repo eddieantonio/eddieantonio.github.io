@@ -27,8 +27,14 @@ new WOW().init();
 </script>
 
 <body>
-    <nav class="corner-nav">
-        <a class="back" href="{{ baseurl }}/">Back to home</a>
+    <nav>
+        <ul>
+            <li><a href="{{ baseurl }}">Back</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Education</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Hobbies</a></li>
+        </ul>
     </nav>
     <header class="profile">
         <img src="{{ site.baseurl }}/style/img/profile.jpg">
@@ -64,7 +70,6 @@ new WOW().init();
             </div>
             {% endfor %}
         </section>
-
         <section class="education">
             <h2 style="color:white"> Education </h2>
             <ul class="ed-list">
@@ -76,7 +81,6 @@ new WOW().init();
                 {% endfor %}
             </ul>
         </section>
-
         <section class="skills">
             <h2> Skills </h2>
             <div class="skills-container">

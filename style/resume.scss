@@ -1,3 +1,27 @@
-p{
-	color:blue
+//Colors
+$Nav-color: red;
+//Font/Style
+
+/*---------------
+MAIN STYLES
+----------------*/
+
+nav {
+    width: 100%;
+    background:$Nav-color*0.5;
+    padding:2em;
+    ul {
+        display: flex;
+        flex-direction: row;        
+        li {
+            list-style: none;
+            flex-grow: 1;
+            text-align: center;
+            
+            a {
+                text-decoration: none;
+                color:#fff;
+            }
+        }
+    }
 }
