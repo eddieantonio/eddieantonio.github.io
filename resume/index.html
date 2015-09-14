@@ -15,6 +15,7 @@ title: Résumé—Eddie Antonio Santos
     <meta name="twitter:creator " content="@_eddieantonio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link media="all" href="{{ baseurl }}/style/reset.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/fonts/latin-modern-roman/stylesheet.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
@@ -33,6 +34,13 @@ new WOW().init();
         <img src="{{ site.baseurl }}/style/img/profile.jpg">
         <h1>Eddie Antonio Santos<h1>
           <p>Résumé Computer programmer based in Edmonton, Alberta, Canada</p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <a href="#" class="bntDownload">Download Printable Resume</a>
     </header>
 
     <h1 >WORK EXPERIENCE</h1>
@@ -56,6 +64,7 @@ new WOW().init();
             </div>
             {% endfor %}
         </section>
+
         <section class="education">
             <h2 style="color:white"> Education </h2>
             <ul class="ed-list">
@@ -67,22 +76,24 @@ new WOW().init();
                 {% endfor %}
             </ul>
         </section>
+
         <section class="skills">
             <h2> Skills </h2>
-            <ul class="lang-list">
-                {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %}
-                {% for lang in tier %}
-                <li class="lang-tier-{{ tier_no }}
+            <div class="skills-container">
+                <ul class="lang-list">
+                    {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
+                    <li class="lang-tier-{{ tier_no }}
                 lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
-                {% endfor %} {% endfor %}
-            </ul>
-            <h3> Miscellaneous technologies </h3>
-            <dl>
-                {% for category in site.data.resume.skills.small_categories %}
-                <dt> {{ category[0] }} </dt>
-                <dd> {{ category[1] | join: ', ' | textilize }} </dd>
-                {% endfor %}
-            </dl>
+                    {% endfor %} {% endfor %}
+                </ul>
+                <h3> Miscellaneous technologies </h3>
+                <dl>
+                    {% for category in site.data.resume.skills.small_categories %}
+                    <dt> {{ category[0] }} </dt>
+                    <dd> {{ category[1] | join: ', ' | textilize }} </dd>
+                    {% endfor %}
+                </dl>
+            </div>
         </section>
         <section class='hobbies'>
             <h2> Hobbies </h2>
