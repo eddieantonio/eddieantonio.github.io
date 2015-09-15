@@ -27,89 +27,90 @@ new WOW().init();
 </script>
 
 <body>
+    <header class="heading">
+        <img src="{{ site.baseurl }}/style/img/profile.jpg">
+        <h1>The Many Musings of Eddie Santos</h1>
+    </header>
     <nav>
         <ul>
-            <li><a href="{{ baseurl }}">Back</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Education</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Hobbies</a></li>
+            <!--<li><a href="{{ baseurl }}"></a></li>-->
+            <li><a href="">Blog</a></li>
+            <li><a href="">Resume</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </nav>
-    <header class="profile">
-        <img src="{{ site.baseurl }}/style/img/profile.jpg">
-        <h1>Eddie Antonio Santos<h1>
-          <p>Résumé Computer programmer based in Edmonton, Alberta, Canada</p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <a href="#" class="bntDownload">Download Printable Resume</a>
-    </header>
 
-    <h1 >WORK EXPERIENCE</h1>
-        <section id="cd-timeline">
-            {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie"></div>
-                <div class="cd-timeline-content  wow bounceInUp">
-                    <h2>{{ job_header | textilize }}</h2>
-                    <hr>
-                    <p>
-                        <strong>{% if job.employer %} {{ job.employer | textilize}} {% endif %}</strong>
-                        <ul>
-                            {% for item in job.responsibilities %}
-                            <li> {{ item | markdownify }} </li>
-                            {% endfor %}
-                            <div class="time">{{ job.time }}</div>
-                        </ul>
-                    </p>
-                </div>
+
+
+    <!--
+    <a href="#" class="bntDownload">Download Printable Resume</a>
+    <h1>WORK EXPERIENCE</h1>
+    -->
+    
+    <section id="cd-timeline">
+        {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie"></div>
+            <div class="cd-timeline-content  wow bounceInUp">
+                <h2>{{ job_header | textilize }}</h2>
+                <hr>
+                <p>
+                    <strong>{% if job.employer %} {{ job.employer | textilize}} {% endif %}</strong>
+                    <ul>
+                        {% for item in job.responsibilities %}
+                        <li> {{ item | markdownify }} </li>
+                        {% endfor %}
+                        <div class="time">{{ job.time }}</div>
+                    </ul>
+                </p>
             </div>
+        </div>
+        {% endfor %}
+    </section>
+
+
+
+
+    <section class="education">
+        <h2 style="color:white"> Education </h2>
+        <ul class="ed-list">
+            {% for ed in site.data.resume.education %}
+            <li>
+                {{ ed.program }}&mdash;{{ ed.institution }} {% if ed.in_progress %}
+                <span class="in-progress">In Progress</span> {% endif %}
+            </li>
             {% endfor %}
-        </section>
-        <section class="education">
-            <h2 style="color:white"> Education </h2>
-            <ul class="ed-list">
-                {% for ed in site.data.resume.education %}
-                <li>
-                    {{ ed.program }}&mdash;{{ ed.institution }} {% if ed.in_progress %}
-                    <span class="in-progress">In Progress</span> {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
-        <section class="skills">
-            <h2> Skills </h2>
-            <div class="skills-container">
-                <ul class="lang-list">
-                    {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
-                    <li class="lang-tier-{{ tier_no }}
+        </ul>
+    </section>
+    <section class="skills">
+        <h2> Skills </h2>
+        <div class="skills-container">
+            <ul class="lang-list">
+                {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
+                <li class="lang-tier-{{ tier_no }}
                 lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
-                    {% endfor %} {% endfor %}
-                </ul>
-                <h3> Miscellaneous technologies </h3>
-                <dl>
-                    {% for category in site.data.resume.skills.small_categories %}
-                    <dt> {{ category[0] }} </dt>
-                    <dd> {{ category[1] | join: ', ' | textilize }} </dd>
-                    {% endfor %}
-                </dl>
-            </div>
-        </section>
-        <section class='hobbies'>
-            <h2> Hobbies </h2>
+                {% endfor %} {% endfor %}
+            </ul>
+            <h3> Miscellaneous technologies </h3>
             <dl>
-                {% for hobby in site.data.resume.hobbies %}
-                <h3> {{ hobby.title | textilize }} </h3> {{ hobby.description | markdownify }} {% endfor %}
+                {% for category in site.data.resume.skills.small_categories %}
+                <dt> {{ category[0] }} </dt>
+                <dd> {{ category[1] | join: ', ' | textilize }} </dd>
+                {% endfor %}
             </dl>
-            </span>
-        </section>
-        </article>
         </div>
-        </div>
+    </section>
+    <section class='hobbies'>
+        <h2> Hobbies </h2>
+        <dl>
+            {% for hobby in site.data.resume.hobbies %}
+            <h3> {{ hobby.title | textilize }} </h3> {{ hobby.description | markdownify }} {% endfor %}
+        </dl>
+        </span>
+    </section>
+    </article>
+    </div>
+    </div>
 </body>
 
 </html>
