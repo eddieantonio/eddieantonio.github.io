@@ -1,7 +1,10 @@
+/*********************
+VARIABLES
+*********************/
+
 //Colors
-$Main-color:darkred;
-
-
+$mainColor:darkred;
+$yellow:#F9C935;
 //Font/Style
 $Helvetica: Helvetica,
 sans-serif;
@@ -10,12 +13,14 @@ Arial,
 serif;
 $Sans:'Open Sans',
 sans-serif;
-
-
 $S: 320px;
 $M: 875px;
 $L: 1170px;
-// media queries
+
+/*********************
+BREAKPOINTS
+*********************/
+
 @mixin MQ($canvas) {
     @if $canvas==S {
         @media only screen and (min-width: $S) {
@@ -34,10 +39,14 @@ $L: 1170px;
     }
 }
 
+
+/*********************
+BREAKPOINTS
+*********************/
+
 @mixin tooltip($left, $right, $left-color, $right-color) {
     content: '';
     position: absolute;
-    top: 16px;
     border: 7px solid transparent;
     left: $left;
     right: $right;
@@ -64,11 +73,32 @@ MAIN STYLES
     @include box-sizing;
 }
 
+a {
+    color: $yellow;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 700;
+}
+
+body {
+    font-size: 100%;
+    color: #fff;
+    font-family: $Lato;
+}
+
+
+/*---------------
+HEADER
+----------------*/
+
 .heading {
     height: auto;
     padding: 2em;
     text-align: center;
-    background-color: $Main-color;
+    background-color: $mainColor;
     h1 {
         font-size: 3em;
         color: #fff;
@@ -83,7 +113,7 @@ img {
 
 nav {
     width: 100%;
-    background: $Main-color*0.7;
+    background: $mainColor*0.7;
     padding: 1em;
     ul {
         display: flex;
@@ -93,8 +123,12 @@ nav {
             text-align: center;
             padding: 0 2em;
             a {
-                text-decoration: none;
-                color: #fff;
+                color: #FFF;
+                font-size: 1em;
+                font-weight: 400;
+                font-family: $Lato;
+                text-transform: uppercase;
+
             }
         }
     }
@@ -125,10 +159,7 @@ $time-content-Color:#38383A;
         clear: both;
     }
     @include MQ(M) {
-        margin: -5em 0;
-        &:first-child {
-            margin-top: 0;
-        }
+        margin: -7em 0;
         &:last-child {
             margin-bottom: 3em;
         }
@@ -141,13 +172,28 @@ $time-content-Color:#38383A;
     }
 }
 
+//The Actual Boxes
 .time-content {
     position: relative;
     border-radius: 0.25em;
-    padding: 1em;
+    padding: 2em 2em 1em;
     background: $time-content-Color;
+    font-weight: 300;
+    font-family: $Lato;
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $yellow;
+    }
+    p {
+        line-height: 20px;
+        font-size: 15px;
+        color: #fff;
+        margin: 13px 0;
+    }
     @include MQ(M) {
-        width: 100%;
         width: 25em;
         &::before {
             @include tooltip(100%, 0, $time-content-Color, #fff);
@@ -170,20 +216,18 @@ $time-content-Color:#38383A;
             left: 50%;
             top: 2.5em;
             margin-left: -2px;
-            background: $Main-color*1.2;
+            background: $mainColor*1.2;
         }
-    }
-}
-
-@include MQ(M) {
-    .time-dot {
-        position: absolute;
-        top: 11px;
-        border-radius: 50%;
-        width: 2em;
-        height: 2em;
-        left: 50%;
-        margin-left: -17px;
-        background-color: $Main-color*1.2;
+        .time-dot {
+            //time line dot
+            position: absolute;
+            top: 11px;
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+            margin-left: -17px;
+            background-color: $mainColor*1.2;
+            left: 50%;
+        }
     }
 }
