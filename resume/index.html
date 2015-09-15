@@ -47,12 +47,12 @@ new WOW().init();
     <h1>WORK EXPERIENCE</h1>
     -->
 
-    <section id="cd-timeline">
+    <section id="timeline">
         job experience
         {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
         <div class="block">
-            <div class="cd-timeline-img cd-movie"></div>
-            <div class="cd-timeline-content  wow bounceInUp">
+            <div class="time-dot"></div>
+            <div class="time-content wow bounceInUp">
                 <h2>{{ job_header | textilize }}</h2>
                 <hr>
                 <p>
