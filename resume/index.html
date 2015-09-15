@@ -46,10 +46,11 @@ new WOW().init();
     <a href="#" class="bntDownload">Download Printable Resume</a>
     <h1>WORK EXPERIENCE</h1>
     -->
-    
+
     <section id="cd-timeline">
+        job experience
         {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
-        <div class="cd-timeline-block">
+        <div class="block">
             <div class="cd-timeline-img cd-movie"></div>
             <div class="cd-timeline-content  wow bounceInUp">
                 <h2>{{ job_header | textilize }}</h2>
