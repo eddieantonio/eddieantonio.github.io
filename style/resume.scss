@@ -1,5 +1,26 @@
+// breakpoints
+   
+$S:     320px;   
+$M:     875px;     
+$L:     1170px;     
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
+
 //Colors
-$Heading-color:darkred;
+$Main-color:darkred;
 //Font/Style
 $Helvetica: Helvetica,
 sans-serif;
@@ -13,9 +34,6 @@ sans-serif;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-
-//Media Queries
-$Desktop:850px;
 
 /*---------------
 MAIN STYLES
@@ -31,7 +49,7 @@ MAIN STYLES
     height: auto;
     padding: 2em;
     text-align: center;
-    background-color: $Heading-color;
+    background-color: $Main-color;
     h1 {
         font-size: 3em;
         color: #fff;
@@ -46,7 +64,7 @@ img {
 
 nav {
     width: 100%;
-    background: $Heading-color*0.7;
+    background: $Main-color*0.7;
     padding: 1em;
     ul {
         display: flex;
@@ -63,10 +81,11 @@ nav {
     }
 }
 
-
-/*------------
+/*---------------/*---------------/*---------------
 TIMELINE
--------------*/
+------------------------------------------------*/
+
+$time-content-Color:#38383A;
 
 .time {
     color: #9E9EA2;
@@ -85,7 +104,7 @@ TIMELINE
     position: relative;
     border-radius: 0.25em;
     padding: 1em;
-    background: #38383A;
+    background: $time-content-Color;
     &::before {
         content: '';
         position: absolute;
@@ -108,17 +127,19 @@ TIMELINE
 }
 
 //ALTERNATING
-@media only screen and (min-width:$Desktop) {
+@media only screen and (min-width:$M) {
     #timeline {
         position: relative;
-        /* vertial line*/
+        max-width:$M;
+        margin:0 auto;
         &::before {
             content: '';
             position: absolute;
             height: 100%;
             width: 3px;
-            background: #c03b44;
+            background:$Main-color*1.2;
             left: 2em;
+            top: 2.5em;
         }
     }
     .time-dot {
@@ -128,16 +149,11 @@ TIMELINE
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background: #c03b44;
     }
     .time-content {
-        margin-left: 6em;
-        padding: 34px 39px 9px;
-        width: 38%;
-        margin-left: 60px;
+        width: 25em;
     }
-    //tooltip
-    .time-content::before {
+    .time-content::before { //tooltip
         top: 24px;
         left: 100%;
         border-color: transparent;
@@ -145,7 +161,6 @@ TIMELINE
     }
     .block:nth-child(even) .time-content {
         float: right;
-        margin-right: 6em;
     }
     .block:nth-child(even) .time-content::before {
         top: 24px;
@@ -159,6 +174,7 @@ TIMELINE
         height: 2em;
         left: 50%;
         margin-left: -17px;
+        background-color:$Main-color*1.2;
     }
     #timeline {
         margin-top: 3em;
@@ -179,3 +195,7 @@ TIMELINE
         }
     }
 }
+
+
+
+
