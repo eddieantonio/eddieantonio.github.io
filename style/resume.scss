@@ -1,4 +1,17 @@
-// breakpoints
+//Colors
+$Main-color:darkred;
+
+
+//Font/Style
+$Helvetica: Helvetica,
+sans-serif;
+$Lato:"Lato",
+Arial,
+serif;
+$Sans:'Open Sans',
+sans-serif;
+
+
 $S: 320px;
 $M: 875px;
 $L: 1170px;
@@ -21,16 +34,19 @@ $L: 1170px;
     }
 }
 
-//Colors
-$Main-color:darkred;
-//Font/Style
-$Helvetica: Helvetica,
-sans-serif;
-$Lato:"Lato",
-Arial,
-serif;
-$Sans:'Open Sans',
-sans-serif;
+@mixin tooltip($left, $right, $left-color, $right-color) {
+    content: '';
+    position: absolute;
+    top: 16px;
+    border: 7px solid transparent;
+    left: $left;
+    right: $right;
+    border-color: transparent;
+    border-left-color: $left-color;
+    border-right-color: $right-color;
+    top: 24px;
+}
+
 @mixin box-sizing {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -108,6 +124,21 @@ $time-content-Color:#38383A;
         display: table;
         clear: both;
     }
+    @include MQ(M) {
+        margin: -5em 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 3em;
+        }
+        &:nth-child(even) .time-content {
+            float: right;
+            &::before {
+                @include tooltip(auto, 100%, #fff, $time-content-Color);
+            }
+        }
+    }
 }
 
 .time-content {
@@ -115,27 +146,18 @@ $time-content-Color:#38383A;
     border-radius: 0.25em;
     padding: 1em;
     background: $time-content-Color;
+    @include MQ(M) {
+        width: 100%;
+        width: 25em;
+        &::before {
+            @include tooltip(100%, 0, $time-content-Color, #fff);
+        }
+    }
 }
 
 #timeline {
     margin-top: 3em 0;
-}
-
-//ALTERNATING BLOCKS
-@media only screen and (min-width:$M) {
-    @mixin tooltip($left, $right, $left-color, $right-color) {
-        content: '';
-        position: absolute;
-        top: 16px;
-        border: 7px solid transparent;
-        left: $left;
-        right: $right;
-        border-color: transparent;
-        border-left-color: $left-color;
-        border-right-color: $right-color;
-        top: 24px;
-    }
-    #timeline {
+    @include MQ(M) {
         position: relative;
         max-width: $M;
         margin: 0 auto;
@@ -151,41 +173,17 @@ $time-content-Color:#38383A;
             background: $Main-color*1.2;
         }
     }
+}
+
+@include MQ(M) {
     .time-dot {
         position: absolute;
         top: 11px;
-        left: 0;
-        width: 25px;
-        height: 25px;
         border-radius: 50%;
-    }
-    .time-content {
-        width: 25em;
-        &::before {
-            @include tooltip(100%, 0, $time-content-Color, #fff);
-        }
-    }
-    .block:nth-child(even) .time-content {
-        float: right;
-        &::before {
-            @include tooltip(auto, 100%, #fff, $time-content-Color);
-        }
-    }
-    .time-dot {
         width: 2em;
         height: 2em;
         left: 50%;
         margin-left: -17px;
         background-color: $Main-color*1.2;
-    }
-    //To move the blocks slightly higher
-    .block {
-        margin: -5em 0;
-        &:first-child {
-            margin-top: 0;
-        }
-        &:last-child {
-            margin-bottom: 3em;
-        }
     }
 }
