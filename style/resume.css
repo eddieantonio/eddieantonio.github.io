@@ -84,42 +84,27 @@ TIMELINE
 .time {
   color: #9E9EA2; }
 
+#timeline {
+  display: flex;
+  flex-wrap: wrap; }
+
 .block {
   position: relative;
-  margin: 1em 3em; }
-  .block:first-child {
-    margin-top: 0; }
-  .block:last-child {
-    margin-bottom: 0; }
-  .block:after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media only screen and (min-width: 875px) {
-    .block {
-      margin: -7em 0; }
-      .block:last-child {
-        margin-bottom: 3em; }
-      .block:nth-child(even) .time-content {
-        float: right; }
-        .block:nth-child(even) .time-content::before {
-          content: '';
-          position: absolute;
-          border: 7px solid transparent;
-          left: auto;
-          right: 100%;
-          border-color: transparent;
-          border-left-color: #fff;
-          border-right-color: #38383A;
-          top: 24px; } }
+  flex-grow: 1; }
 
 .time-content {
-  position: relative;
   border-radius: 0.25em;
   padding: 2em 2em 1em;
   background: #38383A;
   font-weight: 300;
-  font-family: "Lato", Arial, serif; }
+  font-family: "Lato", Arial, serif;
+  /*@include MQ(M) {
+      width: 25em;
+      &::before {
+          @include tooltip(100%, 0, $time-content-Color, #fff);
+      }
+  }
+  */ }
   .time-content h2 {
     font-weight: 600;
     font-size: 25px;
@@ -131,44 +116,160 @@ TIMELINE
     font-size: 15px;
     color: #fff;
     margin: 13px 0; }
-  @media only screen and (min-width: 875px) {
-    .time-content {
-      width: 25em; }
-      .time-content::before {
-        content: '';
-        position: absolute;
-        border: 7px solid transparent;
-        left: 100%;
-        right: 0;
-        border-color: transparent;
-        border-left-color: #38383A;
-        border-right-color: #fff;
-        top: 24px; } }
+
+/*
+.block {
+    position: relative;
+    margin: 1em 3em;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @include MQ(M) {
+        margin: -7em 0;
+        &:last-child {
+            margin-bottom: 3em;
+        }
+        &:nth-child(even) .time-content {
+            float: right;
+            &::before {
+                @include tooltip(auto, 100%, #fff, $time-content-Color);
+            }
+        }
+    }
+}
+#timeline {
+    margin-top: 3em 0;
+    @include MQ(M) {
+        position: relative;
+        max-width: $M;
+        margin: 0 auto;
+        &::before {
+            //vertical line
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 3px;
+            left: 50%;
+            top: 2.5em;
+            margin-left: -2px;
+            background: $mainColor*1.2;
+        }
+        .time-dot {
+            //time line dot
+            position: absolute;
+            top: 11px;
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+            margin-left: -17px;
+            background-color: $mainColor*1.2;
+            left: 50%;
+        }
+    }
+}
+
+*/
+/**
+.block {
+    position: relative;
+    margin: 1em 3em;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @include MQ(M) {
+        margin: -7em 0;
+        &:last-child {
+            margin-bottom: 3em;
+        }
+        &:nth-child(even) .time-content {
+            float: right;
+            &::before {
+                @include tooltip(auto, 100%, #fff, $time-content-Color);
+            }
+        }
+    }
+}
+
+
+
+
+
+//The Actual Boxes
+.time-content {
+    position: relative;
+    border-radius: 0.25em;
+    padding: 2em 2em 1em;
+    background: $time-content-Color;
+    font-weight: 300;
+    font-family: $Lato;
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $yellow;
+    }
+    p {
+        line-height: 20px;
+        font-size: 15px;
+        color: #fff;
+        margin: 13px 0;
+    }
+    @include MQ(M) {
+        width: 25em;
+        &::before {
+            @include tooltip(100%, 0, $time-content-Color, #fff);
+        }
+    }
+}
 
 #timeline {
-  margin-top: 3em 0; }
-  @media only screen and (min-width: 875px) {
-    #timeline {
-      position: relative;
-      max-width: 875px;
-      margin: 0 auto; }
-      #timeline::before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 3px;
-        left: 50%;
-        top: 2.5em;
-        margin-left: -2px;
-        background: #a70000; }
-      #timeline .time-dot {
-        position: absolute;
-        top: 11px;
-        border-radius: 50%;
-        width: 2em;
-        height: 2em;
-        margin-left: -17px;
-        background-color: #a70000;
-        left: 50%; } }
+    margin-top: 3em 0;
+    @include MQ(M) {
+        position: relative;
+        max-width: $M;
+        margin: 0 auto;
+        &::before {
+            //vertical line
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 3px;
+            left: 50%;
+            top: 2.5em;
+            margin-left: -2px;
+            background: $mainColor*1.2;
+        }
+        .time-dot {
+            //time line dot
+            position: absolute;
+            top: 11px;
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+            margin-left: -17px;
+            background-color: $mainColor*1.2;
+            left: 50%;
+        }
+    }
+}
+
+**/
 
 /*# sourceMappingURL=resume.css.map */

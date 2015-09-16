@@ -139,8 +139,7 @@ Intro
     justify-content: center;
     flex-direction: row-reverse;
     margin-left: -3em;
-    align-items:center;
-
+    align-items: center;
     .profile {
         img {
             max-width: 12em;
@@ -149,7 +148,7 @@ Intro
     }
     .description {
         width: 39em;
-        padding-right:3em;
+        padding-right: 3em;
     }
 }
 
@@ -163,6 +162,47 @@ $time-content-Color:#38383A;
     color: #9E9EA2;
 }
 
+#timeline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    position: relative;
+    flex-grow: 1;
+}
+
+//Boxes
+.time-content {
+    border-radius: 0.25em;
+    padding: 2em 2em 1em;
+    background: $time-content-Color;
+    font-weight: 300;
+    font-family: $Lato;
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $yellow;
+    }
+    p {
+        line-height: 20px;
+        font-size: 15px;
+        color: #fff;
+        margin: 13px 0;
+    }
+    /*@include MQ(M) {
+        width: 25em;
+        &::before {
+            @include tooltip(100%, 0, $time-content-Color, #fff);
+        }
+    }
+    */
+}
+
+
+/*
 .block {
     position: relative;
     margin: 1em 3em;
@@ -190,6 +230,72 @@ $time-content-Color:#38383A;
         }
     }
 }
+#timeline {
+    margin-top: 3em 0;
+    @include MQ(M) {
+        position: relative;
+        max-width: $M;
+        margin: 0 auto;
+        &::before {
+            //vertical line
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 3px;
+            left: 50%;
+            top: 2.5em;
+            margin-left: -2px;
+            background: $mainColor*1.2;
+        }
+        .time-dot {
+            //time line dot
+            position: absolute;
+            top: 11px;
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+            margin-left: -17px;
+            background-color: $mainColor*1.2;
+            left: 50%;
+        }
+    }
+}
+
+*/
+
+
+/**
+.block {
+    position: relative;
+    margin: 1em 3em;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @include MQ(M) {
+        margin: -7em 0;
+        &:last-child {
+            margin-bottom: 3em;
+        }
+        &:nth-child(even) .time-content {
+            float: right;
+            &::before {
+                @include tooltip(auto, 100%, #fff, $time-content-Color);
+            }
+        }
+    }
+}
+
+
+
+
 
 //The Actual Boxes
 .time-content {
@@ -250,3 +356,5 @@ $time-content-Color:#38383A;
         }
     }
 }
+
+**/
