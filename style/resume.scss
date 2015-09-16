@@ -105,12 +105,6 @@ HEADER
     }
 }
 
-img {
-    max-width: 100%;
-    padding: 10px;
-    border-radius: 50%
-}
-
 nav {
     width: 100%;
     background: $mainColor*0.7;
@@ -128,9 +122,34 @@ nav {
                 font-weight: 400;
                 font-family: $Lato;
                 text-transform: uppercase;
-
             }
         }
+    }
+}
+
+
+/*---------------
+Intro
+----------------*/
+
+.intro {
+    background-color: red;
+    padding: 6em 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-left: -3em;
+    align-items:center;
+
+    .profile {
+        img {
+            max-width: 12em;
+            border-radius: 50%
+        }
+    }
+    .description {
+        width: 39em;
+        padding-right:3em;
     }
 }
 

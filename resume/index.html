@@ -14,8 +14,8 @@ title: Résumé—Eddie Antonio Santos
     <meta name="description" content="Résumé of Eddie Antonio Santos, Computer Programmer">
     <meta name="twitter:creator " content="@_eddieantonio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,700' rel='stylesheet' type='text/css'> 
-     <!--  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,700' rel='stylesheet' type='text/css'>
+    <!--  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>-->
     <link media="all" href="{{ baseurl }}/style/reset.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/fonts/latin-modern-roman/stylesheet.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
@@ -28,31 +28,29 @@ new WOW().init();
 
 <body>
     <header class="heading">
-       
-       <!-- <img src="{{ site.baseurl }}/style/img/profile.jpg">-->
         <h1>The Many Musings of Eddie Santos</h1>
     </header>
     <nav>
         <ul>
-            <!--<li><a href="{{ baseurl }}"></a></li>-->
+            <!--<li><a href="{{ baseurl }}" ></a></li>-->
             <li><a href="">Blog</a></li>
             <li><a href="">Resume</a></li>
             <li><a href="">Contact</a></li>
-                        <li><a href="">Contact</a></li>
-
+            <li><a href="">Contact</a></li>
         </ul>
     </nav>
-
-
-
-    <!--
-    <a href="#" class="bntDownload">Download Printable Resume</a>
-    <h1>WORK EXPERIENCE</h1>
-    -->
+    <section class="intro">
+        <div class="profile"><img src="{{ site.baseurl }}/style/img/profile.jpg"></div>
+        <div class="description">
+        About Me
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ex aspernatur minima modi dolores, deserunt commodi officiis illum deleniti accusantium nulla, autem. Architecto debitis labore maxime, non consectetur similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum similique voluptatum minima voluptatem voluptatibus illum, libero accusantium maxime, facilis, voluptate reprehenderit autem rerum dolorum illo ex esse modi repellendus.
+        <p><a href="#" class="bntDownload">Download Printable Resume</a><p>
+        </div>
+    </section>
+            <h1>WORK EXPERIENCE</h1>
 
     <section id="timeline">
-        job experience
-        {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
+        job experience {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
         <div class="block">
             <div class="time-dot"></div>
             <div class="time-content wow bounceInUp">
@@ -71,10 +69,6 @@ new WOW().init();
         </div>
         {% endfor %}
     </section>
-
-
-
-
     <section class="education">
         <h2 style="color:white"> Education </h2>
         <ul class="ed-list">

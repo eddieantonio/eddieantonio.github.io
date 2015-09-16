@@ -42,11 +42,6 @@ HEADER
     font-size: 3em;
     color: #fff; }
 
-img {
-  max-width: 100%;
-  padding: 10px;
-  border-radius: 50%; }
-
 nav {
   width: 100%;
   background: #610000;
@@ -64,6 +59,24 @@ nav {
         font-weight: 400;
         font-family: "Lato", Arial, serif;
         text-transform: uppercase; }
+
+/*---------------
+Intro
+----------------*/
+.intro {
+  background-color: red;
+  padding: 6em 5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-left: -3em;
+  align-items: center; }
+  .intro .profile img {
+    max-width: 12em;
+    border-radius: 50%; }
+  .intro .description {
+    width: 39em;
+    padding-right: 3em; }
 
 /*---------------/*---------------/*---------------
 TIMELINE
