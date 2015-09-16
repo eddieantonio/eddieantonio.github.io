@@ -27,6 +27,7 @@ new WOW().init();
 </script>
 
 <body>
+    <div class="container">
     <header class="heading">
         <h1>The Many Musings of Eddie Santos</h1>
     </header>
@@ -52,7 +53,7 @@ new WOW().init();
         -->
 
     <section id="timeline">
-        % for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
+        {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
         <div class="block">
             <div class="time-dot"></div>
             <div class="time-content wow bounceInUp">
@@ -110,6 +111,7 @@ new WOW().init();
     </section>
     </article>
     </div>
+</div>
     </div>
 </body>
 

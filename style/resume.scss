@@ -1,4 +1,4 @@
-/*********************
+    /*********************
 VARIABLES
 *********************/
 
@@ -164,16 +164,31 @@ $time-content-Color:#38383A;
 
 #timeline {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
+    padding: 3em;
 }
 
 .block {
+    margin: 1% 2%;
+    flex: 0 0 45%;
     position: relative;
-    flex-grow: 1;
+        @include MQ(M) {
+        &:nth-child(even) .time-content {
+            &::before {
+                @include tooltip(auto, 100%, #fff, $time-content-Color);
+            }
+        }
+        &:nth-child(odd) .time-content {
+                        &::before {
+                @include tooltip(100%, 0,  $time-content-Color,#fff);
+            }
+
+    }
+}
 }
 
-//Boxes
+//Boxe Styles
 .time-content {
     border-radius: 0.25em;
     padding: 2em 2em 1em;
@@ -193,17 +208,9 @@ $time-content-Color:#38383A;
         color: #fff;
         margin: 13px 0;
     }
-    /*@include MQ(M) {
-        width: 25em;
-        &::before {
-            @include tooltip(100%, 0, $time-content-Color, #fff);
-        }
-    }
-    */
+
 }
-
-
-/*
+    /*
 .block {
     position: relative;
     margin: 1em 3em;
@@ -263,9 +270,7 @@ $time-content-Color:#38383A;
 }
 
 */
-
-
-/**
+    /**
 .block {
     position: relative;
     margin: 1em 3em;
