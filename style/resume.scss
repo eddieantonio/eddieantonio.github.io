@@ -1,308 +1,204 @@
     /*********************
 VARIABLES
 *********************/
-
-//Colors
-$mainColor:darkred;
-$yellow:#F9C935;
-//Font/Style
-$Helvetica: Helvetica,
-sans-serif;
-$Lato:"Lato",
-Arial,
-serif;
-$Sans:'Open Sans',
-sans-serif;
-$S: 320px;
-$M: 875px;
-$L: 1170px;
-
-/*********************
+    
+    //Colors
+    $mainColor:darkred;
+    $yellow:#F9C935;
+    //Font/Style
+    $Helvetica: Helvetica,
+    sans-serif;
+    $Lato:"Lato",
+    Arial,
+    serif;
+    $Sans:'Open Sans',
+    sans-serif;
+    $S: 320px;
+    $M: 875px;
+    $L: 1170px;
+    /*********************
 BREAKPOINTS
 *********************/
-
-@mixin MQ($canvas) {
-    @if $canvas==S {
-        @media only screen and (min-width: $S) {
-            @content;
+    
+    @mixin MQ($canvas) {
+        @if $canvas==S {
+            @media only screen and (min-width: $S) {
+                @content;
+            }
+        }
+        @else if $canvas==M {
+            @media only screen and (min-width: $M) {
+                @content;
+            }
+        }
+        @else if $canvas==L {
+            @media only screen and (min-width: $L) {
+                @content;
+            }
         }
     }
-    @else if $canvas==M {
-        @media only screen and (min-width: $M) {
-            @content;
-        }
-    }
-    @else if $canvas==L {
-        @media only screen and (min-width: $L) {
-            @content;
-        }
-    }
-}
-
-
-/*********************
+    /*********************
 BREAKPOINTS
 *********************/
-
-@mixin tooltip($left, $right, $left-color, $right-color) {
-    content: '';
-    position: absolute;
-    border: 7px solid transparent;
-    left: $left;
-    right: $right;
-    border-color: transparent;
-    border-left-color: $left-color;
-    border-right-color: $right-color;
-    top: 24px;
-}
-
-@mixin box-sizing {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-
-/*---------------
+    
+    @mixin tooltip($left, $right, $left-color, $right-color) {
+        content: '';
+        position: absolute;
+        border: 7px solid transparent;
+        left: $left;
+        right: $right;
+        border-color: transparent;
+        border-left-color: $left-color;
+        border-right-color: $right-color;
+        top: 24px;
+    }
+    
+    @mixin box-sizing {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    /*---------------
 MAIN STYLES
 ----------------*/
-
-*,
-*:after,
-*:before {
-    @include box-sizing;
-}
-
-a {
-    color: $yellow;
-    text-decoration: none;
-    font-weight: 900;
-}
-
-strong {
-    font-weight: 500;
-}
-
-body {
-    font-size: 100%;
-    color: #fff;
-    font-family: $Lato;
-}
-
-
-/*---------------
+    
+    *,
+    *:after,
+    *:before {
+        @include box-sizing;
+    }
+    
+    a {
+        color: $yellow;
+        text-decoration: none;
+        font-weight: 900;
+    }
+    
+    strong {
+        font-weight: 500;
+    }
+    
+    body {
+        font-size: 100%;
+        color: #fff;
+        font-family: $Lato;
+    }
+    /*---------------
 HEADER
 ----------------*/
-
-.heading {
-    height: auto;
-    padding: 2em;
-    text-align: center;
-    background-color: $mainColor;
-    h1 {
-        font-size: 3em;
-        color: #fff;
+    
+    .heading {
+        height: auto;
+        padding: 2em;
+        text-align: center;
+        background-color: $mainColor;
+        h1 {
+            font-size: 3em;
+            color: #fff;
+        }
     }
-}
-
-nav {
-    width: 100%;
-    background: $mainColor*0.7;
-    padding: 1em;
-    ul {
-        display: flex;
-        justify-content: center;
-        li {
-            list-style: none;
-            text-align: center;
-            padding: 0 2em;
-            a {
-                color: #FFF;
-                font-size: 1em;
-                font-weight: 400;
-                font-family: $Lato;
-                text-transform: uppercase;
+    
+    nav {
+        width: 100%;
+        background: $mainColor*0.7;
+        padding: 1em;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                list-style: none;
+                text-align: center;
+                padding: 0 2em;
+                a {
+                    color: #FFF;
+                    font-size: 1em;
+                    font-weight: 400;
+                    font-family: $Lato;
+                    text-transform: uppercase;
+                }
             }
         }
     }
-}
-
-
-/*---------------
+    /*---------------
 Intro
 ----------------*/
-
-.intro {
-    background-color: red;
-    padding: 6em 5em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    margin-left: -3em;
-    align-items: center;
-    .profile {
-        img {
-            max-width: 12em;
-            border-radius: 50%
+    
+    .intro {
+        background-color: red;
+        padding: 6em 5em;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-left: -3em;
+        align-items: center;
+        .profile {
+            img {
+                max-width: 12em;
+                border-radius: 50%
+            }
+        }
+        .description {
+            width: 39em;
+            padding-right: 3em;
         }
     }
-    .description {
-        width: 39em;
-        padding-right: 3em;
-    }
-}
-
-
-/*---------------/*---------------/*---------------
+    /*---------------/*---------------/*---------------
 TIMELINE
 ------------------------------------------------*/
-
-$time-content-Color:#38383A;
-.time {
-    color: #9E9EA2;
-}
-
-#timeline {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 3em;
-}
-
-.block {
-    margin: 1% 2%;
-    flex: 0 0 45%;
-    position: relative;
-        @include MQ(M) {
-        &:nth-child(even) .time-content {
-            &::before {
-                @include tooltip(auto, 100%, #fff, $time-content-Color);
-            }
-        }
-        &:nth-child(odd) .time-content {
-                        &::before {
-                @include tooltip(100%, 0,  $time-content-Color,#fff);
-            }
-
+    
+    $time-content-Color:#38383A;
+    .time {
+        color: #9E9EA2;
     }
-}
-}
-
-//Boxe Styles
-.time-content {
-    border-radius: 0.25em;
-    padding: 2em 2em 1em;
-    background: $time-content-Color;
-    font-weight: 300;
-    font-family: $Lato;
-    h2 {
-        font-weight: 600;
-        font-size: 25px;
-        line-height: 26px;
-        text-transform: uppercase;
-        color: $yellow;
+    
+    #timeline {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 3em;
     }
-    p {
-        line-height: 20px;
-        font-size: 15px;
-        color: #fff;
-        margin: 13px 0;
-    }
-
-}
-    /*
-.block {
-    position: relative;
-    margin: 1em 3em;
-    &:first-child {
-        margin-top: 0;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    @include MQ(M) {
-        margin: -7em 0;
-        &:last-child {
-            margin-bottom: 3em;
-        }
-        &:nth-child(even) .time-content {
-            float: right;
-            &::before {
-                @include tooltip(auto, 100%, #fff, $time-content-Color);
-            }
-        }
-    }
-}
-#timeline {
-    margin-top: 3em 0;
-    @include MQ(M) {
+    
+    .block {
+        margin: 1% 2%;
+        flex: 0 0 45%;
         position: relative;
-        max-width: $M;
-        margin: 0 auto;
-        &::before {
-            //vertical line
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 3px;
-            left: 50%;
-            top: 2.5em;
-            margin-left: -2px;
-            background: $mainColor*1.2;
-        }
-        .time-dot {
-            //time line dot
-            position: absolute;
-            top: 11px;
-            border-radius: 50%;
-            width: 2em;
-            height: 2em;
-            margin-left: -17px;
-            background-color: $mainColor*1.2;
-            left: 50%;
-        }
-    }
-}
-
-*/
-    /**
-.block {
-    position: relative;
-    margin: 1em 3em;
-    &:first-child {
-        margin-top: 0;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    @include MQ(M) {
-        margin: -7em 0;
-        &:last-child {
-            margin-bottom: 3em;
-        }
-        &:nth-child(even) .time-content {
-            float: right;
-            &::before {
-                @include tooltip(auto, 100%, #fff, $time-content-Color);
+        @include MQ(M) {
+            &:nth-child(even) .time-content {
+                &::before {
+                    @include tooltip(auto, 100%, #fff, $time-content-Color);
+                }
+            }
+            &:nth-child(odd) .time-content {
+                &::before {
+                    @include tooltip(100%, 0, $time-content-Color, #fff);
+                }
             }
         }
     }
-}
+    
+    //Boxe Styles
+    .time-content {
+        border-radius: 0.25em;
+        padding: 2em 2em 1em;
+        background: $time-content-Color;
+        font-weight: 300;
+        font-family: $Lato;
+        h2 {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: $yellow;
+        }
+        p {
+            line-height: 20px;
+            font-size: 15px;
+            color: #fff;
+            margin: 13px 0;
+        }
+    }
 
-
-
-
-
+/*
 //The Actual Boxes
 .time-content {
     position: relative;

@@ -53,8 +53,11 @@ new WOW().init();
         -->
 
     <section id="timeline">
+        <!--<hr width="1" height="100%">-->
+
         {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
         <div class="block">
+
             <div class="time-dot"></div>
             <div class="time-content wow bounceInUp">
                 <h2>{{ job_header | textilize }}</h2>

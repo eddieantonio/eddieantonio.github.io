@@ -1,13 +1,13 @@
     /*********************
 VARIABLES
 *********************/
-/*********************
+    /*********************
 BREAKPOINTS
 *********************/
-/*********************
+    /*********************
 BREAKPOINTS
 *********************/
-/*---------------
+    /*---------------
 MAIN STYLES
 ----------------*/
 *,
@@ -30,7 +30,7 @@ body {
   color: #fff;
   font-family: "Lato", Arial, serif; }
 
-/*---------------
+    /*---------------
 HEADER
 ----------------*/
 .heading {
@@ -60,7 +60,7 @@ nav {
         font-family: "Lato", Arial, serif;
         text-transform: uppercase; }
 
-/*---------------
+    /*---------------
 Intro
 ----------------*/
 .intro {
@@ -78,7 +78,7 @@ Intro
     width: 39em;
     padding-right: 3em; }
 
-/*---------------/*---------------/*---------------
+    /*---------------/*---------------/*---------------
 TIMELINE
 ------------------------------------------------*/
 .time {
@@ -134,99 +134,7 @@ TIMELINE
     color: #fff;
     margin: 13px 0; }
 
-    /*
-.block {
-    position: relative;
-    margin: 1em 3em;
-    &:first-child {
-        margin-top: 0;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    @include MQ(M) {
-        margin: -7em 0;
-        &:last-child {
-            margin-bottom: 3em;
-        }
-        &:nth-child(even) .time-content {
-            float: right;
-            &::before {
-                @include tooltip(auto, 100%, #fff, $time-content-Color);
-            }
-        }
-    }
-}
-#timeline {
-    margin-top: 3em 0;
-    @include MQ(M) {
-        position: relative;
-        max-width: $M;
-        margin: 0 auto;
-        &::before {
-            //vertical line
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 3px;
-            left: 50%;
-            top: 2.5em;
-            margin-left: -2px;
-            background: $mainColor*1.2;
-        }
-        .time-dot {
-            //time line dot
-            position: absolute;
-            top: 11px;
-            border-radius: 50%;
-            width: 2em;
-            height: 2em;
-            margin-left: -17px;
-            background-color: $mainColor*1.2;
-            left: 50%;
-        }
-    }
-}
-
-*/
-    /**
-.block {
-    position: relative;
-    margin: 1em 3em;
-    &:first-child {
-        margin-top: 0;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    @include MQ(M) {
-        margin: -7em 0;
-        &:last-child {
-            margin-bottom: 3em;
-        }
-        &:nth-child(even) .time-content {
-            float: right;
-            &::before {
-                @include tooltip(auto, 100%, #fff, $time-content-Color);
-            }
-        }
-    }
-}
-
-
-
-
-
+/*
 //The Actual Boxes
 .time-content {
     position: relative;
