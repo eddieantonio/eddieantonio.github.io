@@ -3,7 +3,7 @@ VARIABLES
 *********************/
     
     //Colors
-    $mainColor:darkred;
+    $mainColor:#31B9B9;
     $yellow:#F9C935;
     //Font/Style
     $Helvetica: Helvetica,
@@ -91,7 +91,7 @@ HEADER
         height: auto;
         padding: 2em;
         text-align: center;
-        background-color: $mainColor;
+        background-color: #352D28;
         h1 {
             font-size: 3em;
             color: #fff;
@@ -102,13 +102,14 @@ HEADER
         width: 100%;
         background: $mainColor*0.7;
         padding: 1em;
+        z-index: 100;
         ul {
             display: flex;
             justify-content: center;
             li {
                 list-style: none;
                 text-align: center;
-                padding: 0 2em;
+                padding: 0 1em;
                 a {
                     color: #FFF;
                     font-size: 1em;
@@ -124,7 +125,7 @@ Intro
 ----------------*/
     
     .intro {
-        background-color: red;
+        background-color: #31B9B9;
         padding: 6em 5em;
         display: flex;
         justify-content: center;
@@ -146,6 +147,15 @@ Intro
 TIMELINE
 ------------------------------------------------*/
     
+    h1 {
+        font-size: 2.5em;
+        color: #228282;
+        text-align: center;
+        padding: 1em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
     $time-content-Color:#38383A;
     .time {
         color: #9E9EA2;
@@ -155,7 +165,7 @@ TIMELINE
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        padding: 3em;
+        padding: 0 3em;
     }
     
     .block {
@@ -197,8 +207,31 @@ TIMELINE
             margin: 13px 0;
         }
     }
-
-/*
+    /*---------------/*---------------/*---------------
+EDUCATION
+------------------------------------------------*/
+    
+    .education {
+        background-color: red;
+        padding: 6em 4em;
+        text-align: center;
+    }
+    /*---------------/*---------------/*---------------
+SKILLS
+------------------------------------------------*/
+    
+    .skills {
+        color: black;
+        padding: 6em 4em;
+        display: flex;
+    }
+    
+    .hobbies {
+        background-color: black;
+        padding: 6em 4em;
+        text-align: center;
+    }
+    /**
 //The Actual Boxes
 .time-content {
     position: relative;
@@ -258,5 +291,4 @@ TIMELINE
         }
     }
 }
-
-**/
+*/
