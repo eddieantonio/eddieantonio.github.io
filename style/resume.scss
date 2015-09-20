@@ -1,237 +1,268 @@
-    /*********************
+/*********************
 VARIABLES
 *********************/
-    
-    //Colors
-    $mainColor:#31B9B9;
-    $yellow:#F9C935;
-    //Font/Style
-    $Helvetica: Helvetica,
-    sans-serif;
-    $Lato:"Lato",
-    Arial,
-    serif;
-    $Sans:'Open Sans',
-    sans-serif;
-    $S: 320px;
-    $M: 875px;
-    $L: 1170px;
-    /*********************
+
+//Colors
+$mainColor:#31B9B9;
+$yellow:#F9C935;
+//Font/Style
+$Helvetica: Helvetica,
+sans-serif;
+$Lato:"Lato",
+Arial,
+serif;
+$Sans:'Open Sans',
+sans-serif;
+$S: 320px;
+$M: 875px;
+$L: 1170px;
+
+/*********************
 BREAKPOINTS
 *********************/
-    
-    @mixin MQ($canvas) {
-        @if $canvas==S {
-            @media only screen and (min-width: $S) {
-                @content;
-            }
-        }
-        @else if $canvas==M {
-            @media only screen and (min-width: $M) {
-                @content;
-            }
-        }
-        @else if $canvas==L {
-            @media only screen and (min-width: $L) {
-                @content;
-            }
+
+@mixin MQ($canvas) {
+    @if $canvas==S {
+        @media only screen and (min-width: $S) {
+            @content;
         }
     }
-    /*********************
+    @else if $canvas==M {
+        @media only screen and (min-width: $M) {
+            @content;
+        }
+    }
+    @else if $canvas==L {
+        @media only screen and (min-width: $L) {
+            @content;
+        }
+    }
+}
+
+
+/*********************
 BREAKPOINTS
 *********************/
-    
-    @mixin tooltip($left, $right, $left-color, $right-color) {
-        content: '';
-        position: absolute;
-        border: 7px solid transparent;
-        left: $left;
-        right: $right;
-        border-color: transparent;
-        border-left-color: $left-color;
-        border-right-color: $right-color;
-        top: 24px;
-    }
-    
-    @mixin box-sizing {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-    }
-    /*---------------
+
+@mixin tooltip($left, $right, $left-color, $right-color) {
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    left: $left;
+    right: $right;
+    border-color: transparent;
+    border-left-color: $left-color;
+    border-right-color: $right-color;
+    top: 24px;
+}
+
+@mixin box-sizing {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/*---------------
 MAIN STYLES
 ----------------*/
-    
-    *,
-    *:after,
-    *:before {
-        @include box-sizing;
-    }
-    
-    a {
-        color: $yellow;
-        text-decoration: none;
-        font-weight: 900;
-    }
-    
-    strong {
-        font-weight: 500;
-    }
-    
-    body {
-        font-size: 100%;
-        color: #fff;
-        font-family: $Lato;
-    }
-    /*---------------
+
+*,
+*:after,
+*:before {
+    @include box-sizing;
+}
+
+a {
+    color: $yellow;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 500;
+}
+
+body {
+    font-size: 100%;
+    color: #fff;
+    font-family: $Lato;
+}
+
+
+/*---------------
 HEADER
 ----------------*/
-    
-    .heading {
-        height: auto;
-        padding: 2em;
-        text-align: center;
-        background-color: #352D28;
-        h1 {
-            font-size: 3em;
-            color: #fff;
-        }
+
+.heading {
+    height: auto;
+    padding: 2em;
+    text-align: center;
+    background-color: #352D28;
+    h1 {
+        font-size: 3em;
+        color: #fff;
     }
-    
-    nav {
-        width: 100%;
-        background: $mainColor*0.7;
-        padding: 1em;
-        z-index: 100;
-        ul {
-            display: flex;
-            justify-content: center;
-            li {
-                list-style: none;
-                text-align: center;
-                padding: 0 1em;
-                a {
-                    color: #FFF;
-                    font-size: 1em;
-                    font-weight: 400;
-                    font-family: $Lato;
-                    text-transform: uppercase;
-                }
-            }
-        }
-    }
-    /*---------------
-Intro
-----------------*/
-    
-    .intro {
-        background-color: #31B9B9;
-        padding: 6em 5em;
+}
+
+nav {
+    width: 100%;
+    background: $mainColor*0.7;
+    padding: 1em;
+    z-index: 100;
+    ul {
         display: flex;
         justify-content: center;
-        flex-direction: row-reverse;
-        margin-left: -3em;
-        align-items: center;
-        .profile {
-            img {
-                max-width: 12em;
-                border-radius: 50%
+        li {
+            list-style: none;
+            text-align: center;
+            padding: 0 1em;
+            a {
+                color: #FFF;
+                font-size: 1em;
+                font-weight: 400;
+                font-family: $Lato;
+                text-transform: uppercase;
             }
         }
-        .description {
-            width: 39em;
-            padding-right: 3em;
+    }
+}
+
+
+/*---------------
+Intro
+----------------*/
+
+.intro {
+    background-color: #31B9B9;
+    padding: 5em 5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: -3em;
+    img {
+        max-width: 15em;
+        border-radius: 50%;
+    }
+    .description {
+        width: 60%;
+        padding-right: 3em;
+        p {
+            font-size: 1em;
+            font-weight: 300;
+            line-height: 22px;
+        }
+        h2 {
+            font-size: 2em;
+            line-height: 34px w
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 300;
+            padding-bottom: 1em;
+            padding-top: 4px
         }
     }
-    /*---------------/*---------------/*---------------
+}
+
+
+/*---------------/*---------------/*---------------
 TIMELINE
 ------------------------------------------------*/
-    
-    h1 {
-        font-size: 2.5em;
-        color: #228282;
-        text-align: center;
-        padding: 1em;
-        font-weight: 400;
+
+h1 {
+    font-size: 2.5em;
+    color: #228282;
+    text-align: center;
+    padding: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+$time-content-Color:#38383A;
+.time {
+    color: #9E9EA2;
+}
+
+#timeline {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+.block {
+    margin: 1% 2%;
+    flex: 0 0 45%;
+    position: relative;
+    @include MQ(M) {
+        &:nth-child(even) .time-content {
+            &::before {
+                @include tooltip(auto, 100%, #fff, $time-content-Color);
+            }
+        }
+        &:nth-child(odd) .time-content {
+            &::before {
+                @include tooltip(100%, 0, $time-content-Color, #fff);
+            }
+        }
+    }
+}
+
+//Boxe Styles
+.time-content {
+    border-radius: 0.25em;
+    padding: 2em 2em 1em;
+    background: $time-content-Color;
+    font-weight: 300;
+    font-family: $Lato;
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 26px;
         text-transform: uppercase;
+        color: $yellow;
     }
-    
-    $time-content-Color:#38383A;
-    .time {
-        color: #9E9EA2;
+    p {
+        line-height: 20px;
+        font-size: 15px;
+        color: #fff;
+        margin: 13px 0;
     }
-    
-    #timeline {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        padding: 0 3em;
-    }
-    
-    .block {
-        margin: 1% 2%;
-        flex: 0 0 45%;
-        position: relative;
-        @include MQ(M) {
-            &:nth-child(even) .time-content {
-                &::before {
-                    @include tooltip(auto, 100%, #fff, $time-content-Color);
-                }
-            }
-            &:nth-child(odd) .time-content {
-                &::before {
-                    @include tooltip(100%, 0, $time-content-Color, #fff);
-                }
-            }
-        }
-    }
-    
-    //Boxe Styles
-    .time-content {
-        border-radius: 0.25em;
-        padding: 2em 2em 1em;
-        background: $time-content-Color;
-        font-weight: 300;
-        font-family: $Lato;
-        h2 {
-            font-weight: 600;
-            font-size: 25px;
-            line-height: 26px;
-            text-transform: uppercase;
-            color: $yellow;
-        }
-        p {
-            line-height: 20px;
-            font-size: 15px;
-            color: #fff;
-            margin: 13px 0;
-        }
-    }
-    /*---------------/*---------------/*---------------
+}
+
+
+/*---------------/*---------------/*---------------
 EDUCATION
 ------------------------------------------------*/
-    
-    .education {
-        background-color: red;
-        padding: 6em 4em;
-        text-align: center;
-    }
-    /*---------------/*---------------/*---------------
+
+.education {
+    background-color: red;
+    padding: 6em 4em;
+    text-align: center;
+}
+
+
+/*---------------/*---------------/*---------------
 SKILLS
 ------------------------------------------------*/
-    
-    .skills {
-        color: black;
-        padding: 6em 4em;
-        display: flex;
-    }
-    
-    .hobbies {
-        background-color: black;
-        padding: 6em 4em;
-        text-align: center;
-    }
-    /**
+
+.skills {
+    color: black;
+    padding: 6em 4em;
+    display: flex;
+}
+
+.hobbies {
+    background-color: black;
+    padding: 6em 4em;
+    text-align: center;
+}
+
+
+/**
 //The Actual Boxes
 .time-content {
     position: relative;
