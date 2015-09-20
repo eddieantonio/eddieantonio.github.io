@@ -96,18 +96,33 @@ HEADER
 
 .heading {
     height: auto;
-    padding: 2em;
+    padding: 5em 0em;
     text-align: center;
     background-color: #352D28;
-    h1 {
-        font-size: 3em;
-        color: #fff;
+    .title {
+        background-color: #F9C935;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        padding: 1em;
+        color: #352D28;
+        font-weight: 600;
+        h1 {
+            font-size: 5em;
+            padding: 8px;
+            display: inline-block;
+            color: #352D28;
+        }
+        h2 {
+            font-size: 2em;
+            display: inline-block;
+        }
     }
 }
 
 nav {
     width: 100%;
-    background: $mainColor*0.7;
+    background: $mainColor*0.5;
     padding: 1em;
     z-index: 100;
     ul {
@@ -164,6 +179,15 @@ Intro
             padding-bottom: 1em;
             padding-top: 4px
         }
+    }
+}
+
+.download {
+    padding: 2em 0;
+    a {
+        padding: 1em;
+        background-color: #352D28;
+        font-weight: 500;
     }
 }
 

@@ -35,16 +35,29 @@ HEADER
 ----------------*/
 .heading {
   height: auto;
-  padding: 2em;
+  padding: 5em 0em;
   text-align: center;
   background-color: #352D28; }
-  .heading h1 {
-    font-size: 3em;
-    color: #fff; }
+  .heading .title {
+    background-color: #F9C935;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    color: #352D28;
+    font-weight: 600; }
+    .heading .title h1 {
+      font-size: 5em;
+      padding: 8px;
+      display: inline-block;
+      color: #352D28; }
+    .heading .title h2 {
+      font-size: 2em;
+      display: inline-block; }
 
 nav {
   width: 100%;
-  background: #228282;
+  background: #195d5d;
   padding: 1em;
   z-index: 100; }
   nav ul {
@@ -91,6 +104,13 @@ Intro
       font-weight: 300;
       padding-bottom: 1em;
       padding-top: 4px; }
+
+.download {
+  padding: 2em 0; }
+  .download a {
+    padding: 1em;
+    background-color: #352D28;
+    font-weight: 500; }
 
 /*---------------/*---------------/*---------------
 TIMELINE
