@@ -98,7 +98,9 @@ HEADER
     height: auto;
     padding: 5em 0em;
     text-align: center;
-    background-color: #352D28;
+    background: url(img/header.jpg) center center fixed;
+    background-image: linear-gradient(to bottom, rgba(37, 34, 34, 0) 0%, rgba(53, 31, 17, 0.66) 100%), url(img/header.jpg);
+    background-size: cover;
     .title {
         background-color: #F9C935;
         text-align: center;
@@ -186,8 +188,9 @@ Intro
     padding: 2em 0;
     a {
         padding: 1em;
-        background-color: #352D28;
+        background: $mainColor*0.5;
         font-weight: 500;
+        color: #fff;
     }
 }
 
@@ -217,14 +220,56 @@ $time-content-Color:#38383A;
     padding: 0 3em;
 }
 
+
+#timeline {
+    margin-top: -2em 0;
+    @include MQ(M) {
+        position: relative;
+        max-width: $M;
+        margin: 0 auto;
+        &::before {
+            //vertical line
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 3px;
+            left: 50%;
+            top: 2.5em;
+            margin-left: -2px;
+            background: $mainColor*1.2;
+        }
+        .time-dot {
+            //time line dot
+            position: absolute;
+            top: 11px;
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+            margin-left: -17px;
+            background-color: $mainColor*1.2;
+            left: 50%;
+        }
+    }
+}
+
+
 .block {
-    margin: 1% 2%;
+    margin: -3% 2%;
     flex: 0 0 45%;
     position: relative;
     @include MQ(M) {
-        &:nth-child(even) .time-content {
-            &::before {
-                @include tooltip(auto, 100%, #fff, $time-content-Color);
+        &:first-child {
+            margin: 0 2%;
+        }
+        &:last-child {
+            margin: 2% 2%;
+        }
+        &:nth-child(even) {
+            margin-top: 21%;
+            .time-content {
+                &::before {
+                    @include tooltip(auto, 100%, #fff, $time-content-Color);
+                }
             }
         }
         &:nth-child(odd) .time-content {
@@ -277,6 +322,7 @@ SKILLS
     color: black;
     padding: 6em 4em;
     display: flex;
+    background-color: #00E8FF;
 }
 
 .hobbies {
@@ -286,64 +332,3 @@ SKILLS
 }
 
 
-/**
-//The Actual Boxes
-.time-content {
-    position: relative;
-    border-radius: 0.25em;
-    padding: 2em 2em 1em;
-    background: $time-content-Color;
-    font-weight: 300;
-    font-family: $Lato;
-    h2 {
-        font-weight: 600;
-        font-size: 25px;
-        line-height: 26px;
-        text-transform: uppercase;
-        color: $yellow;
-    }
-    p {
-        line-height: 20px;
-        font-size: 15px;
-        color: #fff;
-        margin: 13px 0;
-    }
-    @include MQ(M) {
-        width: 25em;
-        &::before {
-            @include tooltip(100%, 0, $time-content-Color, #fff);
-        }
-    }
-}
-
-#timeline {
-    margin-top: 3em 0;
-    @include MQ(M) {
-        position: relative;
-        max-width: $M;
-        margin: 0 auto;
-        &::before {
-            //vertical line
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 3px;
-            left: 50%;
-            top: 2.5em;
-            margin-left: -2px;
-            background: $mainColor*1.2;
-        }
-        .time-dot {
-            //time line dot
-            position: absolute;
-            top: 11px;
-            border-radius: 50%;
-            width: 2em;
-            height: 2em;
-            margin-left: -17px;
-            background-color: $mainColor*1.2;
-            left: 50%;
-        }
-    }
-}
-*/

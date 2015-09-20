@@ -61,6 +61,17 @@ new WOW().init();
                 <p class="download"><a href="#">Download Printable Resume</a></p>
             </div>
         </section>
+        <section class="education">
+            <h2 style="color:white"> Education </h2>
+            <ul class="ed-list">
+                {% for ed in site.data.resume.education %}
+                <li>
+                    {{ ed.program }}&mdash;{{ ed.institution }} {% if ed.in_progress %}
+                    <span class="in-progress">In Progress</span> {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
         <!--
             <h1>WORK EXPERIENCE</h1>
         -->
@@ -86,17 +97,7 @@ new WOW().init();
             </div>
             {% endfor %}
         </section>
-        <section class="education">
-            <h2 style="color:white"> Education </h2>
-            <ul class="ed-list">
-                {% for ed in site.data.resume.education %}
-                <li>
-                    {{ ed.program }}&mdash;{{ ed.institution }} {% if ed.in_progress %}
-                    <span class="in-progress">In Progress</span> {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
+
         <section class="skills">
             <div class="skills-container">
                 <ul class="lang-list">
