@@ -17,7 +17,6 @@ title: Résumé—Eddie Antonio Santos
     <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!--  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>-->
-
     <link media="all" href="{{ baseurl }}/style/reset.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/fonts/latin-modern-roman/stylesheet.css" type="text/css" rel="stylesheet">
     <link media="all" href="{{ baseurl }}/style/resume.css" type="text/css" rel="stylesheet">
@@ -25,33 +24,30 @@ title: Résumé—Eddie Antonio Santos
 </head>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="{{ baseurl }}/js/jquery.sticky.js"></script>
+<script type="text/javascript" src="{{ baseurl }}/js/progress.js"></script>
+<script src="{{ baseurl }}/js/wow.min.js"></script>
 <script>
+new WOW().init();
+
 $(window).load(function() {
     $("nav").sticky({
         topSpacing: 0
     });
 });
 </script>
-<script src="{{ baseurl }}/js/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>
 
 <body>
     <div class="container">
         <header class="heading">
             <div class="title">
-            <h1>The Many Musings of</h1> 
-            <h2>Eddie Antonio Santos</h2>
-        </div>
+                <h1>The Many Musings of</h1>
+                <h2>Eddie Antonio Santos</h2>
+            </div>
         </header>
         <nav>
             <ul>
-                <!--<li><a href="{{ baseurl }}" ></a></li>-->
                 <li><a href="">My Blog</a></li>
                 <li><a href="">About Me</a></li>
-                <!--<li><a href="">Contact</a></li>
-                <li><a href="">Contact</a></li>-->
             </ul>
         </nav>
         <section class="intro">
@@ -60,11 +56,11 @@ new WOW().init();
                 <h2> Eddie Antonio Santos </h2>
                 <h3> Computer Programmer based in Edmonton</h3>
                 <p>About Me Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ex aspernatur minima modi dolores, deserunt commodi officiis illum deleniti accusantium nulla, autem. Architecto debitis labore maxime, non consectetur similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum similique voluptatum minima voluptatem voluptatibus illum, libero accusantium maxime, facilis, voluptate reprehenderit autem rerum dolorum illo ex esse modi repellendus.</p>
-                <p class="download"><a href="#">Download Printable Resume</a></p>
+                <p class="download"><a href="#">Download CV</a></p>
             </div>
         </section>
         <section class="education">
-            <h2 style="color:white"> Education </h2>
+            <h1> Education </h1>
             <ul class="ed-list">
                 {% for ed in site.data.resume.education %}
                 <li>
@@ -77,8 +73,8 @@ new WOW().init();
         <!--
             <h1>WORK EXPERIENCE</h1>
         -->
-        <h1>Work Experience</h1>
-        <section id="timeline">
+        <h1><span>Work </span>Experience</h1>
+        <section class="timeline">
             <!--<hr width="1" height="100%">-->
             {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
             <div class="block">
@@ -99,31 +95,28 @@ new WOW().init();
             </div>
             {% endfor %}
         </section>
-
         <section class="skills">
-            <div class="skills-container">
+         <h1> Skills </h1>
+
+            <section class="skills-box">
                 <ul class="lang-list">
-                    {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
-                    <li class="lang-tier-{{ tier_no }}
-                lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
-                    {% endfor %} {% endfor %}
+                    <h2> Programming languages</h2> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
+                    <li class="lang-tier-{{ tier_no }}lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
+                    {% endfor %}
+                    <progress value="80" max="100"></progress>
+                    {% endfor %}
                 </ul>
-                <h3> Miscellaneous technologies </h3>
+                <h2> Miscellaneous technologies </h2>
                 <dl>
                     {% for category in site.data.resume.skills.small_categories %}
                     <dt> {{ category[0] }} </dt>
                     <dd> {{ category[1] | join: ', ' | textilize }} </dd>
                     {% endfor %}
                 </dl>
-            </div>
+            </section>
         </section>
-        <section class='hobbies'>
-            <h2> Hobbies </h2>
-            <dl>
-                {% for hobby in site.data.resume.hobbies %}
-                <h3> {{ hobby.title | textilize }} </h3> {{ hobby.description | markdownify }} {% endfor %}
-            </dl>
-            </span>
+        <section class="hobbies">
+            {% for hobby in site.data.resume.hobbies %} {{ hobby.title | textilize }} {{ hobby.description | markdownify }} {% endfor %}
         </section>
     </div>
     <footer>Footer </footer>

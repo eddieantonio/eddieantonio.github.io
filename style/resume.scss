@@ -3,8 +3,9 @@ VARIABLES
 *********************/
 
 //Colors
-$mainColor:#d82c2e;
+$mainColor:#03B0E4;
 $yellow:#F9C935;
+$time-content-Color:#03B0E4;
 //Font/Style
 $Helvetica: Helvetica,
 sans-serif;
@@ -87,6 +88,10 @@ body {
     font-size: 100%;
     color: #fff;
     font-family: $Lato;
+}
+
+span {
+    color: #38383A;
 }
 
 
@@ -183,7 +188,7 @@ Intro
             padding-bottom: 1em;
             padding-top: 4px;
             font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+            font-weight: 100;
         }
     }
 }
@@ -220,21 +225,19 @@ h1 {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-
 }
 
-$time-content-Color:#38383A;
 .time {
     color: #9E9EA2;
 }
 
-#timeline {
+.timeline {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-#timeline {
+.timeline {
     margin-top: -2em 0;
     @include MQ(M) {
         position: relative;
@@ -316,7 +319,6 @@ $time-content-Color:#38383A;
         font-size: 25px;
         line-height: 26px;
         text-transform: uppercase;
-        color: $yellow;
     }
     p {
         line-height: 20px;
@@ -333,7 +335,7 @@ EDUCATION
 
 .education {
     background-color: #E8E8E8;
-    padding: 6em 4em;
+    padding: 2em 4em;
     text-align: center;
     color: #000;
 }
@@ -344,14 +346,77 @@ SKILLS
 ------------------------------------------------*/
 
 .skills {
-    color: black;
-    padding: 6em 4em;
+    color: rgb(23, 92, 133);
+    padding: 2em 10em;
     display: flex;
+    flex-wrap: wrap;
     background-color: $mainColor;
+    h1 {
+        width: 100%;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+    }
+    h2 {
+        width: 100%;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        padding: 1em 0 0em;
+        text-transform: uppercase;
+    }
 }
 
+/* Language list thing. */
+.lang-list {
+    list-style: none;
+    li {
+        display: inline-block;
+        color:$mainColor;
+        font-family: 'Montserrat', sans-serif;
+        padding: 1.5em 0em 0.5em;
+        &:not(:last-child):after {
+            content: ", ";
+        }
+    }
+}
+
+.skills-box {
+    background-color: #352D28;
+    padding: 2em;
+}
+progress {
+    background-color: $mainColor;
+    border: 0;
+    height: 2.5em;
+    width: 100%;
+    &::-webkit-progress-bar {
+        background-color: #e0eaf0;
+    }
+    &::-webkit-progress-value {
+        background-color: $yellow;
+    }
+    &::-moz-progress-bar {
+        background-color: #329ad1;
+    }
+}
+
+dt {
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    padding: 17.5px 0 3px;
+}
+dd {
+    font-family: 'Montserrat', sans-serif;
+    color:$mainColor;
+}
+/*---------------/*---------------/*---------------
+HOBBIES
+------------------------------------------------*/
+
 .hobbies {
-    background-color: black;
+    background-color: #352D28;
     padding: 6em 4em;
     text-align: center;
 }
