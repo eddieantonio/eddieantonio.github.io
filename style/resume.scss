@@ -93,12 +93,10 @@ body {
 
 p {
     text-align: left;
-    line-height: 20px;
+    line-height: 22px;
     font-size: 15px;
-    color: #fff;
     margin: 13px 0;
     font-weight: 300;
-    font-family: $Lato;
 }
 
 h1,
@@ -197,11 +195,6 @@ Intro
     .description {
         width: 60%;
         padding-right: 3em;
-        p {
-            font-size: 1em;
-            font-weight: 300;
-            line-height: 22px;
-        }
         h2 {
             font-size: 2em;
             line-height: 34px;
@@ -356,12 +349,12 @@ SKILLS
     display: flex;
     flex-wrap: wrap;
     background-color: $mainColor;
+    font-family: 'Montserrat', sans-serif;
+
     h1 {
-        width: 100%;
         color: #fff;
     }
     h2 {
-        width: 100%;
         color: #fff;
         font-size: 1.5em;
         padding: 1em 0 0em;
@@ -372,22 +365,22 @@ SKILLS
 
 /* Language list thing. */
 
-.lang-list {
+
+
+.skills-box {
+    color: $mainColor;
+    background-color: $time-content-Color; //#04D3FF;
+    padding: 2em;
+    .lang-list {
     list-style: none;
     li {
         display: inline-block;
-        color: $mainColor;
-        font-family: 'Montserrat', sans-serif;
         padding: 1.5em 0em 0.5em;
         &:not(:last-child):after {
             content: ", ";
         }
     }
 }
-
-.skills-box {
-    background-color: $time-content-Color; //#04D3FF;
-    padding: 2em;
 }
 
 progress {
@@ -409,14 +402,7 @@ progress {
 dt {
     font-size: 22px;
     color: #FFFFFF;
-    font-weight: 200;
-    font-family: 'Montserrat', sans-serif;
     padding: 17.5px 0 3px;
-}
-
-dd {
-    font-family: 'Montserrat', sans-serif;
-    color: $mainColor;
 }
 
 
