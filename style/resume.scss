@@ -3,7 +3,7 @@ VARIABLES
 *********************/
 
 //Colors
-$mainColor:#31B9B9;
+$mainColor:#d82c2e;
 $yellow:#F9C935;
 //Font/Style
 $Helvetica: Helvetica,
@@ -14,7 +14,7 @@ serif;
 $Sans:'Open Sans',
 sans-serif;
 $S: 320px;
-$M: 875px;
+$M: 900px;
 $L: 1170px;
 
 /*********************
@@ -124,7 +124,7 @@ HEADER
 
 nav {
     width: 100%;
-    background: $mainColor*0.5;
+    background: $mainColor;
     padding: 1em;
     z-index: 100;
     ul {
@@ -151,8 +151,8 @@ Intro
 ----------------*/
 
 .intro {
-    background-color: #31B9B9;
-    padding: 5em 5em;
+    background-color: $mainColor;
+    padding: 2em 7em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -173,24 +173,35 @@ Intro
         }
         h2 {
             font-size: 2em;
-            line-height: 34px w
+            line-height: 34px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
         }
         h3 {
             font-size: 20px;
             font-weight: 300;
             padding-bottom: 1em;
-            padding-top: 4px
+            padding-top: 4px;
+            font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
         }
     }
 }
 
 .download {
-    padding: 2em 0;
+    padding: 3em 0;
     a {
         padding: 1em;
-        background: $mainColor*0.5;
         font-weight: 500;
         color: #fff;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 2px;
+        transition: all 0.2s ease;
+        &:hover {
+            background-color: #fff;
+            color: $mainColor;
+        }
     }
 }
 
@@ -201,11 +212,15 @@ TIMELINE
 
 h1 {
     font-size: 2.5em;
-    color: #228282;
+    color: $mainColor;
     text-align: center;
     padding: 1em;
     font-weight: 400;
     text-transform: uppercase;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
 }
 
 $time-content-Color:#38383A;
@@ -217,9 +232,7 @@ $time-content-Color:#38383A;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 0 3em;
 }
-
 
 #timeline {
     margin-top: -2em 0;
@@ -236,7 +249,7 @@ $time-content-Color:#38383A;
             left: 50%;
             top: 2.5em;
             margin-left: -2px;
-            background: $mainColor*1.2;
+            background: $mainColor;
         }
         .time-dot {
             //time line dot
@@ -245,24 +258,27 @@ $time-content-Color:#38383A;
             border-radius: 50%;
             width: 2em;
             height: 2em;
-            margin-left: -17px;
             background-color: $mainColor*1.2;
-            left: 50%;
         }
     }
 }
 
-
 .block {
-    margin: -3% 2%;
+    margin: 1% 0;
     flex: 0 0 45%;
     position: relative;
     @include MQ(M) {
         &:first-child {
-            margin: 0 2%;
+            margin: 0 0;
+        }
+        &:nth-child(2) {
+            margin: 0 0;
+        }
+        &:nth-child(3) {
+            margin: -10em 0;
         }
         &:last-child {
-            margin: 2% 2%;
+            margin: 2% 0;
         }
         &:nth-child(even) {
             margin-top: 21%;
@@ -271,10 +287,18 @@ $time-content-Color:#38383A;
                     @include tooltip(auto, 100%, #fff, $time-content-Color);
                 }
             }
+            .time-dot {
+                left: -15%;
+            }
         }
-        &:nth-child(odd) .time-content {
-            &::before {
-                @include tooltip(100%, 0, $time-content-Color, #fff);
+        &:nth-child(odd) {
+            .time-content {
+                &::before {
+                    @include tooltip(100%, 0, $time-content-Color, #fff);
+                }
+            }
+            .time-dot {
+                left: 107%;
             }
         }
     }
@@ -308,9 +332,10 @@ EDUCATION
 ------------------------------------------------*/
 
 .education {
-    background-color: red;
+    background-color: #E8E8E8;
     padding: 6em 4em;
     text-align: center;
+    color: #000;
 }
 
 
@@ -322,7 +347,7 @@ SKILLS
     color: black;
     padding: 6em 4em;
     display: flex;
-    background-color: #00E8FF;
+    background-color: $mainColor;
 }
 
 .hobbies {
@@ -330,5 +355,3 @@ SKILLS
     padding: 6em 4em;
     text-align: center;
 }
-
-
