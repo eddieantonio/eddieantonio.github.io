@@ -115,9 +115,9 @@ $(window).load(function() {
             </section>
         </section>
         <section class="hobbies">
-            <h1> Hobbies </h1>
+            <h1> <span>Additional </span>Projects </h1>
             {% for hobby in site.data.resume.hobbies %} 
-            <div class="hobby-box">
+            <div class="hobby-box wow bounceInUp">
                 <h2>{{ hobby.title | textilize }} </h2>
                 {{ hobby.description | markdownify }}
             </div>

@@ -30,10 +30,18 @@ body {
   color: #fff;
   font-family: "Lato", Arial, serif; }
 
-span {
-  color: #38383A; }
+p {
+  text-align: left;
+  line-height: 20px;
+  font-size: 15px;
+  color: #fff;
+  margin: 13px 0;
+  font-weight: 300;
+  font-family: "Lato", Arial, serif; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', sans-serif;
   width: 100%; }
 
@@ -41,9 +49,11 @@ h1 {
   text-transform: uppercase;
   font-size: 2.5em;
   text-align: center;
-  padding: 1em;
   font-weight: 700;
-  color: #352D28; }
+  color: #352D28;
+  padding: 1em; }
+  h1 span {
+    color: #03B0E4; }
 
 /*---------------
 HEADER
@@ -222,11 +232,6 @@ TIMELINE
     font-size: 25px;
     line-height: 26px;
     text-transform: uppercase; }
-  .time-content p {
-    line-height: 20px;
-    font-size: 15px;
-    color: #fff;
-    margin: 13px 0; }
 
 /*---------------/*---------------/*---------------
 EDUCATION
@@ -310,15 +315,6 @@ HOBBIES
     margin: 1em;
     padding: 2em;
     border-radius: 1em; }
-    .hobbies .hobby-box p {
-      text-align: left;
-      border-radius: 1em;
-      line-height: 20px;
-      font-size: 15px;
-      color: #fff;
-      margin: 13px 0;
-      font-weight: 300;
-      font-family: "Lato", Arial, serif; }
 
 /*---------------/*---------------/*---------------
 Footer
