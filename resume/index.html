@@ -80,7 +80,7 @@ $(window).load(function() {
             <div class="block">
                 <div class="time-dot"></div>
                 <div class="time-content wow bounceInUp">
-                    <h2>{{ job_header | textilize }}</h2>
+                    <h3>{{ job_header | textilize }}</h3>
                     <hr>
                     <p>
                         <strong>{% if job.employer %} {{ job.employer | textilize}} {% endif %}</strong>
@@ -99,13 +99,13 @@ $(window).load(function() {
          <h1> Skills </h1>
             <section class="skills-box">
                 <ul class="lang-list">
-                    <h2> Programming languages</h2> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
+                    <h3> Programming languages</h3> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
                     <li class="lang-tier-{{ tier_no }}lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
                     {% endfor %}
                     <progress value="80" max="100"></progress>
                     {% endfor %}
                 </ul>
-                <h2> Miscellaneous technologies </h2>
+                <h3> Miscellaneous technologies </h3>
                 <dl>
                     {% for category in site.data.resume.skills.small_categories %}
                     <dt> {{ category[0] }} </dt>

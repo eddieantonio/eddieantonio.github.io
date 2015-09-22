@@ -13,13 +13,11 @@ MAIN STYLES
 a {
     color: $yellow;
     text-decoration: none;
-    font-weight: 900;
 }
 
 strong {
     font-weight: 500;
 }
-
 
 body {
     font-size: 100%;
@@ -41,7 +39,12 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 }
-
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 22px;
+}
 h1 {
     text-transform: uppercase;
     font-size: 2.5em;
@@ -50,9 +53,8 @@ h1 {
     color: $time-content-Color;
     padding: 1em;
     span {
-    color: $mainColor;
-}
-
+        color: $mainColor;
+    }
 }
 
 
@@ -61,7 +63,6 @@ HEADER
 ----------------*/
 
 .heading {
-    height: auto;
     padding: 5em 0em;
     text-align: center;
     background: url(img/header.jpg) center center fixed;
@@ -69,7 +70,6 @@ HEADER
     background-size: cover;
     .title {
         background-color: #F9C935;
-        text-align: center;
         width: 50%;
         margin: 0 auto;
         padding: 1em;
@@ -81,7 +81,6 @@ HEADER
             display: inline-block;
         }
         h2 {
-            font-size: 2em;
             display: inline-block;
         }
     }
@@ -132,7 +131,6 @@ Intro
         width: 60%;
         padding-right: 3em;
         h2 {
-            font-size: 2em;
             line-height: 34px;
             font-weight: 400;
         }
@@ -255,8 +253,7 @@ TIMELINE
     background: $time-content-Color;
     font-weight: 300;
     font-family: $Lato;
-    h2 {
-        font-size: 25px;
+    h3 {
         line-height: 26px;
         text-transform: uppercase;
     }
@@ -272,6 +269,7 @@ EDUCATION
     padding: 2em 4em;
     text-align: center;
     color: #000;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -280,65 +278,62 @@ SKILLS
 ------------------------------------------------*/
 
 .skills {
-    color: rgb(23, 92, 133);
     padding: 2em 10em;
     display: flex;
     flex-wrap: wrap;
     background-color: $mainColor;
     font-family: 'Montserrat', sans-serif;
-
     h1 {
         color: #fff;
     }
-    h2 {
-        color: #fff;
-        font-size: 1.5em;
-        padding: 1em 0 0em;
-        text-transform: uppercase;
-    }
+    h3 {
+        color: $mainColor;
+       text-transform: uppercase;
+       font-size: 1.7em;
+   }
 }
-
-
-/* Language list thing. */
-
 
 
 .skills-box {
-    color: $mainColor;
     background-color: $time-content-Color; //#04D3FF;
-    padding: 2em;
+    padding: 4em 5em 3em;
+    border-radius: 1em;
     .lang-list {
-    list-style: none;
-    li {
-        display: inline-block;
-        padding: 1.5em 0em 0.5em;
-        &:not(:last-child):after {
-            content: ", ";
+        list-style: none;
+        padding-bottom: 2em;
+        li {
+            display: inline-block;
+            padding: 1.5em 0em 0.5em;
+            &:not(:last-child):after {
+                content: ", ";
+            }
         }
     }
-}
+    dt {
+        font-size: 22px;
+        color: #FFFFFF;
+        padding: 17.5px 0 3px;
+    }
+    p{
+        margin:0;
+        font-family: $Lato;
+    }
 }
 
+//Progress Bar
 progress {
-    background-color: $mainColor;
-    border: 0;
-    height: 2.5em;
+    background-color: red;
+    height: 1em;
     width: 100%;
     &::-webkit-progress-bar {
-        background-color: #e0eaf0;
+        background-color: #fff;
     }
     &::-webkit-progress-value {
         background-color: $yellow;
     }
     &::-moz-progress-bar {
-        background-color: #329ad1;
+        background-color: #fff;
     }
-}
-
-dt {
-    font-size: 22px;
-    color: #FFFFFF;
-    padding: 17.5px 0 3px;
 }
 
 
@@ -349,9 +344,6 @@ HOBBIES
 .hobbies {
     h1 {
         padding: 1em 0em 0.5em;
-    }
-    h2 {
-        font-size: 22px;
     }
     background-color: #fff;
     padding: 1em 9em;
