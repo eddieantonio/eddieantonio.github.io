@@ -1,66 +1,5 @@
 @import 'main-rules';
 
-/*---------------
-MAIN STYLES
-----------------*/
-
-*,
-*:after,
-*:before {
-    @include box-sizing;
-}
-
-a {
-    color: $yellow;
-    text-decoration: none;
-    font-weight: 800;
-}
-
-strong {
-    font-weight: 500;
-}
-
-body {
-    font-size: 100%;
-    color: #fff;
-    font-family: $Lato;
-}
-
-p {
-    text-align: left;
-    line-height: 22px;
-    font-size: 15px;
-    margin: 13px 0;
-    font-weight: 300;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 22px;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: 700;
-    color: $time-content-Color;
-    padding: 1em;
-    span {
-        color: $mainColor;
-    }
-}
-
 
 /*---------------
 HEADER
@@ -136,14 +75,11 @@ Intro
         padding-right: 3em;
         h2 {
             line-height: 34px;
-            font-weight: 400;
         }
         h3 {
-            font-size: 20px;
-            font-weight: 300;
             padding-bottom: 1em;
             padding-top: 4px;
-            font-weight: 100;
+            text-transform: none;
         }
     }
 }
@@ -170,18 +106,12 @@ Intro
 TIMELINE
 ------------------------------------------------*/
 
-.time {
-    color: #9E9EA2;
-}
-
 .timeline {
+    margin-top: -2em 0;
+    padding: 2em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-}
-
-.timeline {
-    margin-top: -2em 0;
     @include MQ(M) {
         position: relative;
         max-width: $M;
@@ -204,7 +134,10 @@ TIMELINE
             border-radius: 50%;
             width: 2em;
             height: 2em;
-            background-color: $mainColor*1.2;
+            background-color: $mainColor;
+        }
+        .time {
+            color: #9E9EA2;
         }
     }
 }
@@ -215,13 +148,7 @@ TIMELINE
     position: relative;
     @include MQ(M) {
         &:first-child {
-            margin: 0 0;
-        }
-        &:nth-child(2) {
-            margin: 0 0;
-        }
-        &:nth-child(3) {
-            margin: -10em 0;
+            margin: -7px 0;
         }
         &:last-child {
             margin: 2% 0;
@@ -234,7 +161,7 @@ TIMELINE
                 }
             }
             .time-dot {
-                left: -15%;
+                left: -15.5%;
             }
         }
         &:nth-child(odd) {
@@ -244,7 +171,7 @@ TIMELINE
                 }
             }
             .time-dot {
-                left: 107%;
+                left: 106.6%;
             }
         }
     }
@@ -259,7 +186,6 @@ TIMELINE
     font-family: $Lato;
     h3 {
         line-height: 26px;
-        text-transform: uppercase;
     }
 }
 
@@ -282,7 +208,7 @@ SKILLS
 ------------------------------------------------*/
 
 .skills {
-    padding: 2em 10em;
+    padding:3em;
     display: flex;
     flex-wrap: wrap;
     background-color: $mainColor;
@@ -292,8 +218,10 @@ SKILLS
     }
     h3 {
         color: $mainColor;
-        text-transform: uppercase;
         font-size: 1.7em;
+    }
+    @include MQ(M) {
+        padding: 2em 10em;
     }
 }
 
@@ -301,8 +229,7 @@ SKILLS
     background-color: $time-content-Color; //#04D3FF;
     padding: 4em 5em 3em;
     border-radius: 1em;
-        width:100%;
-
+    width: 900px;
     .lang-list {
         list-style: none;
         padding-bottom: 2em;
@@ -347,15 +274,18 @@ HOBBIES
 ------------------------------------------------*/
 
 .hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    padding:3em;
     h1 {
         padding: 1em 0em 0.5em;
     }
-    background-color: #fff;
-    padding: 1em 9em;
-    text-align: center;
     .hobby-box {
+        width:900px;
         background-color: #352D28;
-        margin: 1em;
+        margin: 0.5em 0;
         padding: 2em;
         border-radius: 1em;
         h2 {

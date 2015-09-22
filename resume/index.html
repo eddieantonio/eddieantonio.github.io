@@ -48,6 +48,8 @@ $(window).load(function() {
             <ul>
                 <li><a href="">My Blog</a></li>
                 <li><a href="">About Me</a></li>
+                <li><a href="">Resume</a></li>
+
             </ul>
         </nav>
         <section class="intro">
@@ -96,7 +98,7 @@ $(window).load(function() {
             {% endfor %}
         </section>
         <section class="skills">
-         <h1> Skills </h1>
+         <h1> Technical Skills </h1>
             <section class="skills-box">
                 <ul class="lang-list">
                     <h3> Programming languages</h3> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
@@ -114,6 +116,7 @@ $(window).load(function() {
                 </dl>
             </section>
         </section>
+        
         <section class="hobbies">
             <h1> <span>Additional </span>Projects </h1>
             {% for hobby in site.data.resume.hobbies %} 
