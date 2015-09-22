@@ -1,6 +1,5 @@
 @import 'main-rules';
 
-
 /*---------------
 HEADER
 ----------------*/
@@ -29,6 +28,11 @@ HEADER
     }
 }
 
+
+/*---------------
+NAV
+----------------*/
+
 nav {
     width: 100%;
     background: $mainColor;
@@ -54,7 +58,7 @@ nav {
 
 
 /*---------------
-Intro
+ABOUT ME
 ----------------*/
 
 .intro {
@@ -183,10 +187,7 @@ TIMELINE
     padding: 2em 2em 1em;
     background: $time-content-Color;
     font-weight: 300;
-    font-family: $Lato;
-    h3 {
-        line-height: 26px;
-    }
+    line-height: 26px;
 }
 
 
@@ -195,9 +196,8 @@ EDUCATION
 ------------------------------------------------*/
 
 .education {
+    @extend .flex-stuff;
     background-color: #E8E8E8;
-    padding: 2em 4em;
-    text-align: center;
     color: #000;
     font-family: 'Montserrat', sans-serif;
 }
@@ -208,63 +208,43 @@ SKILLS
 ------------------------------------------------*/
 
 .skills {
-    padding:3em;
-    display: flex;
-    flex-wrap: wrap;
+    @extend .flex-stuff;
     background-color: $mainColor;
     font-family: 'Montserrat', sans-serif;
+
     h1 {
         color: #fff;
     }
     h3 {
-        color: $mainColor;
+        color: $yellow;
         font-size: 1.7em;
-    }
-    @include MQ(M) {
-        padding: 2em 10em;
-    }
-}
-
-.skills-box {
-    background-color: $time-content-Color; //#04D3FF;
-    padding: 4em 5em 3em;
-    border-radius: 1em;
-    width: 900px;
-    .lang-list {
-        list-style: none;
-        padding-bottom: 2em;
-        li {
-            display: inline-block;
-            padding: 1.5em 0em 0.5em;
-            &:not(:last-child):after {
-                content: ", ";
-            }
-        }
-    }
-    dt {
-        font-size: 22px;
-        color: #FFFFFF;
-        padding: 17.5px 0 3px;
     }
     p {
         margin: 0;
         font-family: $Lato;
     }
-}
-
-//Progress Bar
-progress {
-    background-color: red;
-    height: 1em;
-    width: 100%;
-    &::-webkit-progress-bar {
-        background-color: #fff;
-    }
-    &::-webkit-progress-value {
-        background-color: $yellow;
-    }
-    &::-moz-progress-bar {
-        background-color: #fff;
+    .skills-box {
+        width: $M;
+        background-color: $time-content-Color; //#04D3FF;
+        margin: 0.5em 0;
+        padding: 3em;
+        border-radius: 1em;
+        .lang-list {
+            list-style: none;
+            padding-bottom: 2em;
+            li {
+                display: inline-block;
+                padding: 1.5em 0em 0.5em;
+                &:not(:last-child):after {
+                    content: ", ";
+                }
+            }
+        }
+        dt {
+            font-size: 22px;
+            color: #FFFFFF;
+            padding: 17.5px 0 3px;
+        }
     }
 }
 
@@ -274,17 +254,10 @@ HOBBIES
 ------------------------------------------------*/
 
 .hobbies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    display: flex;
-    padding:3em;
-    h1 {
-        padding: 1em 0em 0.5em;
-    }
+    @extend .flex-stuff;
     .hobby-box {
-        width:900px;
-        background-color: #352D28;
+        width: $M;
+        background-color: $time-content-Color; //#04D3FF;
         margin: 0.5em 0;
         padding: 2em;
         border-radius: 1em;
