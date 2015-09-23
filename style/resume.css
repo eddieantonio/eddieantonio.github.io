@@ -10,7 +10,7 @@ Mixins
 /*********************
 EXTENDS
 *********************/
-.flex-stuff, .education, .skills, .hobbies {
+.flex-stuff, .intro, .timeline, .education, .skills, .hobbies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,6 +71,9 @@ h1 {
 /**************
 EXTRA STUFF
 **************/
+.container {
+  overflow: hidden; }
+
 progress {
   background-color: red;
   height: 1em;
@@ -132,11 +135,6 @@ ABOUT ME
 ----------------*/
 .intro {
   background-color: #03B0E4;
-  padding: 2em 7em;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
   flex-direction: row-reverse;
   margin-left: -3em; }
   .intro img {
@@ -170,13 +168,12 @@ ABOUT ME
 TIMELINE
 ------------------------------------------------*/
 .timeline {
-  margin-top: -2em 0;
-  padding: 2em;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
+  margin-top: -2em 0; }
   @media only screen and (min-width: 950px) {
     .timeline {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
       position: relative;
       max-width: 950px;
       margin: 0 auto; }
@@ -201,39 +198,40 @@ TIMELINE
 
 .block {
   margin: 1% 0;
-  flex: 0 0 45%;
   position: relative; }
   @media only screen and (min-width: 950px) {
-    .block:first-child {
-      margin: -7px 0; }
-    .block:last-child {
-      margin: 2% 0; }
-    .block:nth-child(even) {
-      margin-top: 21%; }
-      .block:nth-child(even) .time-content::before {
+    .block {
+      flex: 0 0 45%; }
+      .block:first-child {
+        margin: -7px 0; }
+      .block:last-child {
+        margin: 2% 0; }
+      .block:nth-child(even) {
+        margin-top: 21%; }
+        .block:nth-child(even) .time-content::before {
+          content: '';
+          position: absolute;
+          border: 7px solid transparent;
+          left: auto;
+          right: 100%;
+          border-color: transparent;
+          border-left-color: #fff;
+          border-right-color: #352D28;
+          top: 24px; }
+        .block:nth-child(even) .time-dot {
+          left: -15.5%; }
+      .block:nth-child(odd) .time-content::before {
         content: '';
         position: absolute;
         border: 7px solid transparent;
-        left: auto;
-        right: 100%;
+        left: 100%;
+        right: 0;
         border-color: transparent;
-        border-left-color: #fff;
-        border-right-color: #352D28;
+        border-left-color: #352D28;
+        border-right-color: #fff;
         top: 24px; }
-      .block:nth-child(even) .time-dot {
-        left: -15.5%; }
-    .block:nth-child(odd) .time-content::before {
-      content: '';
-      position: absolute;
-      border: 7px solid transparent;
-      left: 100%;
-      right: 0;
-      border-color: transparent;
-      border-left-color: #352D28;
-      border-right-color: #fff;
-      top: 24px; }
-    .block:nth-child(odd) .time-dot {
-      left: 106.6%; } }
+      .block:nth-child(odd) .time-dot {
+        left: 106.6%; } }
 
 .time-content {
   border-radius: 0.25em;

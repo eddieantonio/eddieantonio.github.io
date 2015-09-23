@@ -139,6 +139,10 @@ h1 {
 EXTRA STUFF
 **************/
 //Progress Bar
+
+.container{
+    overflow: hidden;
+}
 progress {
     background-color: red;
     height: 1em;
