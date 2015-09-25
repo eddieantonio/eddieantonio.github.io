@@ -106,38 +106,40 @@ ABOUT ME
 TIMELINE
 ------------------------------------------------*/
 
-.timeline {
-    margin-top: -2em 0;
+.work {
     @extend .flex-stuff;
-    @include MQ(M) {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        position: relative;
-        max-width: $M;
-        margin: 0 auto;
-        &::before {
-            //vertical line
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 3px;
-            left: 50%;
-            top: 2.5em;
-            margin-left: -2px;
-            background: $mainColor;
-        }
-        .time-dot {
-            //time line dot
-            position: absolute;
-            top: 11px;
-            border-radius: 50%;
-            width: 2em;
-            height: 2em;
-            background-color: $mainColor;
-        }
-        .time {
-            color: #9E9EA2;
+    .timeline {
+        margin-top: -2em 0;
+        @include MQ(M) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            position: relative;
+            max-width: $M;
+            margin: 0 auto;
+            &::before {
+                //vertical line
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 3px;
+                left: 50%;
+                top: 2.5em;
+                margin-left: -2px;
+                background: $mainColor;
+            }
+            .time-dot {
+                //time line dot
+                position: absolute;
+                top: 11px;
+                border-radius: 50%;
+                width: 2em;
+                height: 2em;
+                background-color: $mainColor;
+            }
+            .time {
+                color: #9E9EA2;
+            }
         }
     }
 }
@@ -196,6 +198,10 @@ EDUCATION
     background-color: #E8E8E8;
     color: #000;
     font-family: 'Montserrat', sans-serif;
+    .education-container {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 

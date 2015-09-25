@@ -10,7 +10,7 @@ Mixins
 /*********************
 EXTENDS
 *********************/
-.flex-stuff, .intro, .timeline, .education, .skills, .hobbies {
+.flex-stuff, .intro, .work, .education, .skills, .hobbies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -172,17 +172,17 @@ ABOUT ME
 /*---------------/*---------------/*---------------
 TIMELINE
 ------------------------------------------------*/
-.timeline {
+.work .timeline {
   margin-top: -2em 0; }
   @media only screen and (min-width: 950px) {
-    .timeline {
+    .work .timeline {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
       position: relative;
       max-width: 950px;
       margin: 0 auto; }
-      .timeline::before {
+      .work .timeline::before {
         content: '';
         position: absolute;
         height: 100%;
@@ -191,14 +191,14 @@ TIMELINE
         top: 2.5em;
         margin-left: -2px;
         background: #03B0E4; }
-      .timeline .time-dot {
+      .work .timeline .time-dot {
         position: absolute;
         top: 11px;
         border-radius: 50%;
         width: 2em;
         height: 2em;
         background-color: #03B0E4; }
-      .timeline .time {
+      .work .timeline .time {
         color: #9E9EA2; } }
 
 .block {
@@ -252,6 +252,9 @@ EDUCATION
   background-color: #E8E8E8;
   color: #000;
   font-family: 'Montserrat', sans-serif; }
+  .education .education-container {
+    width: 100%;
+    text-align: center; }
 
 /*---------------/*---------------/*---------------
 SKILLS
