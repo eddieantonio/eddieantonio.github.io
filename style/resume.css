@@ -50,7 +50,6 @@ h1,
 h2,
 h3 {
   font-family: 'Montserrat', sans-serif;
-  width: 100%;
   text-transform: uppercase; }
 
 h2 {
@@ -266,20 +265,18 @@ SKILLS
 .skills {
   background-color: #03B0E4;
   font-family: 'Montserrat', sans-serif; }
-  .skills h1 {
-    color: #fff; }
-  .skills h3 {
-    color: #F9C935;
-    font-size: 1.7em; }
-  .skills p {
-    margin: 0;
-    font-family: "Lato", Arial, serif; }
   .skills .skills-box {
     width: 950px;
     background-color: #352D28;
     margin: 0.5em 0;
     padding: 3em;
     border-radius: 1em; }
+    .skills .skills-box h3 {
+      color: #F9C935;
+      font-size: 1.7em; }
+    .skills .skills-box p {
+      margin: 0;
+      font-family: "Lato", Arial, serif; }
     .skills .skills-box .lang-list {
       list-style: none;
       padding-bottom: 2em; }
