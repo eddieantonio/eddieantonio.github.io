@@ -51,16 +51,19 @@ $(window).load(function() {
             </ul>
         </nav>
         <section class="intro">
-            <img src="{{ site.baseurl }}/style/img/profile.jpg">
-            <div class="description">
-                <h2> Eddie Antonio Santos </h2>
-                <h3> Computer Programmer based in Edmonton</h3>
-                <p>About Me Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ex aspernatur minima modi dolores, deserunt commodi officiis illum deleniti accusantium nulla, autem. Architecto debitis labore maxime, non consectetur similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum similique voluptatum minima voluptatem voluptatibus illum, libero accusantium maxime, facilis, voluptate reprehenderit autem rerum dolorum illo ex esse modi repellendus.</p>
-                <p class="download"><a href="#">Download CV</a></p>
+            <div class="about-me">
+                <img src="{{ site.baseurl }}/style/img/profile.jpg">
+                <div class="description">
+                    <h2> Eddie Antonio Santos </h2>
+                    <h3> Computer Programmer based in Edmonton</h3>
+                    <p>About Me Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ex aspernatur minima modi dolores, deserunt commodi officiis illum deleniti accusantium nulla, autem. Architecto debitis labore maxime, non consectetur similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum similique voluptatum minima voluptatem voluptatibus illum, libero accusantium maxime, facilis, voluptate reprehenderit autem rerum dolorum illo ex esse modi repellendus.</p>
+                    <p class="download"><a href="#">Download CV</a></p>
+                </div>
             </div>
         </section>
         <section class="education">
-            <header class="section-title"> <h1> Education </h1></header>
+            <header class="section-title">
+                <h1> Education </h1></header>
             <ul class="education-container">
                 {% for ed in site.data.resume.education %}
                 <li>
@@ -69,61 +72,64 @@ $(window).load(function() {
                 </li>
                 {% endfor %}
             </ul>
-        </div>
-        </section>
-        <!--
+    </div>
+    </section>
+    <!--
             <h1>WORK EXPERIENCE</h1>
         -->
-        <section class="work">
-            <header class="section-title"> <h1> <span>Work </span>Experience </h1> </header>
-            <section class="timeline">
-                {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
-                <div class="block">
-                    <div class="time-dot"></div>
-                    <div class="time-content wow bounceInUp">
-                        <h3>{{ job_header | textilize }}</h3>
-                        <hr>
-                        <p>
-                            <strong>{% if job.employer %} {{ job.employer | textilize}} {% endif %}</strong>
-                            <ul>
-                                {% for item in job.responsibilities %}
-                                <li> {{ item | markdownify }} </li>
-                                {% endfor %}
-                                <div class="time">{{ job.time }}</div>
-                            </ul>
-                        </p>
-                    </div>
+    <section class="work">
+        <header class="section-title">
+            <h1> <span>Work </span>Experience </h1> </header>
+        <section class="timeline">
+            {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
+            <div class="block">
+                <div class="time-dot"></div>
+                <div class="time-content wow bounceInUp">
+                    <h3>{{ job_header | textilize }}</h3>
+                    <hr>
+                    <p>
+                        <strong>{% if job.employer %} {{ job.employer | textilize}} {% endif %}</strong>
+                        <ul>
+                            {% for item in job.responsibilities %}
+                            <li> {{ item | markdownify }} </li>
+                            {% endfor %}
+                            <div class="time">{{ job.time }}</div>
+                        </ul>
+                    </p>
                 </div>
-                {% endfor %}
-            </section>
-        </section>
-        <section class="skills">
-            <header class="section-title"> <h1> <span>Technical </span>Skills </h1></header>
-            <section class="skills-box">
-                <ul class="lang-list">
-                    <h3> Programming languages</h3> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
-                    <li class="lang-tier-{{ tier_no }}lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
-                    {% endfor %}
-                    <progress value="80" max="100"></progress>
-                    {% endfor %}
-                </ul>
-                <h3> Miscellaneous technologies </h3>
-                <dl>
-                    {% for category in site.data.resume.skills.small_categories %}
-                    <dt> {{ category[0] }} </dt>
-                    <dd> {{ category[1] | join: ', ' | textilize }} </dd>
-                    {% endfor %}
-                </dl>
-            </section>
-        </section>
-        <section class="hobbies">
-            <header class="section-title"> <h1> <span>Additional </span>Projects </h1> </header>
-            {% for hobby in site.data.resume.hobbies %}
-            <div class="hobby-box wow bounceInUp">
-                <h2>{{ hobby.title | textilize }} </h2> {{ hobby.description | markdownify }}
             </div>
             {% endfor %}
         </section>
+    </section>
+    <section class="skills">
+        <header class="section-title">
+            <h1> <span>Technical </span>Skills </h1></header>
+        <section class="skills-box">
+            <ul class="lang-list">
+                <h3> Programming languages</h3> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
+                <li class="lang-tier-{{ tier_no }}lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
+                {% endfor %}
+                <progress value="80" max="100"></progress>
+                {% endfor %}
+            </ul>
+            <h3> Miscellaneous technologies </h3>
+            <dl>
+                {% for category in site.data.resume.skills.small_categories %}
+                <dt> {{ category[0] }} </dt>
+                <dd> {{ category[1] | join: ', ' | textilize }} </dd>
+                {% endfor %}
+            </dl>
+        </section>
+    </section>
+    <section class="hobbies">
+        <header class="section-title">
+            <h1> <span>Additional </span>Projects </h1> </header>
+        {% for hobby in site.data.resume.hobbies %}
+        <div class="hobby-box wow bounceInUp">
+            <h2>{{ hobby.title | textilize }} </h2> {{ hobby.description | markdownify }}
+        </div>
+        {% endfor %}
+    </section>
     </div>
     <footer>Footer </footer>
 </body>

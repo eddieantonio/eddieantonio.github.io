@@ -64,28 +64,32 @@ ABOUT ME
 .intro {
     @extend .flex-stuff;
     background-color: $mainColor;
-    flex-direction: row-reverse;
     margin-left: -3em;
-    img {
-        border-radius: 50%;
-        max-height: 15em;
-    }
-    .description {
-        width: 60%;
-        padding-right: 3em;
-        h2 {
-            line-height: 34px;
+    .about-me {
+        @extend .flex-stuff;
+        max-width:$M +200px;
+        flex-direction: row-reverse;
+        img {
+            border-radius: 50%;
+            max-height: 15em;
         }
-        h3 {
-            padding-bottom: 1em;
-            padding-top: 4px;
-            text-transform: none;
+        .description {
+            width: 60%;
+            padding-right: 3em;
+            h2 {
+                line-height: 34px;
+            }
+            h3 {
+                padding-bottom: 1em;
+                padding-top: 4px;
+                text-transform: none;
+            }
         }
     }
 }
 
 .download {
-    padding: 3em 0;
+    padding: 3em 0 0;
     a {
         padding: 1em;
         font-weight: 500;
@@ -108,6 +112,7 @@ TIMELINE
 
 .work {
     @extend .flex-stuff;
+    border-radius: 1em;
     .timeline {
         margin-top: -2em 0;
         @include MQ(M) {
@@ -181,7 +186,7 @@ TIMELINE
 
 //Boxe Styles
 .time-content {
-    border-radius: 0.25em;
+    border-radius: 1em;
     padding: 2em 2em 1em;
     background: $time-content-Color;
     font-weight: 300;

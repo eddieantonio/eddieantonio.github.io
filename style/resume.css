@@ -10,7 +10,7 @@ Mixins
 /*********************
 EXTENDS
 *********************/
-.flex-stuff, .intro, .work, .education, .skills, .hobbies {
+.flex-stuff, .intro, .intro .about-me, .work, .education, .skills, .hobbies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -142,23 +142,25 @@ ABOUT ME
 ----------------*/
 .intro {
   background-color: #03B0E4;
-  flex-direction: row-reverse;
   margin-left: -3em; }
-  .intro img {
-    border-radius: 50%;
-    max-height: 15em; }
-  .intro .description {
-    width: 60%;
-    padding-right: 3em; }
-    .intro .description h2 {
-      line-height: 34px; }
-    .intro .description h3 {
-      padding-bottom: 1em;
-      padding-top: 4px;
-      text-transform: none; }
+  .intro .about-me {
+    max-width: 1150px;
+    flex-direction: row-reverse; }
+    .intro .about-me img {
+      border-radius: 50%;
+      max-height: 15em; }
+    .intro .about-me .description {
+      width: 60%;
+      padding-right: 3em; }
+      .intro .about-me .description h2 {
+        line-height: 34px; }
+      .intro .about-me .description h3 {
+        padding-bottom: 1em;
+        padding-top: 4px;
+        text-transform: none; }
 
 .download {
-  padding: 3em 0; }
+  padding: 3em 0 0; }
   .download a {
     padding: 1em;
     font-weight: 500;
@@ -174,34 +176,36 @@ ABOUT ME
 /*---------------/*---------------/*---------------
 TIMELINE
 ------------------------------------------------*/
-.work .timeline {
-  margin-top: -2em 0; }
-  @media only screen and (min-width: 950px) {
-    .work .timeline {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      position: relative;
-      max-width: 950px;
-      margin: 0 auto; }
-      .work .timeline::before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 3px;
-        left: 50%;
-        top: 2em;
-        margin-left: -2px;
-        background: #03B0E4; }
-      .work .timeline .time-dot {
-        position: absolute;
-        top: 11px;
-        border-radius: 50%;
-        width: 2em;
-        height: 2em;
-        background-color: #03B0E4; }
-      .work .timeline .time {
-        color: #9E9EA2; } }
+.work {
+  border-radius: 1em; }
+  .work .timeline {
+    margin-top: -2em 0; }
+    @media only screen and (min-width: 950px) {
+      .work .timeline {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: relative;
+        max-width: 950px;
+        margin: 0 auto; }
+        .work .timeline::before {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 3px;
+          left: 50%;
+          top: 2em;
+          margin-left: -2px;
+          background: #03B0E4; }
+        .work .timeline .time-dot {
+          position: absolute;
+          top: 11px;
+          border-radius: 50%;
+          width: 2em;
+          height: 2em;
+          background-color: #03B0E4; }
+        .work .timeline .time {
+          color: #9E9EA2; } }
 
 .block {
   margin: 1% 0;
@@ -241,7 +245,7 @@ TIMELINE
         left: 107.2%; } }
 
 .time-content {
-  border-radius: 0.25em;
+  border-radius: 1em;
   padding: 2em 2em 1em;
   background: #352D28;
   font-weight: 300;
