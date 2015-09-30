@@ -67,8 +67,8 @@ ABOUT ME
     flex-direction: row-reverse;
     margin-left: -3em;
     img {
-        max-width: 15em;
-        border-radius: 50%;
+    border-radius: 50%;
+    max-height: 15em;
     }
     .description {
         width: 60%;
@@ -186,7 +186,11 @@ TIMELINE
     background: $time-content-Color;
     font-weight: 300;
     line-height: 26px;
-}
+    margin: 1em 0;
+        @include MQ(M) {
+            margin:0;
+        }
+    }
 
 
 /*---------------/*---------------/*---------------
