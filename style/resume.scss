@@ -124,7 +124,7 @@ TIMELINE
                 height: 100%;
                 width: 3px;
                 left: 50%;
-                top: 2.5em;
+                top: 2em;
                 margin-left: -2px;
                 background: $mainColor;
             }
@@ -163,7 +163,7 @@ TIMELINE
                 }
             }
             .time-dot {
-                left: -15.5%;
+                left: -65px;
             }
         }
         &:nth-child(odd) {
@@ -173,7 +173,7 @@ TIMELINE
                 }
             }
             .time-dot {
-                left: 106.6%;
+                left: 107.2%;
             }
         }
     }

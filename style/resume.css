@@ -14,7 +14,7 @@ EXTENDS
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 3em; }
+  padding: 2em 3em; }
 
 /*********************
 MAIN STYLES
@@ -190,7 +190,7 @@ TIMELINE
         height: 100%;
         width: 3px;
         left: 50%;
-        top: 2.5em;
+        top: 2em;
         margin-left: -2px;
         background: #03B0E4; }
       .work .timeline .time-dot {
@@ -226,7 +226,7 @@ TIMELINE
           border-right-color: #352D28;
           top: 24px; }
         .block:nth-child(even) .time-dot {
-          left: -15.5%; }
+          left: -65px; }
       .block:nth-child(odd) .time-content::before {
         content: '';
         position: absolute;
@@ -238,7 +238,7 @@ TIMELINE
         border-right-color: #fff;
         top: 24px; }
       .block:nth-child(odd) .time-dot {
-        left: 106.6%; } }
+        left: 107.2%; } }
 
 .time-content {
   border-radius: 0.25em;
