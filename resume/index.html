@@ -60,7 +60,7 @@ $(window).load(function() {
             </div>
         </section>
         <section class="education">
-            <h1> Education </h1>
+            <header class="section-title"> <h1> Education </h1></header>
             <ul class="education-container">
                 {% for ed in site.data.resume.education %}
                 <li>
@@ -75,7 +75,7 @@ $(window).load(function() {
             <h1>WORK EXPERIENCE</h1>
         -->
         <section class="work">
-            <h1> <span>Additional </span>Projects </h1> 
+            <header class="section-title"> <h1> <span>Work </span>Experience </h1> </header>
             <section class="timeline">
                 {% for job in site.data.resume.experience %} {% capture job_header %} {{ job.title }} {% endcapture %}
                 <div class="block">
@@ -98,7 +98,7 @@ $(window).load(function() {
             </section>
         </section>
         <section class="skills">
-            <h1> <span>Additional </span>Projects </h1> 
+            <header class="section-title"> <h1> <span>Technical </span>Skills </h1></header>
             <section class="skills-box">
                 <ul class="lang-list">
                     <h3> Programming languages</h3> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
@@ -117,7 +117,8 @@ $(window).load(function() {
             </section>
         </section>
         <section class="hobbies">
-            <h1> <span>Additional </span>Projects </h1> {% for hobby in site.data.resume.hobbies %}
+            <header class="section-title"> <h1> <span>Additional </span>Projects </h1> </header>
+            {% for hobby in site.data.resume.hobbies %}
             <div class="hobby-box wow bounceInUp">
                 <h2>{{ hobby.title | textilize }} </h2> {{ hobby.description | markdownify }}
             </div>

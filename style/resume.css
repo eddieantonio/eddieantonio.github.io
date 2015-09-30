@@ -66,11 +66,14 @@ h1 {
   margin: 1em;
   background-color: #352D28;
   display: inline-block;
-  width: auto;
   padding: .5em 1em;
   border-radius: 1em; }
   h1 span {
     color: #F9C935; }
+
+header.section-title {
+  width: 100%;
+  text-align: center; }
 
 /**************
 EXTRA STUFF
