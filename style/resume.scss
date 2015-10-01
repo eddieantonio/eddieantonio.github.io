@@ -5,22 +5,23 @@ HEADER
 ----------------*/
 
 .heading {
-    padding: 5em 0em;
+    padding: 7em 0em;
     text-align: center;
     background: url(img/header.jpg) center center fixed;
     background-image: linear-gradient(to bottom, rgba(37, 34, 34, 0) 0%, rgba(53, 31, 17, 0.66) 100%), url(img/header.jpg);
     background-size: cover;
     .title {
-        background-color: #F9C935;
         width: 50%;
         margin: 0 auto;
         padding: 1em;
-        color: #352D28;
         font-weight: 600;
         h1 {
             font-size: 5em;
-            padding: 8px;
-            display: inline-block;
+            background-color: rgba(25, 18, 14, 0.92);
+            padding: .5em 1em;
+            border-color: #F9C935;
+            border-width: 14px;
+            border-style: dotted double;
         }
         h2 {
             display: inline-block;
