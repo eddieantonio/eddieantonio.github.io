@@ -124,11 +124,11 @@ h3 {
 }
 
 h1 {
-font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     font-weight: 700;
     color: #fff;
-    margin: 1em;
+    margin: 1em 0;
     background-color: #352D28;
     display: inline-block;
     padding: .5em 1em;
@@ -136,7 +136,12 @@ font-size: 2.5em;
     span {
         color: $yellow;
     }
+    @include MQ(M) {
+        font-size: 2.5em;
+    }
 }
+
+
 
 header.section-title{
     width:100%;

@@ -68,14 +68,25 @@ ABOUT ME
     .about-me {
         @extend .flex-stuff;
         max-width:$M +200px;
+        align-items:center;
         flex-direction: row-reverse;
         img {
             border-radius: 50%;
-            max-height: 15em;
+            max-height: 13em;
+            margin:0 0 3em;
         }
         .description {
-            width: 60%;
-            padding-right: 3em;
+            text-align:center;
+            h2,h3,p{
+                text-align: center;
+            }
+            @include MQ(M) {
+                width: 65%;
+                padding-right: 3em;
+                h2,h3,p{
+                    text-align: left;
+                }
+            }
             h2 {
                 line-height: 34px;
             }
@@ -89,6 +100,11 @@ ABOUT ME
 }
 
 .download {
+    text-align:center;
+    @include MQ(M) {
+        text-align:left;
+    }
+
     padding: 3em 0 0;
     a {
         padding: 1em;

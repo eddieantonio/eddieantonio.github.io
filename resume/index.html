@@ -109,7 +109,7 @@ $(window).load(function() {
                 <h3> Programming languages</h3> {% for tier in site.data.resume.skills.languages %} {% assign tier_no = forloop.index %} {% for lang in tier %}
                 <li class="lang-tier-{{ tier_no }}lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
                 {% endfor %}
-                <progress value="80" max="100"></progress>
+               <!--add something-->
                 {% endfor %}
             </ul>
             <h3> Miscellaneous technologies </h3>
