@@ -90,16 +90,6 @@ ABOUT ME
             p {
                 text-align: center;
             }
-            @include MQ(M) {
-                width: 65%;
-                padding-right: 3em;
-                h2,
-                h3,
-                p {
-                    text-align: left;
-                    padding-bottom: 0;
-                }
-            }
             h2 {
                 line-height: 34px;
                 padding-bottom: 0.3em;
@@ -114,6 +104,16 @@ ABOUT ME
                 text-transform: none;
                 @media print {
                     font-size: 15px;
+                }
+            }
+            @include MQ(M) {
+                width: 65%;
+                padding-right: 3em;
+                h2,
+                h3,
+                p {
+                    text-align: left;
+                    padding-bottom: 0;
                 }
             }
         }
