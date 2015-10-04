@@ -104,37 +104,37 @@ progress {
 
   #content {
     width: 100%;
-    margin: 0;
-    float: none; }
+    margin: 0; }
 
   .heading,
   img,
-  nav {
+  nav,
+  footer {
     display: none; }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  p {
-    padding: 0 !important;
-    margin: 0 !important; }
-
-  h1 {
-    font-size: 15px !important; }
-
-  h2,
-  h3,
-  h4 {
-    font-size: 12px !important; }
-
-  p,
-  a {
-    font-size: 9px !important; }
 
   a[href^="http:"]::after {
     content: " [" attr(href) "]";
-    color: blue; } }
+    color: blue;
+    text-transform: lowercase; }
+
+  .intro, .work, .skills, .skills-box, .hobbies, .hobby-box, .education, .time-content, .block, p {
+    padding: 0 !important;
+    margin: 0 !important; }
+
+  h1, h2, h3, h4 {
+    padding: 10px, 0 !important; }
+
+  h1 {
+    font-size: 20px !important; }
+
+  h2, h3 {
+    font-size: 15px !important; }
+
+  dt {
+    font-size: 14px !important; }
+
+  p, .time, dl, li {
+    font-size: 12px !important; } }
 /*---------------
 HEADER
 ----------------*/
@@ -218,6 +218,10 @@ ABOUT ME
     .intro .about-me .description h2 {
       line-height: 34px;
       padding-bottom: 0.3em; }
+      @media print {
+        .intro .about-me .description h2 {
+          font-size: 20px;
+          font-weight: bold; } }
     .intro .about-me .description h3 {
       padding-bottom: 1em;
       padding-top: 4px;
@@ -349,6 +353,9 @@ SKILLS
     .skills .skills-box h3 {
       color: #F9C935;
       font-size: 1.7em; }
+      @media print {
+        .skills .skills-box h3 {
+          font-size: 16px; } }
     .skills .skills-box p {
       margin: 0;
       font-family: "Lato", Arial, serif; }
@@ -368,14 +375,24 @@ SKILLS
 
 .lang-tier-1 {
   font-size: 1.5em; }
+  @media print {
+    .lang-tier-1 {
+      font-size: 16px;
+      font-weight: bold; } }
 
 .lang-tier-2 {
   font-size: 1em; }
+  @media print {
+    .lang-tier-2 {
+      font-size: 14px; } }
 
 .lang-tier-3 {
   font-size: 1em;
   font-weight: 300;
   font-family: "Lato", Arial, serif; }
+  @media print {
+    .lang-tier-3 {
+      font-size: 12px; } }
 
 /*---------------/*---------------/*---------------
 HOBBIES
@@ -389,6 +406,9 @@ HOBBIES
   .hobbies .hobby-box h2 a {
     font-size: 1.5em;
     font-weight: 200; }
+    @media print {
+      .hobbies .hobby-box h2 a {
+        font-size: 15px; } }
 
 /*---------------/*---------------/*---------------
 Footer

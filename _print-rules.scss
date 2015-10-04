@@ -1,0 +1,45 @@
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        font-family: "Times New Roman", Times, serif !important;
+    }
+    #content {
+        width: 100%;
+        margin: 0;
+    }
+    .heading,
+    img,
+    nav,
+    footer {
+        display: none;
+    }
+
+    a[href^="http:"]::after {
+        content: " ["attr(href)"]";
+        color: blue;
+        text-transform: lowercase;
+    }
+
+//REMOVING ALL THE PADS AND MARGINS
+.intro, .work, .skills,.skills-box, .hobbies, .hobby-box,.education, .time-content, .block, p{
+    padding:0 !important;
+    margin:0 !important;
+    }
+ h1, h2, h3, h4{
+    padding:10px, 0 !important;
+ }
+ h1{
+    font-size: 20px !important;
+}
+h2,h3{
+    font-size: 15px !important;
+ }
+ dt{
+    font-size: 14px !important;
+ }
+ p, .time, dl,li{
+    font-size: 12px !important;
+ }
+}

@@ -1,46 +1,5 @@
 @import 'main-rules';
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        font-family: "Times New Roman", Times, serif !important;
-    }
-    #content {
-        width: 100%;
-        margin: 0;
-        float: none;
-    }
-    .heading,
-    img,
-    nav {
-        display: none;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    p {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    h1 {
-        font-size: 15px !important;
-    }
-    h2,
-    h3,
-    h4 {
-        font-size: 12px !important;
-    }
-    p,
-    a {
-        font-size: 9px !important;
-    }
-    a[href^="http:"]::after {
-        content: " ["attr(href)"]";
-        color: blue;
-    }
-}
+@import 'print-rules';
 
 
 /*---------------
@@ -145,6 +104,10 @@ ABOUT ME
             h2 {
                 line-height: 34px;
                 padding-bottom: 0.3em;
+                        @media print {
+        font-size: 20px;
+        font-weight: bold;
+    }
             }
             h3 {
                 padding-bottom: 1em;
@@ -302,6 +265,9 @@ SKILLS
         h3 {
             color: $yellow;
             font-size: 1.7em;
+            @media print {
+        font-size: 16px;
+    }
         }
         p {
             margin: 0;
@@ -329,16 +295,26 @@ SKILLS
 
 .lang-tier-1 {
     font-size: 1.5em;
+    @media print {
+        font-size: 16px;
+        font-weight: bold;
+}
 }
 
 .lang-tier-2 {
     font-size: 1em;
+        @media print {
+        font-size: 14px;
+    }
 }
 
 .lang-tier-3 {
     font-size: 1em;
     font-weight: 300;
     font-family: $Lato;
+        @media print {
+        font-size: 12px;
+    }
 }
 
 
@@ -358,6 +334,10 @@ HOBBIES
             a {
                 font-size: 1.5em;
                 font-weight: 200;
+                @media print{
+                    font-size:15px; 
+                }
+
             }
         }
     }
