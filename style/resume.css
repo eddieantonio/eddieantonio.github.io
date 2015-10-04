@@ -339,10 +339,10 @@ Footer
 ------------------------------------------------*/
 footer {
   background-color: #352D28;
-  padding: 3em 9em; }
+  color: #827A76; }
   footer .fa {
-    font-size: 3vw;
-    margin-left: .5em; }
+    font-size: 2em;
+    margin-left: 1em; }
   footer .quote {
     width: 100%;
     text-align: center;

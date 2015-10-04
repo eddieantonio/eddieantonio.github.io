@@ -311,10 +311,10 @@ Footer
 footer {
     @extend .flex-stuff;
     background-color: $time-content-Color;
-    padding: 3em 9em;
+    color:#827A76;
     .fa{
-        font-size: 3vw;
-        margin-left:.5em;
+        font-size: 2em;
+        margin-left:1em;
     }
     .quote{
         width:100%;
