@@ -127,9 +127,6 @@ progress {
   h1 {
     font-size: 20px !important; }
 
-  h2, h3 {
-    font-size: 15px !important; }
-
   dt {
     font-size: 14px !important; }
 
@@ -226,6 +223,9 @@ ABOUT ME
       padding-bottom: 1em;
       padding-top: 4px;
       text-transform: none; }
+      @media print {
+        .intro .about-me .description h3 {
+          font-size: 15px; } }
 
 .download {
   text-align: center;
@@ -326,6 +326,9 @@ TIMELINE
   @media only screen and (min-width: 950px) {
     .time-content {
       margin: 0; } }
+  @media print {
+    .time-content h3 {
+      font-size: 15px; } }
 
 /*---------------/*---------------/*---------------
 EDUCATION

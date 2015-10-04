@@ -1,7 +1,6 @@
 @import 'main-rules';
 @import 'print-rules';
 
-
 /*---------------
 HEADER
 ----------------*/
@@ -104,15 +103,18 @@ ABOUT ME
             h2 {
                 line-height: 34px;
                 padding-bottom: 0.3em;
-                        @media print {
-        font-size: 20px;
-        font-weight: bold;
-    }
+                @media print {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
             }
             h3 {
                 padding-bottom: 1em;
                 padding-top: 4px;
                 text-transform: none;
+                @media print {
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -229,6 +231,11 @@ TIMELINE
     @include MQ(M) {
         margin: 0;
     }
+    h3 {
+        @media print {
+            font-size: 15px;
+        }
+    }
 }
 
 
@@ -266,8 +273,8 @@ SKILLS
             color: $yellow;
             font-size: 1.7em;
             @media print {
-        font-size: 16px;
-    }
+                font-size: 16px;
+            }
         }
         p {
             margin: 0;
@@ -298,12 +305,12 @@ SKILLS
     @media print {
         font-size: 16px;
         font-weight: bold;
-}
+    }
 }
 
 .lang-tier-2 {
     font-size: 1em;
-        @media print {
+    @media print {
         font-size: 14px;
     }
 }
@@ -312,7 +319,7 @@ SKILLS
     font-size: 1em;
     font-weight: 300;
     font-family: $Lato;
-        @media print {
+    @media print {
         font-size: 12px;
     }
 }
@@ -334,10 +341,9 @@ HOBBIES
             a {
                 font-size: 1.5em;
                 font-weight: 200;
-                @media print{
-                    font-size:15px; 
+                @media print {
+                    font-size: 15px;
                 }
-
             }
         }
     }
