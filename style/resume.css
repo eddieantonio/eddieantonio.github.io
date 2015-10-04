@@ -327,13 +327,15 @@ SKILLS
   content: ", "; }
 
 .lang-tier-1 {
-  font-size: 2em; }
-
-.lang-tier-2 {
   font-size: 1.5em; }
 
-.lang-tier-3 {
+.lang-tier-2 {
   font-size: 1em; }
+
+.lang-tier-3 {
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Lato", Arial, serif; }
 
 /*---------------/*---------------/*---------------
 HOBBIES
