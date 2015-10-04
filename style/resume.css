@@ -115,7 +115,7 @@ progress {
   a[href^="http:"]::after {
     content: " [" attr(href) "]";
     color: blue;
-    text-transform: lowercase; }
+    text-transform: lowercase !important; }
 
   .intro, .work, .skills, .skills-box, .hobbies, .hobby-box, .education, .time-content, .block, p {
     padding: 0 !important;
