@@ -309,7 +309,16 @@ Footer
 ------------------------------------------------*/
 
 footer {
-    disply: flex;
-    background-color: #03B0E4;
+    @extend .flex-stuff;
+    background-color: $time-content-Color;
     padding: 3em 9em;
+    .fa{
+        font-size: 3vw;
+        margin-left:.5em;
+    }
+    .quote{
+        width:100%;
+        text-align: center;
+        padding-top:1em;
+    }
 }

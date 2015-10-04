@@ -10,7 +10,7 @@ Mixins
 /*********************
 EXTENDS
 *********************/
-.flex-stuff, .intro, .intro .about-me, .work, .education, .skills, .hobbies {
+.flex-stuff, .intro, .intro .about-me, .work, .education, .skills, .hobbies, footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -338,8 +338,14 @@ HOBBIES
 Footer
 ------------------------------------------------*/
 footer {
-  disply: flex;
-  background-color: #03B0E4;
+  background-color: #352D28;
   padding: 3em 9em; }
+  footer .fa {
+    font-size: 3vw;
+    margin-left: .5em; }
+  footer .quote {
+    width: 100%;
+    text-align: center;
+    padding-top: 1em; }
 
 /*# sourceMappingURL=resume.css.map */
