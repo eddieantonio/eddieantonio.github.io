@@ -103,8 +103,8 @@ HEADER
   background: url(img/header.jpg) center center fixed;
   background-image: linear-gradient(to bottom, rgba(37, 34, 34, 0) 0%, rgba(53, 31, 17, 0.66) 100%), url(img/header.jpg);
   background-size: cover;
-  height: 19em;
-  padding-top: 4em; }
+  height: auto;
+  padding: 3em; }
   .heading .title {
     width: 50%;
     margin: 0 auto;
@@ -114,11 +114,14 @@ HEADER
     border-color: #F9C935;
     border-width: 14px;
     border-style: dotted double; }
+    @media only screen and (max-width: 630px) {
+      .heading .title {
+        width: 100%; } }
     .heading .title h1 {
       margin: 0;
       padding: 0;
       background-color: transparent;
-      font-size: 6em; }
+      font-size: 9vw; }
     .heading .title h4 {
       font-size: 3em;
       text-transform: uppercase; }
@@ -150,31 +153,31 @@ ABOUT ME
 ----------------*/
 .intro {
   background-color: #03B0E4;
-  margin-left: -3em; }
+  justify-content: center; }
   .intro .about-me {
-    max-width: 1150px;
     align-items: center;
+    padding: 0;
     flex-direction: row-reverse; }
     .intro .about-me img {
       border-radius: 50%;
       max-height: 13em;
       margin: 0 0 3em; }
-    .intro .about-me .description {
+    .intro .about-me .description h2, .intro .about-me .description h3, .intro .about-me .description p {
       text-align: center; }
-      .intro .about-me .description h2, .intro .about-me .description h3, .intro .about-me .description p {
-        text-align: center; }
-      @media only screen and (min-width: 950px) {
-        .intro .about-me .description {
-          width: 65%;
-          padding-right: 3em; }
-          .intro .about-me .description h2, .intro .about-me .description h3, .intro .about-me .description p {
-            text-align: left; } }
-      .intro .about-me .description h2 {
-        line-height: 34px; }
-      .intro .about-me .description h3 {
-        padding-bottom: 1em;
-        padding-top: 4px;
-        text-transform: none; }
+    @media only screen and (min-width: 950px) {
+      .intro .about-me .description {
+        width: 65%;
+        padding-right: 3em; }
+        .intro .about-me .description h2, .intro .about-me .description h3, .intro .about-me .description p {
+          text-align: left;
+          padding-bottom: 0; } }
+    .intro .about-me .description h2 {
+      line-height: 34px;
+      padding-bottom: 0.3em; }
+    .intro .about-me .description h3 {
+      padding-bottom: 1em;
+      padding-top: 4px;
+      text-transform: none; }
 
 .download {
   text-align: center;
@@ -336,7 +339,7 @@ Footer
 ------------------------------------------------*/
 footer {
   disply: flex;
-  background-color: #352D28;
-  padding: 5em 9em; }
+  background-color: #03B0E4;
+  padding: 3em 9em; }
 
 /*# sourceMappingURL=resume.css.map */

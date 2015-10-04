@@ -14,7 +14,7 @@ Arial,
 serif;
 $Sans:'Open Sans',
 sans-serif;
-$S: 320px;
+$S: 630px;
 $M: 950px;
 $L: 1170px;
 
@@ -24,7 +24,7 @@ BREAKPOINTS
 
 @mixin MQ($canvas) {
     @if $canvas==S {
-        @media only screen and (min-width: $S) {
+        @media only screen and (max-width: $S) {
             @content;
         }
     }
