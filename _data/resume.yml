@@ -148,6 +148,12 @@ skills:
 
 hobbies:
   - title: >
+      "Undergraduate Research Opportunities Conference":https://cs.uwaterloo.ca/conferences/uroc2015/
+    description:
+      Was invited to attend conference intended to incite interest in computer
+      science research.
+
+  - title: >
       "Waterbear—Visual Programming Language":https://github.com/waterbearlang/waterbear
     description:
       Rewrote the execution model of this imperative visual "block"
