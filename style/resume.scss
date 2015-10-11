@@ -60,9 +60,18 @@ nav {
                 font-weight: 400;
                 font-family: $Lato;
                 text-transform: uppercase;
+                transition: color 0.2s ease;
+
+                 &:hover {
+                    color: $yellow;
             }
         }
     }
+}
+}
+
+.active{
+    color:$yellow;
 }
 
 
@@ -367,4 +376,5 @@ footer {
         text-align: center;
         padding-top: 1em;
     }
+    
 }

@@ -183,7 +183,13 @@ nav {
         font-size: 1em;
         font-weight: 400;
         font-family: "Lato", Arial, serif;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: color 0.2s ease; }
+        nav ul li a:hover {
+          color: #F9C935; }
+
+.active {
+  color: #F9C935; }
 
 /*---------------
 ABOUT ME
