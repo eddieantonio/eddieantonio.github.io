@@ -2,8 +2,7 @@ education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: BSc. Specialization in Computing Science
-    in_progress: yes
-    time: { start: 2010, end: Fall 2015}
+    time: { start: September 2010, end: Decemeber 2015}
 
 experience:
   - title: Lead Developer, Research Assistant
