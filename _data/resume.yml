@@ -145,6 +145,13 @@ skills:
      - '"Puppet Configuration Management":http://puppetlabs.com/'
      - '"Vagrant":http://www.vagrantup.com/'
 
+publications:
+  - title: Multi-token code suggestions using statistical language models
+    year: 2014
+    authors: E. A. Santos and A. Hindle
+    doi: 10.7287/peerj.preprints.1597v1
+    url: https://peerj.com/preprints/1597/
+
 hobbies:
   - title: >
       "Undergraduate Research Opportunities Conference":https://cs.uwaterloo.ca/conferences/uroc2015/

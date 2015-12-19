@@ -106,13 +106,32 @@ title: Résumé—Eddie Antonio Santos
         </section>
       </section>
 
+      <section class='publications'>
+        <h2> Publications </h2>
+
+        <ul>
+          {% for paper in site.data.resume.publications %}
+            <li>
+              <span class="publication-authors">{{ paper.authors }}</span>,
+              <span class="publication-title">
+                {% if paper.url %}
+                  “<a href="{{ paper.url }}">{{ paper.title }}</a>,”
+                {% else %}
+                  “{{ paper.title }},”
+                {% endif %}
+              </span>
+              <span class="publication-year">{{ paper.year }}</span>.
+          {% endfor %}
+        </ul>
+      </section>
+
       <section class='hobbies'>
         <h2> Hobbies </h2>
 
         <dl>
           {% for hobby in site.data.resume.hobbies %}
-            <h3> {{ hobby.title | textilize }} </h3>
-            {{ hobby.description | markdownify }}
+            <dt> {{ hobby.title | textilize }} </dt>
+            <dd> {{ hobby.description | markdownify }} </dd>
           {% endfor %}
         </dl>
       </section>
