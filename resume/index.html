@@ -41,7 +41,7 @@ title: Résumé—Eddie Antonio Santos
         <dl>
         {% for job in site.data.resume.experience %}
           {% capture job_header %} {{ job.title }} {% if job.employer %} for {{ job.employer }} {% endif %}{% endcapture %}
-          <dt> <h3>{{ job_header | textilize }}
+          <dt> <h3>{{ job_header | markdownify }}
             <small class="time">{{ job.time }}</small> </h3> </dt>
           <dd>
             <h4> Responsibilities </h4>
@@ -100,7 +100,7 @@ title: Résumé—Eddie Antonio Santos
           <dl>
             {% for category in site.data.resume.skills.small_categories %}
               <dt> {{ category[0] }} </dt>
-              <dd> {{ category[1] | join: ', ' | textilize }} </dd>
+              <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
             {% endfor %}
           </dl>
         </section>
@@ -112,7 +112,7 @@ title: Résumé—Eddie Antonio Santos
         <ul>
           {% for paper in site.data.resume.publications %}
             <li>
-              <span class="publication-authors">{{ paper.authors }}</span>,
+              <span class="publication-authors">{{ paper.authors | join: ', ' }}</span>,
               <span class="publication-title">
                 {% if paper.url %}
                   “<a href="{{ paper.url }}">{{ paper.title }}</a>,”
@@ -130,7 +130,7 @@ title: Résumé—Eddie Antonio Santos
 
         <dl>
           {% for hobby in site.data.resume.hobbies %}
-            <dt> {{ hobby.title | textilize }} </dt>
+            <dt> {{ hobby.title | markdownify }} </dt>
             <dd> {{ hobby.description | markdownify }} </dd>
           {% endfor %}
         </dl>
