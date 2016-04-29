@@ -2,7 +2,7 @@ education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: BSc. Specialization in Computing Science
-    time: { start: September 2010, end: Decemeber 2015}
+    time: { start: September 2010, end: December 2015}
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
@@ -10,8 +10,8 @@ education:
     in_progress: true
 
 experience:
-  - title: Adjunt Researcher
-    employer: BioWare ULC, University of Alberta
+  - title: Adjunct Researcher
+    employer: BioWare ULC/University of Alberta
     time: January 2016—Present
     responsibilities:
       - Research and develop state-of-the-art in crash report deduplication
@@ -19,14 +19,14 @@ experience:
       - Implement production-quality implementations of state-of-the-art algorithms
 
   - title: Lead Developer, Research Assistant
-    employer: Dr. Eleni Stroulia, Patrick von Hauff
-    time: May 2015–August 2015
+    employer: Dr. Eleni Stroulia/Patrick von Hauff
+    time: May 2015–May 2016
     responsibilities:
       - Collaborate intensively with colleagues in medicine on a virtual
         patient simulation platform.
       - Research, evaluate, and integrate medical ontologies.
-      - Write a web application using PHP, JavaScript (with React.JS), Neo4j
-        and MongoDB.
+      - Write a web application using PHP, JavaScript (with React)
+      - Experiment with databases such as Virtuoso, Neo4j and MongoDB.
       - Support and maintain a legacy PHP web application.
 
   - title: Computing Science Tutor
@@ -126,7 +126,7 @@ skills:
     - [Haskell, R, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
 
   small_categories:
-    Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis, Neo4j]
+    Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis, Neo4j, 4store, Virtuoso]
 
     Editors: [Vim, Eclipse, Atom, PHPStorm]
 
