@@ -157,37 +157,8 @@ skills:
      - '[Puppet Configuration Management](http://puppetlabs.com/)'
      - '[Vagrant](http://www.vagrantup.com/)'
 
+# TODO: Replace with BibTex?
 publications:
-  - title: Multi-token code suggestions using statistical language models
-    year: 2014
-    authors:
-      - Santos, Eddie Antonio
-      - Hindle, Abram
-    published: null
-    doi: 10.7287/peerj.preprints.1597v1
-    url: https://peerj.com/preprints/1597/
-
-  - title: The unreasonable effectiveness of traditional information retrieval in crash report deduplication
-    year: 2016
-    authors:
-      - Campbell, J. C.
-      - Santos, E. A.
-      - Hindle, A.
-    journal: The International Conference on Mining Software Repositories
-    doi: https://doi.org/10.7287/peerj.preprints.1705v1
-    url: https://peerj.com/preprints/1705/
-    pages: 10
-
-  - title: Judging a commit by its cover; or can a commit message predict build failure?
-    year: 2016
-    authors:
-      - Santos, E. A.
-      - Hindle, A.
-    journal: The International Conference on Mining Software Repositories
-    pages: 4
-    url: https://peerj.com/preprints/1771/
-    doi: https://doi.org/10.7287/peerj.preprints.1771v1
-
   - title: Training & Quality Assessment of an OCR Model for Northern Haida
     year: 2016
     authors:
@@ -197,6 +168,38 @@ publications:
       - Santos, E. A.
     journal: Language Resources and Evaluation Conference 2016, Portoroz, Slovenia
     pages: 10
+
+  - title: The unreasonable effectiveness of traditional information retrieval in crash report deduplication
+    year: 2016
+    authors:
+      - Campbell, J. C.
+      - Santos, E. A.
+      - Hindle, A.
+    journal: Proceedings of the 13th International Workshop on Mining Software Repositories
+    doi: https://doi.org/10.7287/peerj.preprints.1705v1
+    url: https://peerj.com/preprints/1705/
+    pages: 10
+
+  - title: Judging a commit by its cover; or can a commit message predict build failure?
+    year: 2016
+    authors:
+      - Santos, E. A.
+      - Hindle, A.
+    accolades:
+      - MSR 2016 Mining Challenge Winner
+    journal: Proceedings of the 13th International Workshop on Mining Software Repositories
+    pages: 4
+    url: https://peerj.com/preprints/1771/
+    doi: https://doi.org/10.7287/peerj.preprints.1771v1
+
+  - title: Multi-token code suggestions using statistical language models
+    year: 2014
+    authors:
+      - Santos, Eddie Antonio
+      - Hindle, Abram
+    published: null
+    doi: 10.7287/peerj.preprints.1597v1
+    url: https://peerj.com/preprints/1597/
 
 hobbies:
   - title: >
