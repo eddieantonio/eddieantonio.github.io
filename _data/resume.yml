@@ -167,18 +167,8 @@ publications:
       - Lachler, J.
       - Santos, E. A.
     journal: Language Resources and Evaluation Conference 2016, Portoroz, Slovenia
-    pages: 10
-
-  - title: The unreasonable effectiveness of traditional information retrieval in crash report deduplication
-    year: 2016
-    authors:
-      - Campbell, J. C.
-      - Santos, E. A.
-      - Hindle, A.
-    journal: Proceedings of the 13th International Workshop on Mining Software Repositories
-    doi: https://doi.org/10.7287/peerj.preprints.1705v1
-    url: https://peerj.com/preprints/1705/
-    pages: 10
+    url: https://www.ualberta.ca/~isabell/files/publications/HubertArppeLachlerSantos_2016_LREC.pdf
+    pages: 8
 
   - title: Judging a commit by its cover; or can a commit message predict build failure?
     year: 2016
@@ -189,8 +179,19 @@ publications:
       - MSR 2016 Mining Challenge Winner
     journal: Proceedings of the 13th International Workshop on Mining Software Repositories
     pages: 4
-    url: https://peerj.com/preprints/1771/
-    doi: https://doi.org/10.7287/peerj.preprints.1771v1
+    doi: https://doi.org/10.1145/2901739.2903493
+    url: http://dl.acm.org/citation.cfm?id=2903493
+
+  - title: The unreasonable effectiveness of traditional information retrieval in crash report deduplication
+    year: 2016
+    authors:
+      - Campbell, J. C.
+      - Santos, E. A.
+      - Hindle, A.
+    journal: Proceedings of the 13th International Workshop on Mining Software Repositories
+    doi: https://doi.org/10.1145/2901739.2901766
+    url: http://dl.acm.org/citation.cfm?id=2901766
+    pages: 10
 
   - title: Multi-token code suggestions using statistical language models
     year: 2014
