@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/eddieantonio
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://eddieantonio.ca
+  * I am eddieantonio (https://keybase.io/eddieantonio) on keybase.
+  * I have a public key with fingerprint FD44 261B 487F 3725 29C9  9420 DD41 1EA4 D950 9D87
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01206d53542a4b349326f34f60104b7d53fff85a34628548701dae5477caaab9cf820a",
+            "fingerprint": "fd44261b487f372529c99420dd411ea4d9509d87",
+            "host": "keybase.io",
+            "key_id": "dd411ea4d9509d87",
+            "kid": "0101d368e2bdb20c2c0fa733bc7443dda79dd2f24017257fb0742f93386898984adf0a",
+            "uid": "da74e1d8d7dce545ccb4e6d052932419",
+            "username": "eddieantonio"
+        },
+        "service": {
+            "hostname": "eddieantonio.ca",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1469042164,
+    "expire_in": 157680000,
+    "prev": "81ad0d1d4b6048a03cdfb22fda79529fe39d979b55226bb50b8593d21b2ee5bb",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMNoAnicbVJ7UBVVGOelCNR0FcECoWmBNIZs9+zZ10VG1EShMiwGm6ty3d1zFhe8
+e+GyoLzGKBmmibghTVikFI8mixwTnWDCEqauIiDEo4CxmgpCpodNqGHeol3K/zzn
+jzPnfL/X9835/F5/n2DfbzZGt0ykH6vy7es+Vuiz0z1wvZSQnKiYsJYSuXjxwPsR
+LtDtuSoirARJAZJFDM1AIEKJhgINWIWGCktSJJQ4o6IoCs+INGQBz0CeIykkYgZy
+nCyKoiTICg9IkUggFFXLxq48l6rphqyCIAQsJRkEheYAAwRZECAgEYIUhUWIBIYU
+EM8ZxH3OApNhhJPEArxOdRpvxsW+GO8u+Du5jSA0y2MgIQmQMpBJReRoWpI5CGmE
+RE5ACCgAkpRhzykSyUGgCDTNs7xgbCgiZTF34X8+IgcxhXjEIdnojpFlCWIWkUZw
+GkBKMIEF2KWJDmygMUIqFjXdqRlpyxMIo1KkytgcrtnNXVDrZNMrz+XUnbJzv1Hc
+p+t5VpOrF+eZ4ANYsv8vY5dUDRnTNAhF2FWgOjXCShlIWVdNXQqyAgkBxcIEAh/M
+U13YrpoIhmN50limDS4yJHlKRCSiEJRYEvIiSctIkQBQzNkYfSmYFpDACRLDAMBK
+EkNKPCPQCFASwJiRJMJsLF9zElbBiClmG5IFarYm6oUuTJT3dO8O8PEN9lm6xM/8
+ZT7BQZY7f+/RkfsWFKbK0nky7J7k6B3VB9C5zQnrDx/eND+9y5t7qLLLVtKzd/Cz
+fsIT9NzF5si/E5NyPC1TFXVjk/3W2lXn/VdsGsv3rnZ45oYGf7pRPVFrm0qcuZXx
+hHNY3YncgUHz3pvZRytjNtzYkdUX+laLQ3V02+K6aioOXjoeWX6Z7fnw1NkF/+Y4
+d+r3tZ3lTFN1Tptn5VXPA1ZbVrbX1vp6e3rohnSG2Tx7bZte+kgRDZrTI6KZjP5X
+TqfH3b9leNXjf3meb+2NaHzstyeXlont19+eCMwaiZ28sB2f+mWmLTK1usL76pdH
+SwfO/NMYVrd2+ex0Rqi7qeGQXrXFEf7OV1EvD32gdrSM+51oUL9taqsTnuosSXxh
+TlO3WjvqO/YknX+3u7cvJCJidP7P2ZJPpGv0RFdxgDyMfpiMTUoDlgDXfI02jbbv
+XcjOv5DWGtpvsWcupI1Erfa7uQzQQr2mlVt+TrbZViZ/N7TsyNkGurFnz5rOWOZM
++ccDy60xsy+ld9Wlrh9pPLc2PPD2p1PNl+BkiE/sF0lhmUeeaR89mbqt7w3HdFTO
+UK/bd8lYeGRIza+VNWv0gJRxPT6MuPJHzPtvDp3eHV837EnJm/taibmyYjStwffy
++Efu42UBD5ZZO0NvX3QTD794tbZs14+/189sTRnkvfMRr8Xe2shnnojPf++hYt/2
+p8sszxb/Cw3Rw6A=
+=8nkq
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/eddieantonio
+
+==================================================================
