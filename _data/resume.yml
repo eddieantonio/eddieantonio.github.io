@@ -159,6 +159,18 @@ skills:
 
 # TODO: Replace with BibTex?
 publications:
+  - title: Visualizing Project Evolution through Abstract Syntax Tree Analysis
+    year: 2016
+    authors:
+      - Feist, M. D.
+      - Santos, E. A.
+      - Watts, I.
+      - Hindle, A.
+    journal: Proceedings of the 2016 IEEE Working Conference on Software Visualization
+    pages: 10
+    doi: 10.1109/VISSOFT.2016.6
+    #url: http://dl.acm.org/citation.cfm?id=2903493
+
   - title: Training & Quality Assessment of an OCR Model for Northern Haida
     year: 2016
     authors:
