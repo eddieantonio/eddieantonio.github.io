@@ -1,22 +1,31 @@
 education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
-    program: BSc. with specialization in Computing Science with distinction
-    time: { start: September 2010, end: December 2015}
-  - institution: University of Alberta
-    location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
     time: { start: January 2010, end: null}
     in_progress: true
+  - institution: University of Alberta
+    location: Edmonton, Alberta, Canada
+    program: BSc. with specialization in Computing Science with distinction
+    time: { start: September 2010, end: December 2015}
 
 experience:
+  - title: Teaching Assistant, CMPUT 301 and CMPUT 404
+    employer: Dr. Abram Hindle, University of Alberta
+    time: September 2016—December 2016
+    responsibilities:
+      - Lead demonstrations in software engineering and web development contexts
+      - Improve pedalogical efficacy of lab assignments
+      - Mark lab assigments
+      - Support and mentor students learning the material
+
   - title: Adjunct Researcher
     employer: BioWare ULC/University of Alberta
-    time: January 2016—Present
+    time: January 2016—August 2016
     responsibilities:
-      - Research and develop state-of-the-art in crash report deduplication
+      - Research and develop state-of-the-art methods in crash report deduplication
       - Perform experiments and empirical evaluations of technologies
-      - Implement production-quality implementations of state-of-the-art algorithms
+      - Implement production-quality implementations of novel algorithms
 
   - title: Lead Developer, Research Assistant
     employer: Dr. Eleni Stroulia/Patrick von Hauff
@@ -30,7 +39,7 @@ experience:
       - Support and maintain a legacy PHP web application.
 
   - title: Computing Science Tutor
-    employer: null
+    employer: Self-employed
     time: 2014–
     responsibilities:
       - Tutor students in introductory computing science, primarily using
@@ -119,16 +128,26 @@ skills:
     - [Python, JavaScript, C, Java, Erlang]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [PHP, Ruby, Scala, Perl, C#, Scheme, C++, Common Lisp, Go, 6502 Assembly]
+    - [Ruby, Scala, PHP, Perl, C#, Scheme, C++, Common Lisp, Go, 6502 Assembly]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
     - [Haskell, R, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
 
   small_categories:
-    Databases: [MySQL, SQLite3, Oracle SQL, MongoDB, Redis, Neo4j, 4store, Virtuoso]
+    Databases:
+      - SQLite3
+      - Redis
+      - MongoDB
+      - ElasticSearch
+      - MySQL
+      - Microsoft SQL Server
+      - Neo4j
+      - Oracle SQL
+      - 4store
+      - Virtuoso
 
-    Editors: [Vim, Eclipse, Atom, PHPStorm]
+    Editors: [Vim, IntelliJ Platform, Atom, Eclipse]
 
     OSs:
       - Mac OS X
@@ -154,8 +173,9 @@ skills:
       - '[Stylus](http://learnboost.github.io/stylus/)'
 
     Miscellaneous:
-     - '[Puppet Configuration Management](http://puppetlabs.com/)'
+     - '[Docker](https://www.docker.com/)'
      - '[Vagrant](http://www.vagrantup.com/)'
+     - '[Puppet Configuration Management](http://puppetlabs.com/)'
 
 # TODO: Replace with BibTex?
 publications:
@@ -166,10 +186,10 @@ publications:
       - Santos, E. A.
       - Watts, I.
       - Hindle, A.
-    journal: Proceedings of the 2016 IEEE Working Conference on Software Visualization
+    venue: Proceedings of the 2016 IEEE Working Conference on Software Visualization
     pages: 10
     doi: 10.1109/VISSOFT.2016.6
-    #url: http://dl.acm.org/citation.cfm?id=2903493
+    url: http://ieeexplore.ieee.org/abstract/document/7780152/
 
   - title: Training & Quality Assessment of an OCR Model for Northern Haida
     year: 2016
@@ -178,18 +198,18 @@ publications:
       - Arppe, A.
       - Lachler, J.
       - Santos, E. A.
-    journal: Language Resources and Evaluation Conference 2016, Portoroz, Slovenia
+    venue: Language Resources and Evaluation Conference 2016, Portoroz, Slovenia
     url: https://www.ualberta.ca/~isabell/files/publications/HubertArppeLachlerSantos_2016_LREC.pdf
     pages: 8
 
-  - title: Judging a commit by its cover; or can a commit message predict build failure?
+  - title: Judging a commit by its cover; correlating commit message entropy with build status on Travis-CI
     year: 2016
     authors:
       - Santos, E. A.
       - Hindle, A.
     accolades:
       - MSR 2016 Mining Challenge Winner
-    journal: Proceedings of the 13th International Workshop on Mining Software Repositories
+    venue: Proceedings of the 13th International Workshop on Mining Software Repositories
     pages: 4
     doi: https://doi.org/10.1145/2901739.2903493
     url: http://dl.acm.org/citation.cfm?id=2903493
@@ -200,7 +220,7 @@ publications:
       - Campbell, J. C.
       - Santos, E. A.
       - Hindle, A.
-    journal: Proceedings of the 13th International Workshop on Mining Software Repositories
+    venue: Proceedings of the 13th International Workshop on Mining Software Repositories
     doi: https://doi.org/10.1145/2901739.2901766
     url: http://dl.acm.org/citation.cfm?id=2901766
     pages: 10
@@ -215,6 +235,21 @@ publications:
     url: https://peerj.com/preprints/1597/
 
 hobbies:
+  - title: >
+      [Ladies Learning Code Mentor](http://ladieslearningcode.com/)
+    description: >
+      Mentored students in [learning Python][1] as their introduction to the
+      world of programming.
+
+
+      Mentored students in learning HTML/CSS for [National Learn How to Code
+      Day][2].
+
+
+      [1]: http://learninglabs.org/meet-mentors-intro-python-edmonton/
+
+      [2]: http://ladieslearningcode.com/codeday/
+
   - title: >
       [Undergraduate Research Opportunities Conference](https://cs.uwaterloo.ca/conferences/uroc2015/)
     description:
@@ -238,21 +273,6 @@ hobbies:
 
       [Atom]: http://atom.io/
 
-
-  - title: >
-      [Ladies Learning Code Mentor](http://ladieslearningcode.com/)
-    description: >
-      Mentored students in [learning Python][1] as their introduction to the
-      world of programming.
-
-
-      Mentored students in learning HTML/CSS for [National Learn How to Code
-      Day][2].
-
-
-      [1]: http://learninglabs.org/meet-mentors-intro-python-edmonton/
-
-      [2]: http://ladieslearningcode.com/codeday/
 
   - title: >
       [Canadian Open Data Experience 2014 Hackathon](https://www.canadianopendataexperience.com/)
