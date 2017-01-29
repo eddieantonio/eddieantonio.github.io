@@ -11,6 +11,8 @@ $main-colour: #666;
 $background-color: #fafcff;
 $banner-color: fade-out(white, 0.15);
 
+$background-image: url(./bg/barco-atitlan.jpg);
+
 // Main font styles.
 
 $display-fonts: Raleway, Helvetica Neue, Helvetica, sans-serif;
@@ -33,16 +35,17 @@ a:hover { color: $highlight-colour; }
 
 // Home page styles
 
+html {
+  background: $background-image 50% / cover fixed no-repeat $background-color;
+}
+
 body {
-  background-color: $background-color;
   color: $main-colour;
 }
 
 body.home {
   display: flex;
   align-items: center;
-
-  background: url(./bg/barco-atitlan.jpg) no-repeat 50% / cover;
 }
 
 body.home > footer {
