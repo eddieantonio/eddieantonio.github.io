@@ -53,7 +53,7 @@ redirect_from: /cv/
             <div class="location">{{ ed.institution }}</div>
           </header>
 
-          <div class="date">
+          <div class="time">
             {{ ed.time.start }}–{% if ed.time.end %}{{ ed.time.end }}{% endif %}
             {% if ed.in_progress %}
             <span class="in-progress">In Progress</span>
@@ -69,21 +69,28 @@ redirect_from: /cv/
           <h2> Experience </h2>
         </header>
 
-        <dl>
         {% for job in site.data.resume.experience %}
-          {% capture job_header %} {{ job.title }} {% if job.employer %} for {{ job.employer }} {% endif %}{% endcapture %}
-          <dt> <h3>{{ job_header | markdownify }}
-            <small class="time">{{ job.time }}</small> </h3> </dt>
-          <dd>
-            <ul>
+        <section class="title-location-block">
+          {% capture job_employer %}{% if job.employer %}{{ job.employer }}{% else %}{{ job.location }}{% endif %}{% endcapture %}
+          <header>
+            <h3 class="title">{{ job.title }}</h3>
+            <div class="location">{{ job_employer }}</div>
+          </header>
+          <div class="time">
+            {% if job.time.start == job.time.end
+              %}{{ job.time.start }}{%
+              else
+              %}{{ job.time.start }}–{% if job.time.end %}{{ job.time.end }}{% endif %}
+            {% endif %}
+          </div>
+
+          <ul class="responsibilities">
             {% for item in job.responsibilities %}
               <li> {{ item | markdownify }} </li>
             {% endfor %}
           </ul>
-          </dd>
+        </section>
         {% endfor %}
-      </dl>
-
       </section>
 
       <section class="skills">

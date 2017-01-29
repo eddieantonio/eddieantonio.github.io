@@ -11,26 +11,28 @@ education:
     time: { start: September 2010, end: December 2015}
 
 experience:
-  - title: Teaching Assistant, CMPUT 301 and CMPUT 404
-    employer: Dr. Abram Hindle, University of Alberta
-    time: September 2016—December 2016
+  - title: Teaching assistant
+    employer: Dr. Abram Hindle
+    location: University of Alberta
+    time: { start: September 2016, end: December 2016 }
     responsibilities:
+      - Taught CMPUT 301 (Software Engineering), CMPUT 404 (Web Development)
       - Lead demonstrations in software engineering and web development topics
       - Improve pedagogical efficacy of lab assignments
       - Mark lab assignments
       - Support and mentor students learning the material
 
-  - title: Adjunct Researcher
-    employer: BioWare ULC/University of Alberta
-    time: January 2016—August 2016
+  - title: Research assistant
+    employer: BioWare ULC
+    time: { start: January 2016, end: August 2016 }
     responsibilities:
       - Research and develop state-of-the-art methods in crash report deduplication
       - Perform experiments and empirical evaluations of technologies
       - Implement production-quality implementations of novel algorithms
 
-  - title: Lead Developer, Research Assistant
-    employer: Dr. Eleni Stroulia/Patrick von Hauff
-    time: May 2015–May 2016
+  - title: Lead developer
+    employer: Dr. Eleni Stroulia, Patrick von Hauff
+    time: { start: May 2015, end: September 2015 }
     responsibilities:
       - Collaborate intensively with colleagues in medicine on a virtual
         patient simulation platform.
@@ -39,9 +41,9 @@ experience:
       - Experiment with databases such as Virtuoso, Neo4j and MongoDB.
       - Support and maintain a legacy PHP web application.
 
-  - title: Computing Science Tutor
+  - title: Computing Science tutor
     employer: Self-employed
-    time: 2014–
+    time: { start: 2014 }
     responsibilities:
       - Tutor students in introductory computing science, primarily using
         C and Python.
@@ -50,10 +52,12 @@ experience:
       - Guide students to find the answer for themselves.
       - Promote active thinking rather than rote memorization.
 
-  - title: Computer programmer/Research Assistant
-    employer: Dr. Denilson Barbosa, University of Alberta
-    time: 2014
+  - title: Software developer
+    employer: Dr. Denilson Barbosa
+    location: University of Alberta
+    time: { start: 2014, end: 2014 }
     responsibilities:
+      # TODO: completely rewrite this... I did something else entirely.
       - Develop a RESTful database abstraction library in Apache Wink (JAX-RS
         implementation) for interoperation between our various text processing
         tools and an assortment of persistence tools (including MongoDB).
@@ -64,32 +68,35 @@ experience:
       - Develop a simple CoffeeScript Node.js app for bridging the web demos
         to the text processing tools.
 
-  - title: Teaching assistant, SCI 100
+  - title: Teaching assistant
     employer: University of Alberta
-    time: 2012-2014
+    time: { start: 2012, end: 2014 }
     responsibilities:
+      - Taught SCI 100, Computing Science component
       - Assist students learning Python as their first programming language.
       - Evaluate student coursework.
 
-  - title: Computer Programmer/Research Assistant
-    employer: >
-      [Cultr](http://cultr.business.ualberta.ca), Alberta School of Business
-    time: 2013-2014
+  - title: Lead developer
+    location: Alberta School of Business
+    employer: Dr. Joel Gehman and Dr. Matthew Grimes
+    time: { start: 2013, end: 2014 }
     responsibilities:
+      #[Cultr](http://cultr.business.ualberta.ca)
       - Write a robust and versatile web crawling service using a variety of
         technologies including [Scrapy](http://scrapy.org/), and
         [PhantomJS](http://phantomjs.org/) duck-taped together using an Erlang
         load-balancer and [Redis](http://redis.io/).
       - Expose the web crawling daemon as a service with a Node.JS web server.
-      - Assist in development of the website front-end.
+      - Assist in development of the website front-end
       - Configure and maintain custom daemon processes on Ubuntu 12.04 servers.
       - Patch a memory leak in an open source library ([MongoDB Erlang
         Driver](https://github.com/eddieantonio/mongodb-erlang)) used in a
         server program.
 
-  - title: Research Assistant/Web developer
-    employer: Dr. Denilson Barbosa, University of Alberta
-    time: 2013
+  - title: Web developer
+    employer: Dr. Denilson Barbosa
+    location: University of Alberta
+    time: { start: 2013, end: 2013 }
     responsibilities:
       - Create and maintain existing web demos for text processing tools
         using JavaScript, jQuery, and [D3](http://d3js.org/).
@@ -100,9 +107,9 @@ experience:
         to the text processing tools.
 
   - title: Web developer
-    employer: >
-      [UAWater](http://waterdb.ualberta.ca), Dr. Greg Goss, University of Alberta
-    time: 2012-2013
+    location: University of Alberta
+    employer: Dr. Greg Goss
+    time: { start: 2012, end: 2013 }
     responsibilities:
       - Evaluate the state of a legacy PHP web application and promptly chuck
         it out (incrementing a database cursor in the middle of template
@@ -112,15 +119,16 @@ experience:
       - Employ the use of full-text indices for measurably faster text
         search queries.
       - Design simple, clean CSS for the website.
+      # Deployed the website [UAWater](http://waterdb.ualberta.ca)
 
-  - title: Research Assistant/Web developer
-    employer: Dr. Davood Rafiei, University of Alberta
-    time: 2012
+  - title: Web developer
+    employer: Dr. Davood Rafiei
+    location: University of Alberta
+    time: { start: 2012, end: 2012 }
     responsibilities:
       - Develop a PHP-backed web game for human computation.
       - Created an MySQL backed real-time system (it's not really worth it).
       - Linux system administration.
-
 
 
 skills:
