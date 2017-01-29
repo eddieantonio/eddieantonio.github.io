@@ -1,0 +1,97 @@
+// Colors
+
+$highlight-colour: #999;
+$main-colour: #666;
+$background-color: #fafcff;
+
+// Main font styles.
+
+$display-fonts: Raleway, Helvetica Neue, Helvetica, sans-serif;
+
+body {
+    font: 100% $display-fonts;
+}
+
+
+// Layout and reset.
+
+html, body { height: 100%; }
+
+a:link, a:visited, a:active {
+    color: inherit;
+}
+
+a:hover { color: $highlight-colour; }
+
+// Home page styles
+
+main > h1 {
+   word-spacing: -0.25em; /* Remove the space between words. */
+   font-weight: 100;
+   font-size: 400%;
+}
+
+body {
+    text-align: center;
+    background-color: $background-color;
+    color: $main-colour;
+}
+
+body.home {
+    background: url(./bg/barco-atitlan.jpg) no-repeat 50% / cover;
+}
+
+// Banner styles
+
+.eddie-antonio { color: $highlight-colour; }
+
+// Old stuff
+
+.inline-nav > * > li {
+    display: inline-block;
+    margin-left: 0.6em;
+}
+
+
+main {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    /* Vertically centre the element. */
+    margin-bottom: -6em;
+    bottom: 50%;
+
+    text-transform: lowercase;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1em 0 1.5em;
+}
+
+.home > footer {
+   position: absolute;
+   bottom: 2px;
+   left: 2px;
+   color: white;
+   opacity: 0.4;
+}
+
+main > h1 {
+   word-spacing: -0.25em; /* Remove the space between words. */
+   font-weight: 100;
+   font-size: 400%;
+}
+
+.santos {
+    font-weight: normal;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media {
+    margin-top: 1em;
+}
