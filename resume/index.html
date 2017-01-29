@@ -13,6 +13,7 @@ redirect_from: /cv/
     <meta name="date" content="{{ site.time | date: "%F" }}">
     <meta name="designer" content="Eddie Antonio Santos">
     <meta name="description" content="Résumé of Eddie Antonio Santos, Computer Programmer">
+
     <meta name="twitter:creator " content="@_eddieantonio">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,14 +26,36 @@ redirect_from: /cv/
   </nav>
 
   <div class='container'>
-
-    <article>
+    <main>
       <header class="masthead">
         <h1 class="author"> Eddie Antonio Santos </h1>
         <h2 class="title"> Résumé </h2>
-        <h3 class="tagline"> Computer programmer based in Edmonton, Alberta,
-          Canada </h3>
+        <p class="tagline"> Computer programmer based in Edmonton, Alberta, Canada </p>
+        <ul class="contact">
+          <!-- https://www.google.com/recaptcha/admin#mailhide -->
+          <li><a class="website" href="{{ baseurl }}/">{{ site.me.website }}</a></li>
+          <li><a class="email" href="http://www.google.com/recaptcha/mailhide/d?k=01A3B2V-lI3SC7lsQNUnLWTA==&amp;c=hoBBkmg3M4raQ4vEIrG_WrwkAm4dbApmI8Rn3vnGrc4="
+                 onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01A3B2V-lI3SC7lsQNUnLWTA\x3d\x3d\x26c\x3dhoBBkmg3M4raQ4vEIrG_WrwkAm4dbApmI8Rn3vnGrc4\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal my e-mail address">e…@ualberta.ca</a></li>
+          <li><a class="github" href="{{ site.me.github }}">eddieantonio</a></li>
+        </ul> </p>
       </header>
+
+      <section class="education">
+        <header>
+          <h2> Education </h2>
+        </header>
+
+        <ul class="ed-list">
+        {% for ed in site.data.resume.education %}
+          <li>
+            {{ ed.program }}&mdash;{{ ed.institution }}
+            {% if ed.in_progress %}
+            <span class="in-progress">In Progress</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </section>
 
       <section class="experience">
         <header>
@@ -56,24 +79,6 @@ redirect_from: /cv/
       </dl>
 
       </section>
-
-      <section class="education">
-        <header>
-          <h2> Education </h2>
-        </header>
-
-        <ul class="ed-list">
-        {% for ed in site.data.resume.education %}
-          <li>
-            {{ ed.program }}&mdash;{{ ed.institution }}
-            {% if ed.in_progress %}
-            <span class="in-progress">In Progress</span>
-            {% endif %}
-          </li>
-        {% endfor %}
-        </ul>
-      </section>
-
 
       <section class="skills">
         <header>
@@ -136,8 +141,7 @@ redirect_from: /cv/
           {% endfor %}
         </dl>
       </section>
-
-    </article>
+    </main>
   </div>
 </body>
 </html>

@@ -4,81 +4,123 @@
  * 2015-2017 © Eddie Antonio Santos.
  */
 
-/* LaTeX-inspired theme. */
+// LaTeX-inspired theme.
 
-$body-font: "Latin Modern Roman", serif;
+// Fonts
+$body-font: Latin Modern Roman, serif;
 
-/* Global stuff. */
-body { font-family: $body-font; }
-.container { text-align: center; }
-.container > article {
-   text-align: left;
-   margin: 0 auto;
-   max-width: 32em;
+// Colours
+$background-color: white;
+$main-color: #111;
+$link-color: #37A;
+
+$selection-text-colour: white;
+$selection-colour: #38C;
+
+// Global stuff.
+body {
+  font: 11pt $body-font;
+  line-height: 1.25;
+
+  color: $main-color;
+  background-color: $background-color;
 }
+
+.container {
+  text-align: center;
+
+  main {
+    text-align: left;
+    margin: 0 auto;
+    // TODO: make the margins thiner!
+    max-width: 32em;
+  }
+}
+
+// Mix this into the @page html ruleset to faintly render page borders.
+@mixin debug-page($page-width, $page-height) {
+  width: $page-width;
+  height: $page-height;
+  margin: auto;
+
+  box-shadow: 1px 1px 3px fade-out(black, .9);
+}
+
 @media print {
-   body { font-size: 11pt; }
+  html {
+    //@include debug-page(8.5in, 11in);
+  }
+
+  body { font-size: 11pt; }
+
+  a {
+    text-decoration: none;
+    text-decoration-skip: all;
+
+    &:link, &:visited { color: inherit; }
+
+    // Write the link out... but I decided this is ugly...
+    //&:after {
+    //  text-decoration: underline;
+    //  color: #666;
+    //  content: "<" attr(href) ">";
+    //  margin-left: 0.5em;
+    //}
+
+    h1 &:after, h2 &:after, h3 &:after { display: none }
+  }
 }
 
-::selection {
-   background: #38C;
-   color: #fff;
-   text-shadow: none;
-}
-::-moz-selection {
-   background: #38C;
-   color: #fff;
-   text-shadow: none;
-}
-
-/* Weird link stuff. */
-@media print {
-   a {
-      text-decoration: none;
-      text-decoration-skip: all;
-   }
-   a:link, a:visited { color: inherit; }
-   a:after {
-      text-decoration: underline;
-      color: #666;
-      content: "<" attr(href) ">";
-      margin-left: 0.5em;
-   }
-   h1 a:after, h2 a:after, h3 a:after { display: none }
-}
-
-/* De-emphasize links in headings. */
+// De-emphasize links in headings.
 h1 a:link, h1 a:visited,
 h2 a:link, h2 a:visited,
 h3 a:link, h3 a:visited {
-   color: inherit;
-   transition: color 3s ease;
+  color: inherit;
+  transition: color 3s ease;
 }
+
 a:link, a:visited,
 h1 a:hover, h1 a:active,
 h2 a:hover, h2 a:active,
 h3 a:hover, h3 a:active {
-   color: #37A;
-}
-/* Transition effects. */
-h1 a:hover, h1 a:active,
-h2 a:hover, h2 a:active,
-h3 a:hover, h3 a:active {
-   transition: color 0.25s ease;
+  color: $link-color;
 }
 a:hover, a:active {
   text-decoration: none;
 }
 
-/* Header stuff. */
+// Transition effects
+h1 a:hover, h1 a:active,
+h2 a:hover, h2 a:active,
+h3 a:hover, h3 a:active {
+  transition: color 0.25s ease;
+}
+
+// Header stuff
 .masthead {
-   text-align: center;
-   padding: 6em 0 2em;
+  text-align: center;
+  padding: 6em 0 2em;
+
+  // Override the bold font weight of the headers.
+  .title, .author, .tagline {
+    font-weight: normal
+  }
+
+  .tagline { font-size: 1em }
+
+  ul.contact {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-of-type):after {
+        content: " • ";
+      }
+    }
+  }
 }
-.masthead .title, .masthead .author, .masthead .tagline {
-  font-weight: normal
-}
-.masthead .tagline { font-size: 1em }
 
 
 /* Get rid of weird gap. */
@@ -86,12 +128,26 @@ li > p:first-child { margin: 0 inherit; }
 
 /* Get rid of big margins. */
 li > p {
-    margin: 0;
+  margin: 0;
 }
+
+// Use a special colour for selections.
+::-moz-selection {
+  background: $selection-colour;
+  color: $selection-text-colour;
+  text-shadow: none;
+}
+::selection {
+  background: $selection-colour;
+  color: $selection-text-colour;
+  text-shadow: none;
+}
+
+// Sections of the page.
 
 /* Get rid of unnecessary margin. */
 .experience dd {
-   margin: auto auto 2em 0;
+  margin: auto auto 2em 0;
 }
 
 .experience .time {
@@ -100,10 +156,10 @@ li > p {
 
 /* Language list thing. */
 .lang-list {
-   list-style: none;
-   font-size: 1.5em;
-   text-align: center;
-   padding: 0 0.25em;
+  list-style: none;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 0.25em;
 }
 .lang-list > li { display: inline-block; }
 .lang-tier-1 { font-weight: bold; }
@@ -111,26 +167,26 @@ li > p {
 .lang-tier-3 { font-size: 0.6em; }
 /* Separate list entries with commas. */
 .lang-list > li:not(:last-child):after {
-   content: ", ";
+  content: ", ";
 }
 
 .corner-nav {
-   font: 10pt sans-serif;
-   position: fixed;
-   top: 1em;
-   opacity: 0.3;
-   transition: opacity 0.25s ease;
+  font: 10pt sans-serif;
+  position: fixed;
+  top: 1em;
+  opacity: 0.3;
+  transition: opacity 0.25s ease;
 }
 .corner-nav:hover {
-   opacity: 1;
+  opacity: 1;
 }
 @media print {
-   .corner-nav { display: none }
+  .corner-nav { display: none }
 }
 /* Add a little hooked arrow going back. */
 .back:before { content: "\21A9  " }
 
 /* Explicit printed page styles. */
 @page {
-   margin: 72pt 55pt 36pt;
+  margin: 72pt 55pt 36pt;
 }
