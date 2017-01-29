@@ -32,10 +32,13 @@ body {
   main {
     text-align: left;
     margin: 0 auto;
-    // TODO: make the margins thiner!
-    max-width: 32em;
+
+    @media screen {
+      max-width: 40em;
+    }
   }
 }
+
 
 // Mix this into the @page html ruleset to faintly render page borders.
 @mixin debug-page($page-width, $page-height) {
@@ -122,7 +125,6 @@ h3 a:hover, h3 a:active {
   }
 }
 
-
 /* Get rid of weird gap. */
 li > p:first-child { margin: 0 inherit; }
 
@@ -144,6 +146,14 @@ li > p {
 }
 
 // Sections of the page.
+
+main > article > section {
+  margin-top: 3em;
+
+  h2 {
+    font-variant: small-caps;
+  }
+}
 
 .title-location-block {
   margin: 1em 0;
