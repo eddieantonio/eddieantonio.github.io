@@ -58,8 +58,6 @@ body {
     margin: 1in 1.5in;
   }
 
-  body { font-size: 11pt; }
-
   a {
     text-decoration: none;
     text-decoration-skip: all;
@@ -134,6 +132,9 @@ h3 a:hover, h3 a:active {
     }
   }
 }
+
+.nothing-to-see-here:before { content: "easanto"; }
+.nothing-to-see-here:after { content: "@ualberta.ca"; }
 
 /* Get rid of weird gap. */
 li > p:first-child { margin: 0 inherit; }
