@@ -79,6 +79,11 @@ a:hover, a:active {
 /* Get rid of weird gap. */
 li > p:first-child { margin: 0 inherit; }
 
+/* Get rid of big margins. */
+li > p {
+    margin: 0;
+}
+
 /* Get rid of unnecessary margin. */
 .experience dd {
    margin: auto auto 2em 0;
