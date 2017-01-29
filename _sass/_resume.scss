@@ -11,7 +11,7 @@ $body-font: Latin Modern Roman, serif;
 
 // Colours
 $background-color: white;
-$main-color: #111;
+$main-colour: #111;
 $link-color: #37A;
 
 $selection-text-colour: white;
@@ -22,7 +22,7 @@ body {
   font: 11pt $body-font;
   line-height: 1.25;
 
-  color: $main-color;
+  color: $main-colour;
   background-color: $background-color;
 }
 
@@ -52,6 +52,10 @@ body {
 @media print {
   html {
     //@include debug-page(8.5in, 11in);
+  }
+
+  @page {
+    margin: 1in 1.5in;
   }
 
   body { font-size: 11pt; }
@@ -90,6 +94,12 @@ h3 a:hover, h3 a:active {
 }
 a:hover, a:active {
   text-decoration: none;
+}
+
+@media print {
+  a:link, a:visited, a:active {
+    color: inherit;
+  }
 }
 
 // Transition effects
@@ -156,7 +166,8 @@ main > article > section {
 }
 
 .title-location-block {
-  margin: 1em 0;
+  margin: 1.5em 0 1em;
+  page-break-inside: avoid;
 
   & > header {
     display: flex;
