@@ -145,6 +145,29 @@ li > p {
 
 // Sections of the page.
 
+.title-location-block {
+  margin: 1em 0;
+
+  & > header {
+    display: flex;
+
+    .title {
+      flex: 1;
+
+      margin: 0 auto;
+    }
+
+    .location {
+      text-align: right;
+    }
+  }
+}
+
+.in-progress {
+  font-style: italic;
+  color: #666;
+}
+
 /* Get rid of unnecessary margin. */
 .experience dd {
   margin: auto auto 2em 0;

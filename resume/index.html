@@ -40,21 +40,28 @@ redirect_from: /cv/
         </ul> </p>
       </header>
 
+      <article>
       <section class="education">
         <header>
           <h2> Education </h2>
         </header>
 
-        <ul class="ed-list">
         {% for ed in site.data.resume.education %}
-          <li>
-            {{ ed.program }}&mdash;{{ ed.institution }}
+        <section class="title-location-block">
+          <header>
+            <h3 class="title">{{ ed.program }}</h3>
+            <div class="location">{{ ed.institution }}</div>
+          </header>
+
+          <div class="date">
+            {{ ed.time.start }}–{% if ed.time.end %}{{ ed.time.end }}{% endif %}
             {% if ed.in_progress %}
             <span class="in-progress">In Progress</span>
             {% endif %}
+          </div>
           </li>
+        </section>
         {% endfor %}
-        </ul>
       </section>
 
       <section class="experience">
@@ -68,7 +75,6 @@ redirect_from: /cv/
           <dt> <h3>{{ job_header | markdownify }}
             <small class="time">{{ job.time }}</small> </h3> </dt>
           <dd>
-            <h4> Responsibilities </h4>
             <ul>
             {% for item in job.responsibilities %}
               <li> {{ item | markdownify }} </li>
@@ -87,8 +93,6 @@ redirect_from: /cv/
 
         <section>
           <h3> Programming languages </h3>
-          <p> I love to learn programming languages. Here's a list of
-              programming languages I have experience in: </p>
 
           <ul class="lang-list">
           {% for tier in site.data.resume.skills.languages %}
@@ -141,6 +145,7 @@ redirect_from: /cv/
           {% endfor %}
         </dl>
       </section>
+      </article>
     </main>
   </div>
 </body>

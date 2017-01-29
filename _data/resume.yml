@@ -2,11 +2,12 @@ education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
-    time: { start: January 2010, end: null}
+    time: { start: January 2016, end: null}
     in_progress: true
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
-    program: BSc. with specialization in Computing Science with distinction
+    program: BSc. Computing Science
+    title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
 experience:
