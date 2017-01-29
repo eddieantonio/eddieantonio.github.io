@@ -1,10 +1,15 @@
-@charset "UTF-8";
+/*
+ * Styles for my résumé/CV.
+ *
+ * 2015-2017 © Eddie Antonio Santos.
+ */
 
 /* LaTeX-inspired theme. */
 
+$body-font: "Latin Modern Roman", serif;
 
 /* Global stuff. */
-body { font-family: "Latin Modern Roman", serif }
+body { font-family: $body-font; }
 .container { text-align: center; }
 .container > article {
    text-align: left;
