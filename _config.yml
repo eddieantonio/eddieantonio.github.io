@@ -12,5 +12,8 @@ me:
   blog: http://www.eddieantonio.ca/blog/
   keybase: https://keybase.io/eddieantonio
 
+sass:
+  style: compressed
+
 gems:
   - jekyll-redirect-from
