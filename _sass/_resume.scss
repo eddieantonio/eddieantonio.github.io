@@ -4,6 +4,8 @@
  * 2015-2017 © Eddie Antonio Santos.
  */
 
+@import "octicons";
+
 // LaTeX-inspired theme.
 
 // Fonts
@@ -123,18 +125,17 @@ h3 a:hover, h3 a:active {
     list-style: none;
     padding-left: 0;
 
-    li {
-      display: inline-block;
-
-      &:not(:last-of-type):after {
-        content: " • ";
-      }
-    }
+    li { display: inline-block; }
   }
 }
 
 .nothing-to-see-here:before { content: "easanto"; }
 .nothing-to-see-here:after { content: "@ualberta.ca"; }
+
+.contact {
+  .email:before { @include octicon($email-content); }
+  .github:before { @include octicon($github-mark-content); }
+}
 
 /* Get rid of weird gap. */
 li > p:first-child { margin: 0 inherit; }
