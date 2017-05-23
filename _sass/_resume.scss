@@ -164,6 +164,13 @@ main > article > section {
 
   h2 {
     font-variant: small-caps;
+    line-height: 1.5;
+
+    &:before, &:after {
+        display: block;
+        content: "";
+        outline: 0.5pt solid #666;
+    }
   }
 }
 

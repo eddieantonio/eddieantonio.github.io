@@ -56,7 +56,7 @@ redirect_from: /cv/
           <div class="time">
             {{ ed.time.start }}–{% if ed.time.end %}{{ ed.time.end }}{% endif %}
             {% if ed.in_progress %}
-            <span class="in-progress">In Progress</span>
+              <span class="in-progress">Expected: {{ ed.time.expected }} </span>
             {% endif %}
           </div>
           </li>
@@ -64,9 +64,38 @@ redirect_from: /cv/
         {% endfor %}
       </section>
 
+      <section class="skills">
+        <header>
+          <h2>Technical Skills</h2>
+        </header>
+
+        <section>
+          <h3> Programming languages </h3>
+
+          <ul class="lang-list">
+          {% for tier in site.data.resume.skills.languages %}
+            {% assign tier_no = forloop.index %}
+            {% for lang in tier %}
+            <li class="lang-tier-{{ tier_no }}
+              lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
+            {% endfor %}
+          {% endfor %}
+          </ul>
+        </section>
+
+        <section>
+          <dl>
+            {% for category in site.data.resume.skills.small_categories %}
+              <dt> {{ category[0] }} </dt>
+              <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
+            {% endfor %}
+          </dl>
+        </section>
+      </section>
+
       <section class="experience">
         <header>
-          <h2>Experience</h2>
+          <h2> Work Experience </h2>
         </header>
 
         {% for job in site.data.resume.experience %}
@@ -93,38 +122,10 @@ redirect_from: /cv/
         {% endfor %}
       </section>
 
-      <section class="skills">
-        <header>
-          <h2>Skills</h2>
-        </header>
-
-        <section>
-          <h3> Programming languages </h3>
-
-          <ul class="lang-list">
-          {% for tier in site.data.resume.skills.languages %}
-            {% assign tier_no = forloop.index %}
-            {% for lang in tier %}
-            <li class="lang-tier-{{ tier_no }}
-              lang-{{ lang | replace:' ','-' | downcase }}">{{ lang }}</li>
-            {% endfor %}
-          {% endfor %}
-          </ul>
-        </section>
-
-        <section>
-          <h3>Miscellaneous technologies</h3>
-          <dl>
-            {% for category in site.data.resume.skills.small_categories %}
-              <dt> {{ category[0] }} </dt>
-              <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
-            {% endfor %}
-          </dl>
-        </section>
-      </section>
-
       <section class='publications'>
         <h2>Publications</h2>
+
+        <p> My OCRID: <a href="https://orcid.org/0000-0001-5337-715X"> orcid.org/0000-0001-5337-715X </a>
 
         <ul>
           {% for paper in site.data.resume.publications %}
@@ -148,7 +149,6 @@ redirect_from: /cv/
         <dl>
           {% for hobby in site.data.resume.hobbies %}
             <dt> {{ hobby.title | markdownify }} </dt>
-            <dd> {{ hobby.description | markdownify }} </dd>
           {% endfor %}
         </dl>
       </section>

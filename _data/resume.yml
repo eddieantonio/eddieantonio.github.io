@@ -2,7 +2,7 @@ education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
-    time: { start: January 2016, end: null}
+    time: { start: January 2016, expected: September 2017}
     in_progress: true
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
@@ -134,27 +134,22 @@ experience:
 skills:
   languages:
     # "Tier 1" -- the languages that I spend a bunch of time programming.
-    - [Python, JavaScript, C, Java, Erlang]
+    - [Python, JavaScript, C, Erlang]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Ruby, Scala, PHP, Perl, C#, Scheme, C++, Common Lisp, Go, 6502 Assembly]
+    - [Ruby, Java, Scala, PHP, Perl, C#, R, Scheme, C++]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
-    - [Haskell, R, MIPS assembly, Pascal, Smalltalk-80, Eiffel]
+    - [Haskell, 6502 Assembly, MIPS assembly]
 
   small_categories:
     Databases:
-      - SQLite3
+      - SQL
       - Redis
       - MongoDB
+      - SPARQL
       - ElasticSearch
-      - MySQL
-      - Microsoft SQL Server
-      - Neo4j
-      - Oracle SQL
-      - 4store
-      - Virtuoso
 
     Editors: [Vim, IntelliJ Platform, Atom, Eclipse]
 
@@ -164,27 +159,11 @@ skills:
       - OpenBSD
       - Other Linux distributions
 
-    Version Control: [Git, Mercurial, limited knowledge of SVN]
-
-    HTML Template Languages:
-      - '[React/JSX](https://facebook.github.io/react/)'
-      - '[Jade](http://jade-lang.com/)'
-      - '[Twig](http://twig.sensiolabs.org/)'
-      - '[Django](https://docs.djangoproject.com/en/dev/topics/templates/)'
-      - '[Jinja2](http://jinja.pocoo.org/docs/dev/)'
-      - '[Swig](http://paularmstrong.github.io/swig/)'
-      - '[Liquid](http://liquidmarkup.org/)'
-      - '[Handlebars](http://handlebarsjs.com/)'
-      - '[Dust](http://akdubya.github.io/dustjs/)'
-
-    CSS Preprocessors:
-      - '[Less](http://lesscss.org/)'
-      - '[Stylus](http://learnboost.github.io/stylus/)'
+    Version Control: [Git, Mercurial]
 
     Miscellaneous:
      - '[Docker](https://www.docker.com/)'
      - '[Vagrant](http://www.vagrantup.com/)'
-     - '[Puppet Configuration Management](http://puppetlabs.com/)'
 
 # TODO: Replace with BibTex?
 publications:
@@ -233,15 +212,6 @@ publications:
     doi: https://doi.org/10.1145/2901739.2901766
     url: http://dl.acm.org/citation.cfm?id=2901766
     pages: 10
-
-  - title: Multi-token code suggestions using statistical language models
-    year: 2014
-    authors:
-      - Santos, Eddie Antonio
-      - Hindle, Abram
-    published: null
-    doi: 10.7287/peerj.preprints.1597v1
-    url: https://peerj.com/preprints/1597/
 
 hobbies:
   - title: >
