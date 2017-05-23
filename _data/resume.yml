@@ -215,60 +215,11 @@ publications:
 
 hobbies:
   - title: >
-      [Ladies Learning Code Mentor](http://ladieslearningcode.com/)
-    description: >
-      Mentored students in [learning Python][1] as their introduction to the
-      world of programming.
-
-
-      Mentored students in learning HTML/CSS for [National Learn How to Code
-      Day][2].
-
-
-      [1]: http://learninglabs.org/meet-mentors-intro-python-edmonton/
-
-      [2]: http://ladieslearningcode.com/codeday/
-
+      [Ladies Learning Code mentor](http://ladieslearningcode.com/)
   - title: >
-      [Undergraduate Research Opportunities Conference](https://cs.uwaterloo.ca/conferences/uroc2015/)
-    description:
-      Was invited to attend conference intended to incite interest in computer
-      science research.
-
+      [Frequent open source contributor](https://github.com/eddieantonio)
   - title: >
-      [Waterbear—Visual Programming Language](https://github.com/waterbearlang/waterbear)
-    description:
-      Rewrote the execution model of this imperative visual "block"
-      programming language such that each thread would have an explicit,
-      re-entrant call stack. This enabled writing common debugging features.
-
-  - title: >
-      [Gamboge—Predictive code input](https://github.com/eddieantonio/atom-gamboge)
-    description: >
-      A multi-token code suggestion engine written for the [Atom][] text editor.
-      It uses an _n_-gram language model to predict several code tokens ahead
-      of the cursor.
-
-
-      [Atom]: http://atom.io/
-
-
-  - title: >
-      [Canadian Open Data Experience 2014 Hackathon](https://www.canadianopendataexperience.com/)
-
-    description: >
-      Developed [Forward](http://code-forward.meteor.com) in under 48 hours
-      for the hackathon with a team of myself and three other students. I was
-      primarily responsible for coding the front-end, developing templates,
-      and attaching the background data processing work to the front-end.
-      Based on my designer's mockups, I quickly crafted CSS style sheets
-      designed for most common mobile phones.
-
-  - title: >
-      [Pal.JS](http://www.eddieantonio.ca/paljs/)
-    description:
-      A Pal (subset of Pascal) compiler written and targeting JavaScript. It's
-      not fully implemented. I wrote this after my compilers class,
-      implementing the same language.  This gave me a bit of distraction while
-      procrastinating on studying for finals, and I learned about [parsing
-      expression grammars](http://pegjs.majda.cz/) while writing it.
+      Creator of presentations on
+      [several](http://www.eddieantonio.ca/unicode-es6/#/)
+      [technical](https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub?start=false&loop=false)
+      [topics](http://www.eddieantonio.ca/ExchangeJS-Prototypes/#/)

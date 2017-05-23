@@ -103,15 +103,15 @@ redirect_from: /cv/
           {% capture job_employer %}{% if job.employer %}{{ job.employer }}{% else %}{{ job.location }}{% endif %}{% endcapture %}
           <header>
             <h3 class="title">{{ job.title }}</h3>
-            <div class="location">{{ job_employer }}</div>
+            <div class="time">
+              {% if job.time.start == job.time.end
+                %}{{ job.time.start }}{%
+                else
+                %}{{ job.time.start }}–{% if job.time.end %}{{ job.time.end }}{% endif %}
+              {% endif %}
+            </div>
           </header>
-          <div class="time">
-            {% if job.time.start == job.time.end
-              %}{{ job.time.start }}{%
-              else
-              %}{{ job.time.start }}–{% if job.time.end %}{{ job.time.end }}{% endif %}
-            {% endif %}
-          </div>
+          <div class="location">{{ job_employer }}</div>
 
           <ul class="responsibilities">
             {% for item in job.responsibilities %}
