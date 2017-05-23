@@ -18,7 +18,7 @@ experience:
     responsibilities:
       - Taught CMPUT 301 (Software Engineering), CMPUT 404 (Web Development)
       - Lead demonstrations in software engineering and web development topics
-      - Improve pedagogical efficacy of lab assignments
+      - Improve quality of lab assignments
       - Mark lab assignments
       - Support and mentor students learning the material
 
@@ -52,21 +52,11 @@ experience:
       - Guide students to find the answer for themselves.
       - Promote active thinking rather than rote memorization.
 
-  - title: Software developer
-    employer: Dr. Denilson Barbosa
-    location: University of Alberta
-    time: { start: 2014, end: 2014 }
-    responsibilities:
-      # TODO: completely rewrite this... I did something else entirely.
-      - Develop a RESTful database abstraction library in Apache Wink (JAX-RS
-        implementation) for interoperation between our various text processing
-        tools and an assortment of persistence tools (including MongoDB).
-      - Integrate build automation using Apache Maven to compile, test, and
-        deploy web services to a servlet container (Apache Tomcat).
-      - Create and maintain existing web demos for text processing tools
-        using JavaScript, jQuery, and [D3](http://d3js.org/).
-      - Develop a simple CoffeeScript Node.js app for bridging the web demos
-        to the text processing tools.
+  # - title: Software developer
+  #   employer: Dr. Denilson Barbosa
+  #   location: University of Alberta
+  #   time: { start: 2014, end: 2014 }
+  #   responsibilities:
 
   - title: Teaching assistant
     employer: University of Alberta
