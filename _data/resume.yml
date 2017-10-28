@@ -11,24 +11,33 @@ education:
     time: { start: September 2010, end: December 2015}
 
 experience:
+  - title: Course design assistant
+    employer: Osmar Zaiane
+    location: University of Alberta
+    time: { start: September 2017 }
+    responsibilities:
+      - Write, edit, and produce video tutorials teaching Python and
+        presenting fundamental computing science concepts.
+      - Create quizzes to effectively test knowledge.
+
   - title: Teaching assistant
     employer: Dr. Abram Hindle
     location: University of Alberta
     time: { start: September 2016, end: December 2016 }
     responsibilities:
-      - Taught CMPUT 301 (Software Engineering), CMPUT 404 (Web Development)
-      - Lead demonstrations in software engineering and web development topics
-      - Improve quality of lab assignments
-      - Mark lab assignments
-      - Support and mentor students learning the material
+      - Taught CMPUT 301 (Software Engineering), CMPUT 404 (Web Development).
+      - Lead demonstrations in software engineering and web development topics.
+      - Improve quality of lab assignments.
+      - Mark lab assignments.
+      - Support and mentor students learning the material.
 
   - title: Research assistant
     employer: BioWare ULC
     time: { start: January 2016, end: August 2016 }
     responsibilities:
-      - Research and develop state-of-the-art methods in crash report deduplication
-      - Perform experiments and empirical evaluations of technologies
-      - Implement production-quality implementations of novel algorithms
+      - Research and develop state-of-the-art methods in crash report deduplication.
+      - Perform experiments and empirical evaluations of technologies.
+      - Implement production-quality implementations of novel algorithms.
 
   - title: Lead developer
     employer: Dr. Eleni Stroulia, Patrick von Hauff
@@ -37,7 +46,7 @@ experience:
       - Collaborate intensively with colleagues in medicine on a virtual
         patient simulation platform.
       - Research, evaluate, and integrate medical ontologies.
-      - Write a web application using PHP, JavaScript (with React)
+      - Write a web application using PHP, JavaScript (with React).
       - Experiment with databases such as Virtuoso, Neo4j and MongoDB.
       - Support and maintain a legacy PHP web application.
 
@@ -52,17 +61,11 @@ experience:
       - Guide students to find the answer for themselves.
       - Promote active thinking rather than rote memorization.
 
-  # - title: Software developer
-  #   employer: Dr. Denilson Barbosa
-  #   location: University of Alberta
-  #   time: { start: 2014, end: 2014 }
-  #   responsibilities:
-
   - title: Teaching assistant
     employer: University of Alberta
     time: { start: 2012, end: 2014 }
     responsibilities:
-      - Taught SCI 100, Computing Science component
+      - Taught SCI 100, Computing Science component.
       - Assist students learning Python as their first programming language.
       - Evaluate student coursework.
 
@@ -71,13 +74,12 @@ experience:
     employer: Dr. Joel Gehman and Dr. Matthew Grimes
     time: { start: 2013, end: 2014 }
     responsibilities:
-      #[Cultr](http://cultr.business.ualberta.ca)
       - Write a robust and versatile web crawling service using a variety of
         technologies including [Scrapy](http://scrapy.org/), and
         [PhantomJS](http://phantomjs.org/) duck-taped together using an Erlang
         load-balancer and [Redis](http://redis.io/).
       - Expose the web crawling daemon as a service with a Node.JS web server.
-      - Assist in development of the website front-end
+      - Assist in development of the website front-end.
       - Configure and maintain custom daemon processes on Ubuntu 12.04 servers.
       - Patch a memory leak in an open source library ([MongoDB Erlang
         Driver](https://github.com/eddieantonio/mongodb-erlang)) used in a
@@ -109,7 +111,6 @@ experience:
       - Employ the use of full-text indices for measurably faster text
         search queries.
       - Design simple, clean CSS for the website.
-      # Deployed the website [UAWater](http://waterdb.ualberta.ca)
 
   - title: Web developer
     employer: Dr. Davood Rafiei
@@ -144,7 +145,7 @@ skills:
     Editors: [Vim, IntelliJ Platform, Atom, Eclipse]
 
     OSs:
-      - Mac OS X
+      - macOS
       - Ubuntu/Debian Linux
       - OpenBSD
       - Other Linux distributions
@@ -205,11 +206,15 @@ publications:
 
 hobbies:
   - title: >
-      [Ladies Learning Code mentor](http://ladieslearningcode.com/)
+      [Ladies Learning Code](http://ladieslearningcode.com/) mentor and lead instructor.
   - title: >
-      [Frequent open source contributor](https://github.com/eddieantonio)
+      [Open source maintainer and contributor](https://github.com/eddieantonio).
   - title: >
-      Creator of presentations on
-      [several](http://www.eddieantonio.ca/unicode-es6/#/)
-      [technical](https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub?start=false&loop=false)
-      [topics](http://www.eddieantonio.ca/ExchangeJS-Prototypes/#/)
+      Volunteer with [MakiNg Science Fun](https://www.facebook.com/ingcrediblescience/posts/1059095607554152).
+  - title: >
+      Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
+  - title: >
+      Creator of presentations on several technical topics
+      [[1]](http://www.eddieantonio.ca/unicode-es6/#/),
+      [[2]](https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub),
+      [[3]](http://www.eddieantonio.ca/ExchangeJS-Prototypes/#/).
