@@ -11,6 +11,15 @@ education:
     time: { start: September 2010, end: December 2015}
 
 experience:
+  - title: Teaching assistant
+    employer: Joshua Charles Campbell
+    location: University of Alberta
+    time: { start: January 2018 }
+    responsibilities:
+      - Lead CMPUT 296 (Web Development) labs
+      - Create novel, exploratory labs on web technologies
+      - Mark lab assignments.
+      - Support and mentor students learning the material.
   - title: Course design assistant
     employer: Osmar Zaiane
     location: University of Alberta
@@ -25,7 +34,7 @@ experience:
     location: University of Alberta
     time: { start: September 2016, end: December 2016 }
     responsibilities:
-      - Taught CMPUT 301 (Software Engineering), CMPUT 404 (Web Development).
+      - Lead CMPUT 301 (Software Engineering), CMPUT 404 (Web Development).
       - Lead demonstrations in software engineering and web development topics.
       - Improve quality of lab assignments.
       - Mark lab assignments.
@@ -221,8 +230,6 @@ hobbies:
       [Ladies Learning Code](http://ladieslearningcode.com/) mentor and lead instructor.
   - title: >
       [Open source maintainer and contributor](https://github.com/eddieantonio).
-  - title: >
-      Volunteer with [MakiNg Science Fun](https://www.facebook.com/ingcrediblescience/posts/1059095607554152).
   - title: >
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
   - title: >
