@@ -158,6 +158,18 @@ skills:
 
 # TODO: Replace with BibTex?
 publications:
+  - title: "Syntax and Sensibility: Using language models to detect and correct syntax errors"
+    year: 2018
+    authors:
+      - Santos, E. A.
+      - Campbell, J. C.
+      - Patel, D.
+      - Hindle, A.
+      - Amaral, J. N.
+    venue: 25th IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER 2018)}
+    pages: 12
+    url: http://softwareprocess.ca/pubs/santos2018SANER-syntax.pdf
+
   - title: Visualizing Project Evolution through Abstract Syntax Tree Analysis
     year: 2016
     authors:
