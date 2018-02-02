@@ -61,7 +61,7 @@ experience:
 
   - title: Computing Science tutor
     employer: Self-employed
-    time: { start: 2014 }
+    time: { start: 2014, end: 2017 }
     responsibilities:
       - Tutor students in introductory computing science, primarily using
         C and Python.
