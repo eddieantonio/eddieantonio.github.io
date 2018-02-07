@@ -1,7 +1,7 @@
 /*
  * Styles for my résumé/CV.
  *
- * 2015-2017 © Eddie Antonio Santos.
+ * 2015–2018 © Eddie Antonio Santos.
  */
 
 @import "octicons";
@@ -56,8 +56,9 @@ body {
     //@include debug-page(8.5in, 11in);
   }
 
+  /* Explicit printed page styles. */
   @page {
-    margin: 1in 1.5in;
+    margin: 72pt 55pt 36pt;
   }
 
   a {
@@ -76,6 +77,8 @@ body {
 
     h1 &:after, h2 &:after, h3 &:after { display: none }
   }
+
+  .no-print { display: none }
 }
 
 // De-emphasize links in headings.
@@ -238,11 +241,6 @@ main > article > section {
 }
 /* Add a little hooked arrow going back. */
 .back:before { content: "\21A9  " }
-
-/* Explicit printed page styles. */
-@page {
-  margin: 72pt 55pt 36pt;
-}
 
 /* Styles for "technical skills" section */
 .skills {
