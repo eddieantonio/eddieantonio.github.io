@@ -243,3 +243,30 @@ main > article > section {
 @page {
   margin: 72pt 55pt 36pt;
 }
+
+/* Styles for "technical skills" section */
+.skills {
+  dl {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  dt, dd {
+    display: inline;
+    text-align: left;
+    margin: .25em 0;
+    width: auto;
+    height: 1.5em;
+  }
+
+  dt {
+    flex-basis: 8em; /* "Version Control" is 7.5ems in Latin Modern Roman */
+  }
+  dd {
+    flex-basis: calc(100% - 8em);
+    & > p {
+      margin: 0;
+    }
+  }
+}
