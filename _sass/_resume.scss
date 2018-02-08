@@ -67,14 +67,6 @@ body {
 
     &:link, &:visited { color: inherit; }
 
-    // Write the link out... but I decided this is ugly...
-    //&:after {
-    //  text-decoration: underline;
-    //  color: #666;
-    //  content: "<" attr(href) ">";
-    //  margin-left: 0.5em;
-    //}
-
     h1 &:after, h2 &:after, h3 &:after { display: none }
   }
 
