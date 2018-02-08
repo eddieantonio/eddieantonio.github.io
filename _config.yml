@@ -1,7 +1,6 @@
 name: eddieantonio
 markdown: kramdown
 
-baseurl: http://www.eddieantonio.ca
 safe: true
 
 # Some metadata... like my social media handles, etc.
