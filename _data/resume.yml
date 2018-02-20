@@ -20,6 +20,7 @@ experience:
       - Create novel, exploratory labs on web technologies.
       - Mark lab assignments.
       - Support and mentor students learning the material.
+
   - title: Course design assistant
     employer: Dr. Osmar Zaïane
     location: University of Alberta
@@ -74,7 +75,7 @@ experience:
     employer: University of Alberta
     time: { start: 2012, end: 2014 }
     responsibilities:
-      - Taught SCI 100, Computing Science component.
+      - Lead SCI 100, Computing Science component.
       - Assist students learning Python as their first programming language.
       - Evaluate student coursework.
 
@@ -127,7 +128,7 @@ experience:
     time: { start: 2012, end: 2012 }
     responsibilities:
       - Develop a PHP-backed web game for human computation.
-      - Created an MySQL backed real-time system (it's not really worth it).
+      - Created an MySQL backed game server.
       - Linux system administration.
 
 
