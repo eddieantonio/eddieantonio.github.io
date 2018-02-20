@@ -48,18 +48,18 @@ redirect_from: "/resume/"
 
         {% for ed in site.data.resume.education %}
         <section class="title-location-block">
-          <header>
+          <hgroup>
             <h3 class="title">{{ ed.program }}</h3>
             <div class="location">{{ ed.institution }}</div>
-          </header>
+          </hgroup>
 
           <div class="time">
-            {{ ed.time.start }}–{% if ed.time.end %}{{ ed.time.end }}{% endif %}
-            {% if ed.in_progress %}
-              <span class="in-progress">Expected: {{ ed.time.expected }} </span>
+            {{ ed.time.start }}–{% if ed.time.end
+              %}{{ ed.time.end }}
+            {% elsif ed.in_progress
+              %}<span class="in-progress">Expected: {{ ed.time.expected }} </span>
             {% endif %}
           </div>
-          </li>
         </section>
         {% endfor %}
       </section>
@@ -101,7 +101,7 @@ redirect_from: "/resume/"
         {% for job in site.data.resume.experience %}
         <section class="title-location-block">
           {% capture job_employer %}{% if job.employer %}{{ job.employer }}{% else %}{{ job.location }}{% endif %}{% endcapture %}
-          <header>
+          <hgroup>
             <h3 class="title">{{ job.title }}</h3>
             <div class="time">
               {% if job.time.start == job.time.end
@@ -110,7 +110,7 @@ redirect_from: "/resume/"
                 %}{{ job.time.start }}–{% if job.time.end %}{{ job.time.end }}{% endif %}
               {% endif %}
             </div>
-          </header>
+          </hgroup>
           <div class="location">{{ job_employer }}</div>
 
           <ul class="responsibilities">

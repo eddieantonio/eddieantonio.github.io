@@ -111,10 +111,13 @@ h3 a:hover, h3 a:active {
 
   // Override the bold font weight of the headers.
   .title, .author, .tagline {
-    font-weight: normal
+    font-weight: normal;
+    margin: 0.5em 0;
   }
 
-  .tagline { font-size: 1em }
+  .author { font-size: 24pt }
+  .title { font-size: 18pt; }
+  .tagline { font-size: 12pt; }
 
   ul.contact {
     list-style: none;
@@ -174,7 +177,7 @@ main > article > section {
   margin: 1.5em 0 1em;
   page-break-inside: avoid;
 
-  & > header {
+  & > hgroup {
     display: flex;
 
     .title {
