@@ -11,6 +11,16 @@ education:
     time: { start: September 2010, end: December 2015}
 
 experience:
+  - title: Software Engineer
+    employer: Dr. Antti Arppe
+    location: University of Alberta
+    time: { start: February 2018 }
+    responsibilities:
+      - Write code that cleans and organizes recording validation data.
+      - Interpret requirements and deliver work in incremental sprints.
+      - Create a web application in Flask/SQLAlchemy to assist in manual
+        recordings validation.
+
   - title: Teaching assistant
     employer: Joshua Charles Campbell
     location: University of Alberta
