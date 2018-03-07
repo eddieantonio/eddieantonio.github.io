@@ -73,6 +73,10 @@ body {
   .no-print { display: none }
 }
 
+@media not print {
+  .print-only { display: none }
+}
+
 // De-emphasize links in headings.
 h1 a:link, h1 a:visited,
 h2 a:link, h2 a:visited,
