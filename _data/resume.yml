@@ -24,7 +24,7 @@ experience:
   - title: Teaching assistant
     employer: Joshua Charles Campbell
     location: University of Alberta
-    time: { start: January 2018 }
+    time: { start: January 2018, end: April 2018 }
     responsibilities:
       - Lead CMPUT 296 (Web Development) labs.
       - Create novel, exploratory labs on web technologies.
@@ -34,7 +34,7 @@ experience:
   - title: Course design assistant
     employer: Dr. Osmar Zaïane
     location: University of Alberta
-    time: { start: September 2017 }
+    time: { start: September 2017, end: April 2018 }
     responsibilities:
       - Write, edit, and produce video tutorials teaching Python and
         presenting fundamental computing science concepts.
