@@ -57,7 +57,7 @@ experience:
     responsibilities:
       - Research and develop state-of-the-art methods in crash report deduplication.
       - Perform experiments and empirical evaluations of technologies.
-      - Implement production-quality implementations of novel algorithms.
+      - Write, test, and deploy production-quality implementations of novel algorithms.
 
   - title: Lead developer
     employer: Dr. Eleni Stroulia, Patrick von Hauff
