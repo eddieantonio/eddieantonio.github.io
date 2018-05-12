@@ -2,8 +2,7 @@ education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
-    time: { start: January 2016, expected: April 2018}
-    in_progress: true
+    time: { start: January 2016, end: September 2018}
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: BSc. Computing Science
