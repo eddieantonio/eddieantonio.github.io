@@ -9,11 +9,23 @@ education:
     title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
+# TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
+# etc.
+
 experience:
+  - title: Application Development Specialist
+    employer: National Research Council of Canada (NRC-CNRC)
+    time: { start: June 2018 }
+    responsibilities:
+      - Develop language technology for Canadian indigenous languages (e.g., Plains Cree).
+      - Collaborate with representatives from language communities and linguists.
+      - Write integration tests for a legacy web application to detect
+        regressions, support refactoring, and cleanly adding new features.
+
   - title: Software Engineer
     employer: Dr. Antti Arppe
     location: University of Alberta
-    time: { start: February 2018 }
+    time: { start: February 2018, end: May 2018 }
     responsibilities:
       - Write code that cleans and organizes recording validation data.
       - Interpret requirements and deliver work in incremental sprints.
