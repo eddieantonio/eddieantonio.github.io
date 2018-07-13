@@ -189,6 +189,17 @@ skills:
 
 # TODO: Replace with BibTex?
 publications:
+  - title: "How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers"
+    year: 2018
+    authors:
+      - Santos, E. A.
+      - McLean, C.
+      - Solinas, C.
+      - Hindle, A.
+    venue: The Journal of Systems and Software
+    pages: 17
+    url: https://arxiv.org/pdf/1705.01176.pdf
+
   - title: "Syntax and Sensibility: Using language models to detect and correct syntax errors"
     year: 2018
     authors:
