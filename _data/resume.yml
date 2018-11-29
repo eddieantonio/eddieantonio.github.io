@@ -17,10 +17,10 @@ experience:
     employer: National Research Council of Canada (NRC-CNRC)
     time: { start: June 2018 }
     responsibilities:
-      - Develop language technology for Canadian indigenous languages (e.g., Plains Cree).
+      - Develop language software for Canadian Indigenous languages (e.g., Plains Cree).
       - Collaborate with representatives from language communities and linguists.
-      - Write integration tests for a legacy web application to detect
-        regressions, support refactoring, and cleanly adding new features.
+      - Write integration tests for web applications to detect
+        regressions, support refactoring, and add new features.
 
   - title: Software Engineer
     employer: Dr. Antti Arppe
@@ -37,7 +37,7 @@ experience:
     location: University of Alberta
     time: { start: January 2018, end: April 2018 }
     responsibilities:
-      - Lead CMPUT 296 (Web Development) labs.
+      - Lead CMPUT 296 (Front-end Web Development) labs.
       - Create novel, exploratory labs on web technologies.
       - Mark lab assignments.
       - Support and mentor students learning the material.
@@ -47,8 +47,8 @@ experience:
     location: University of Alberta
     time: { start: September 2017, end: April 2018 }
     responsibilities:
-      - Write, edit, and produce video tutorials teaching Python and
-        presenting fundamental computing science concepts.
+      - Write, edit, and produce video tutorials teaching introductory Python
+        and presenting fundamental computing science concepts.
       - Create quizzes to effectively test knowledge.
 
   - title: Teaching assistant
@@ -159,11 +159,11 @@ skills:
     - [Python, JavaScript, C, Erlang]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Ruby, Java, Scala, PHP, Perl, C#, R, Scheme, C++]
+    - [TypeScript, Ruby, Java, Scala, PHP, Perl, C#, R, Scheme, C++]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
-    - [Haskell, 6502 Assembly, MIPS assembly]
+    - [Rust, Haskell, 6502 Assembly, MIPS assembly]
 
   small_categories:
     Databases:
@@ -173,7 +173,7 @@ skills:
       - SPARQL
       - ElasticSearch
 
-    Editors: [Vim, IntelliJ Platform, Atom, Eclipse]
+    Editors: [Vim, IntelliJ Platform, Visual Studio Code, Atom, Eclipse]
 
     OSs:
       - macOS
@@ -184,10 +184,9 @@ skills:
     Version Control: [Git, Mercurial]
 
     Miscellaneous:
-     - '[Docker](https://www.docker.com/)'
-     - '[Vagrant](http://www.vagrantup.com/)'
+     - Docker
+     - Vagrant
 
-# TODO: Replace with BibTex?
 publications:
   - title: "How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers"
     year: 2018
@@ -264,11 +263,14 @@ hobbies:
   - title: >
       [Open source maintainer and contributor](https://github.com/eddieantonio).
   - title: >
-      Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
+      Teach Python as part of [Edmonton Public Library's Community Expert program](https://www.epl.ca/community-expert-program/).
   - title: >
       Creator of presentations on several technical topics.
       <span class="no-print">
       [[1]](http://www.eddieantonio.ca/unicode-es6/#/),
       [[2]](https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub),
-      [[3]](http://www.eddieantonio.ca/ExchangeJS-Prototypes/#/)
+      [[3]](https://www.eddieantonio.ca/ExchangeJS-Prototypes/#/),
+      [[4]](https://www.eddieantonio.ca/py-unicode/#/)
       </span>
+  - title: >
+      Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
