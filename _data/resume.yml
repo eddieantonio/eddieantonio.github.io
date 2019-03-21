@@ -187,15 +187,15 @@ skills:
      - Vagrant
 
 publications:
-  - title: "OCR evaluation for the 21st century"
+  - title: OCR evaluation for the 21st century
     year: 2019
     authors:
       - Santos, E. A.
     venue: 3rd Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-3)
     pages: 4
-    url: https://computel-workshop.org/wp-content/uploads/2019/02/CEL3_book_papers_draft.pdf
+    url: https://scholar.colorado.edu/cgi/viewcontent.cgi?article=1008&context=scil-cmel
 
-  - title: "How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers"
+  - title: How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers
     year: 2018
     authors:
       - Santos, E. A.
