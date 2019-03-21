@@ -164,10 +164,13 @@ li > p {
 main > article > section {
   margin-top: 3em;
 
+  & > section {
+    page-break-inside: avoid;
+  }
+
   h2 {
     font-variant: small-caps;
     line-height: 1.5;
-    page-break-inside: avoid;
 
     &:before, &:after {
         display: block;
