@@ -14,13 +14,12 @@ education:
 
 experience:
   - title: Application Development Specialist
-    employer: National Research Council of Canada (NRC-CNRC)
+    employer: National Research Council Canada (NRC-CNRC)
     time: { start: June 2018 }
     responsibilities:
-      - Develop language software for Canadian Indigenous languages (e.g., Plains Cree).
+      - Develop language software for Canadian indigenous languages (e.g., Plains Cree, SENĆOŦEN).
       - Collaborate with representatives from language communities and linguists.
-      - Write integration tests for web applications to detect
-        regressions, support refactoring, and add new features.
+      - Implement mopholigical language modelling for polysynthetic languages.
 
   - title: Software Engineer
     employer: Dr. Antti Arppe
@@ -156,10 +155,10 @@ experience:
 skills:
   languages:
     # "Tier 1" -- the languages that I spend a bunch of time programming.
-    - [Python, JavaScript, C, Erlang]
+    - [Python, JavaScript, C, Erlang, TypeScript]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [TypeScript, Ruby, Java, Scala, PHP, Perl, C#, R, Scheme, C++]
+    - [Ruby, Java, Scala, PHP, Perl, C#, R, Scheme, C++]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
@@ -188,6 +187,14 @@ skills:
      - Vagrant
 
 publications:
+  - title: "OCR evaluation for the 21st century"
+    year: 2019
+    authors:
+      - Santos, E. A.
+    venue: 3rd Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-3)
+    pages: 4
+    url: https://computel-workshop.org/wp-content/uploads/2019/02/CEL3_book_papers_draft.pdf
+
   - title: "How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers"
     year: 2018
     authors:
@@ -274,3 +281,5 @@ hobbies:
       </span>
   - title: >
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
+  - title: >
+      Created [syllabics.app](https://syllabics.app/) — a Cree syllabics converter
