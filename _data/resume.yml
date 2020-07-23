@@ -188,6 +188,15 @@ skills:
      - Vagrant
 
 publications:
+  - title: "Design and evaluation of a smartphone keyboard for Plains Cree syllabics"
+    year: 2020
+    authors:
+      - Santos, E. A.
+      - Harrigan, A. G.
+    venue: Proceedings of the 1st Joint Workshop on Spoken Language Technologies for Under-resourced languages (SLTU) and Collaboration and Computing for Under-Resourced Languages (CCURL)
+    pages: 9
+    url: https://www.aclweb.org/anthology/2020.sltu-1.12.pdf
+
   - title: "How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers"
     year: 2018
     authors:
@@ -259,6 +268,8 @@ publications:
 
 hobbies:
   - title: >
+      [Ada's Team](https://adasteam.ca) tutor; leader of the [Git Workshop](https://docs.google.com/presentation/d/1_q9iprlHnUVg_lQB9wsOwd5EyUCeDnKyGmJouu8u4Mk).
+  - title: >
       [Canada Learning Code](https://www.canadalearningcode.ca/) lead instructor and mentor.
   - title: >
       [Open source maintainer and contributor](https://github.com/eddieantonio).
@@ -271,6 +282,8 @@ hobbies:
       [[2]](https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub),
       [[3]](https://www.eddieantonio.ca/ExchangeJS-Prototypes/#/),
       [[4]](https://www.eddieantonio.ca/py-unicode/#/)
+      [[5]](https://www.youtube.com/watch?v=1GIIaGbL9qQ&t=6m52s)
+      [[6]](https://www.youtube.com/watch?v=xgU5fb_OgXE&t=7m45s)
       </span>
   - title: >
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
