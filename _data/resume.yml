@@ -187,6 +187,36 @@ skills:
      - Vagrant
 
 publications:
+  - title: "The Indigenous Languages Technology project at NRC Canada: An empowerment-oriented approach to developing language software"
+    authors:
+      - Roland Kuhn
+      - Fineen Davis
+      - Alain Désilets
+      - Eric Joanis
+      - Anna Kazantseva
+      - Rebecca Knowles
+      - Patrick Littell
+      - Delaney Lothian
+      - Aidan Pine
+      - Caroline Running Wolf
+      - Eddie Antonio Santos
+      - Darlene Stewart
+      - Gilles Boulianne
+      - Vishwa Gupta
+      - Owennatékha Brian Maracle
+      - Akwiratékha’ Martin
+      - Christopher Cox
+      - Marie-Odile Junker
+      - Olivia Sammons
+      - Delasie Torkornoo
+      - Nathan Thanyehténhas Brinklow
+      - Sara Child
+      - Benoît Farley
+      - David Huggins-Daines
+      - Daisy Rosenblum
+      - Heather Souter
+    venue: To appear in: Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), Online, Dec. 8-13, 2020.
+
   - title: Design and evaluation of a smartphone keyboard for Plains Cree syllabics
     year: 2020
     authors:
