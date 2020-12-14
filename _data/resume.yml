@@ -216,7 +216,8 @@ publications:
       - David Huggins-Daines
       - Daisy Rosenblum
       - Heather Souter
-    venue: "To appear in: Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), Online, Dec. 8-13, 2020."
+    venue: Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020)
+    url: https://www.aclweb.org/anthology/2020.coling-main.516/
 
   - title: Design and evaluation of a smartphone keyboard for Plains Cree syllabics
     year: 2020
