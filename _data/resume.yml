@@ -328,3 +328,18 @@ hobbies:
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
   - title: >
       Created [syllabics.app](https://syllabics.app/) — a Cree syllabics converter
+
+presentations:
+  - title: Demystifiying CPython Bytecode
+    date: August 14, 2019
+    venue: EdmontonPy Python meetup
+    slide_url: https://docs.google.com/presentation/d/1MGq2FtT-EtXwNb1uvM0NL2Kq4XzwUnvYzKzkB50Wve8/edit?usp=sharing
+    video_url: https://youtu.be/5yqUTJuFuUk?t=430
+  - title: Pipenv vs. Poetry
+    slide_url: https://docs.google.com/presentation/d/1EhUtS2_HlN8JMojgJwAmO7HB7CKbe_DNwgUFQFty89A/edit?usp=sharing
+  - title: nêhiyawêwin language technology built at the NRC (National Research Council)
+  - title: "Git Workshop [Beginners]"
+  - title: Canadian Indigneous languages technology project
+  - title: How does texting work?
+  - title: Advanced Unicode (for people who skipped introduction to Unicode)
+  - title: "Git Workshop [Intermediate]"
