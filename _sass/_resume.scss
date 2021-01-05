@@ -131,8 +131,8 @@ h3 a:hover, h3 a:active {
   }
 }
 
-.nothing-to-see-here:before { content: "easanto"; }
-.nothing-to-see-here:after { content: "@ualberta.ca"; }
+.nothing-to-see-here:before { content: "eddieantoni"; }
+.nothing-to-see-here:after { content: "@hey.com"; }
 
 .contact {
   .email:before { @include octicon($email-content); }
