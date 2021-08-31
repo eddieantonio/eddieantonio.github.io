@@ -194,38 +194,38 @@ publications:
       - Santos, E. A.
       - Souter, H.
     venue: "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume"
-    pages: "2631–2636"
+    pages: 5
     url: https://aclanthology.org/2021.eacl-main.226.pdf
 
   - title: "The Indigenous Languages Technology project at NRC Canada: An empowerment-oriented approach to developing language software"
     year: 2020
     authors:
-      - Roland Kuhn
-      - Fineen Davis
-      - Alain Désilets
-      - Eric Joanis
-      - Anna Kazantseva
-      - Rebecca Knowles
-      - Patrick Littell
-      - Delaney Lothian
-      - Aidan Pine
-      - Caroline Running Wolf
-      - Eddie Antonio Santos
-      - Darlene Stewart
-      - Gilles Boulianne
-      - Vishwa Gupta
-      - Owennatékha Brian Maracle
-      - Akwiratékha’ Martin
-      - Christopher Cox
-      - Marie-Odile Junker
-      - Olivia Sammons
-      - Delasie Torkornoo
-      - Nathan Thanyehténhas Brinklow
-      - Sara Child
-      - Benoît Farley
-      - David Huggins-Daines
-      - Daisy Rosenblum
-      - Heather Souter
+      - Kuhn, R.
+      - Davis, F.
+      - Désilets, A.
+      - Joanis, E.
+      - Kazantseva, A.
+      - Knowles, R.
+      - Littell, P.
+      - Lothian, D.
+      - Pine, A.
+      - Running Wolf, C.
+      - Santos, E. A.
+      - Stewart, D.
+      - Boulianne, G.
+      - Gupta, V.
+      - Maracle, O. B.
+      - Martin, A
+      - Cox, C.
+      - Junker, M.-O.
+      - Sammons, O.
+      - Torkornoo, D.
+      - Brinklow, N. T.
+      - Child, S.
+      - Farley, B.
+      - Huggins-Daines, D.
+      - Rosenblum, D.
+      - Souter, H.
     venue: Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020)
     url: https://www.aclweb.org/anthology/2020.coling-main.516/
 
