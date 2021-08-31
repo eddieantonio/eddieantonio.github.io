@@ -10,16 +10,16 @@ education:
     time: { start: September 2010, end: December 2015}
 
 # TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
-# etc.
+# NRC open source award, NRC Early Achievement award
 
 experience:
   - title: Application Development Specialist
     employer: National Research Council Canada (NRC-CNRC)
-    time: { start: June 2018 }
+    time: { start: June 2018, end: August 2021 }
     responsibilities:
-      - Develop apps and software for Indigenous languages (e.g., Plains Cree, SENĆOŦEN, Michif, Tsuut'ina).
       - Collaborate with representatives from language communities and linguists.
-      - Implement morphological computational modelling for polysynthetic languages.
+      - Develop open source applications for Indigenous languages (e.g., Plains Cree, SENĆOŦEN, Michif, Tsuut'ina, Makah).
+      - Implement morphological computational modelling and predictive text for polysynthetic languages.
 
   - title: Software Developer
     employer: Dr. Antti Arppe
@@ -187,6 +187,16 @@ skills:
      - Vagrant
 
 publications:
+  - title: On the Computational Modelling of Michif Verbal Morphology
+    year: 2021
+    authors:
+      - Davis, F.
+      - Santos, E. A.
+      - Souter, H.
+    venue: "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume"
+    pages: "2631–2636"
+    url: https://aclanthology.org/2021.eacl-main.226.pdf
+
   - title: "The Indigenous Languages Technology project at NRC Canada: An empowerment-oriented approach to developing language software"
     year: 2020
     authors:
