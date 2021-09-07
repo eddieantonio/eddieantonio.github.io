@@ -132,7 +132,7 @@ h3 a:hover, h3 a:active {
 }
 
 .nothing-to-see-here:before { content: "hell"; }
-.nothing-to-see-here:after { content: "o@eddieantonio.ca"; }
+.nothing-to-see-here:after { content: "@eddieantonio.ca"; }
 
 .contact {
   .email:before { @include octicon($email-content); }
