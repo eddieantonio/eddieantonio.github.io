@@ -1,4 +1,8 @@
 education:
+  - institution: University College Dublin
+    location: Dublin, Ireland
+    program: PhD. Computing Science
+    time: { start: September 2021 }
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
@@ -10,7 +14,7 @@ education:
     time: { start: September 2010, end: December 2015}
 
 # TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
-# NRC open source award, NRC Early Achievement award
+# NRC open source award, NRC Early Achievement award, Open source award
 
 experience:
   - title: Application Development Specialist
