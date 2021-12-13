@@ -265,7 +265,7 @@ publications:
     year: 2018
     authors:
       - Santos, E. A.
-      - Campbell, J. C.
+      - Campbell, H. V.
       - Patel, D.
       - Hindle, A.
       - Amaral, J. N.
@@ -311,7 +311,7 @@ publications:
   - title: The unreasonable effectiveness of traditional information retrieval in crash report deduplication
     year: 2016
     authors:
-      - Campbell, J. C.
+      - Campbell, H. V.
       - Santos, E. A.
       - Hindle, A.
     venue: Proceedings of the 13th International Workshop on Mining Software Repositories
