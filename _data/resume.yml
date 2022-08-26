@@ -15,6 +15,13 @@ education:
 
 # TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
 # NRC open source award, NRC Early Achievement award, Open source award
+awards:
+  - title: 2016 MSR Mining Challenge
+    url: 'https://2017.msrconf.org/#:~:text=judging%20a%20commit%20by%20its%20cover%3A%20correlating%20commit%20message%20entropy%20with%20build%20status%20on%20travis-ci'
+  - title: MSc Early Acheivement Award
+    url: https://www.ualberta.ca/computing-science/research/awards-and-accolades.html
+  - title: NRC IP Award
+    contributors: (ILT team!)
 
 experience:
   - title: Application Development Specialist
@@ -328,6 +335,7 @@ hobbies:
       [Open source maintainer and contributor](https://github.com/eddieantonio).
   - title: >
       Teach Python as part of [Edmonton Public Library's Community Expert program](https://www.epl.ca/community-expert-program/).
+  # TODO: move all of these to a dedicated "presentations" section
   - title: >
       Creator of presentations on several technical topics.
       <span class="no-print">
@@ -342,3 +350,11 @@ hobbies:
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
   - title: >
       Created [syllabics.app](https://syllabics.app/) — a Cree syllabics converter
+  - title: >
+      [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252)
+
+presentations:
+  - title: Why are there so many programming languages?
+    year: 2022
+  #  slides_url:
+  #  video_url:
