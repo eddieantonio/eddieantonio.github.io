@@ -13,16 +13,6 @@ education:
     title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
-# TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
-# NRC open source award, NRC Early Achievement award, Open source award
-awards:
-  - title: 2016 MSR Mining Challenge
-    url: 'https://2017.msrconf.org/#:~:text=judging%20a%20commit%20by%20its%20cover%3A%20correlating%20commit%20message%20entropy%20with%20build%20status%20on%20travis-ci'
-  - title: MSc Early Acheivement Award
-    url: https://www.ualberta.ca/computing-science/research/awards-and-accolades.html
-  - title: NRC IP Award
-    contributors: (ILT team!)
-
 experience:
   - title: Application Development Specialist
     employer: National Research Council Canada (NRC-CNRC)
@@ -198,6 +188,23 @@ skills:
      - Vagrant
 
 publications:
+  - title: "G<sub>i</sub>2P<sub>i</sub>: Rule-based, index-preserving grapheme-to-phoneme transformations"
+    year: 2022
+    authors:
+      - Pine, A.
+      - Littell, P.
+      - Joanis, E.
+      - Huggins-Daines, D.
+      - Cox, C.
+      - Davis, F.
+      - Santos, E. A.
+      - Srikanth, S.
+      - Torkornoo, D.
+      - Yu, S.
+    venue: Proceedings of the Fifth Workshop on the Use of Computational Methods in the Study of Endangered Languages
+    pages: 9
+    url: https://aclanthology.org/2022.computel-1.7/
+
   - title: On the Computational Modelling of Michif Verbal Morphology
     year: 2021
     authors:
@@ -352,6 +359,21 @@ hobbies:
       Created [syllabics.app](https://syllabics.app/) — a Cree syllabics converter
   - title: >
       [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252)
+
+# TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
+# NRC open source award, NRC Early Achievement award, Open source award
+awards:
+  - title: 2016 MSR Mining Challenge
+    url: 'https://2017.msrconf.org/#:~:text=judging%20a%20commit%20by%20its%20cover%3A%20correlating%20commit%20message%20entropy%20with%20build%20status%20on%20travis-ci'
+  - title: MSc Early Acheivement Award
+    url: https://www.ualberta.ca/computing-science/research/awards-and-accolades.html
+  - title: NRC IP Award
+    contributors: (ILT team!)
+
+# TODO: language technology
+# e.g., keyboards for Plains Cree, Makah, Piaroa
+# predictive text for SENĆOŦEN
+# itwêwina
 
 presentations:
   - title: Why are there so many programming languages?
