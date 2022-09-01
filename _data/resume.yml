@@ -14,6 +14,14 @@ education:
     time: { start: September 2010, end: December 2015}
 
 experience:
+  - title: Lead Teaching Assistant
+    employer: Beijing Dublin International College (BDIC)
+    time: { start: February 2022, end: June 2022 }
+    responsibilities:
+      - Lead students on software engineering projects (COMP3030J, COMP3032J)
+      - Create lab presentations and develop assignments for high-performance computing (COMP3036J)
+      - Assist students with C programming (COMP1002J)
+
   - title: Application Development Specialist
     employer: National Research Council Canada (NRC-CNRC)
     time: { start: June 2018, end: August 2021 }
@@ -156,14 +164,14 @@ experience:
 skills:
   languages:
     # "Tier 1" -- the languages that I spend a bunch of time programming.
-    - [Python, JavaScript, C, Erlang, TypeScript]
+    - [Python, JavaScript, C, TypeScript, Rust, Java]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Ruby, Java, Scala, PHP, Perl, C#, R, Scheme, C++]
+    - [Erlang, Ruby, PHP, Perl, C#, R, Scheme, C++]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have intimate knowledge of 'em because I'm a
     # freak.
-    - [Rust, Haskell, 6502 Assembly, MIPS assembly]
+    - [Scala, Haskell, 6502 Assembly, MIPS assembly]
 
   small_categories:
     Databases:
