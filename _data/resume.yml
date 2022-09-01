@@ -2,7 +2,8 @@ education:
   - institution: University College Dublin
     location: Dublin, Ireland
     program: PhD. Computing Science
-    time: { start: September 2021 }
+    time: { start: September 2021, expected: 2025 }
+    in_progress: true
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
