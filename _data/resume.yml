@@ -1,7 +1,7 @@
 education:
   - institution: University College Dublin
     location: Dublin, Ireland
-    program: PhD. Computing Science
+    program: PhD. Computer Science
     time: { start: September 2021, expected: 2025 }
     in_progress: true
   - institution: University of Alberta
@@ -14,21 +14,23 @@ education:
     title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
+
 experience:
   - title: Lead Teaching Assistant
     employer: Beijing-Dublin International College (BDIC)
     time: { start: February 2022, end: June 2022 }
     responsibilities:
-      - Lead students on software engineering projects (COMP3030J, COMP3032J)
-      - Create lab presentations and develop assignments for high-performance computing (COMP3036J)
-      - Assist students with C programming (COMP1002J)
+      - Lead students on software engineering projects (COMP3030J, COMP3032J).
+      - Create lab presentations and develop assignments for high-performance computing (COMP3036J).
+      - Assist students with C programming (COMP1002J).
 
   - title: Application Development Specialist
     employer: National Research Council Canada (NRC-CNRC)
     time: { start: June 2018, end: August 2021 }
     responsibilities:
+      - Work on the [Indigenous Languages Technology Project](https://nrc.canada.ca/en/research-development/research-collaboration/programs/canadian-indigenous-languages-technology-project)
       - Collaborate with representatives from language communities and linguists.
-      - Develop open source applications for Indigenous languages (e.g., Plains Cree, SENĆOŦEN, Michif, Tsuut'ina, Makah).
+      - Develop open source applications for Indigenous languages (e.g., Plains Cree, SENĆOŦEN, Michif, Tsuut'ina, Makah, Piaroa).
       - Implement morphological computational modelling and predictive text for polysynthetic languages.
 
   - title: Software Developer
@@ -96,7 +98,6 @@ experience:
     responsibilities:
       - Tutor students in introductory computing science, primarily using
         C and Python.
-      - Establish a relationship with the student based on mutual trust and respect.
       - Proactively find resources that will help the student succeed.
       - Guide students to find the answer for themselves.
       - Promote active thinking rather than rote memorization.
@@ -106,7 +107,7 @@ experience:
     time: { start: 2012, end: 2014 }
     responsibilities:
       - Lead SCI 100, Computing Science component.
-      - Assist students learning Python as their first programming language.
+      - Assist students learning Python as their first programming language (CS1).
       - Evaluate student coursework.
 
   - title: Lead developer
@@ -143,10 +144,8 @@ experience:
     employer: Dr. Greg Goss
     time: { start: 2012, end: 2013 }
     responsibilities:
-      - Evaluate the state of a legacy PHP web application and promptly chuck
-        it out (incrementing a database cursor in the middle of template
-        code that generates HTML tables? Ain't nobody got time for that).
-      - Create database migration tools to transition from an SQLite3
+      - Update a legacy PHP web application
+      - Create database migration tools to transition from a SQL
         database schema to a more maintainable (i.e., normalized) schema.
       - Employ the use of full-text indices for measurably faster text
         search queries.
@@ -168,11 +167,10 @@ skills:
     - [Python, JavaScript, C, TypeScript, Rust, Java]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Erlang, Ruby, PHP, Perl, C#, R, Scheme, C++]
+    - [Erlang, Ruby, PHP, Perl, POSIX shell script, Awk, R,  C++]
     # Less useful, or far less proficient; I don't really program them often
-    # or haven't recently, but I have intimate knowledge of 'em because I'm a
-    # freak.
-    - [Scala, Haskell, 6502 Assembly, MIPS assembly]
+    # or haven't recently, but I have knowledge of 'em because I'm a freak.
+    - [Scheme, C#, Scala, Haskell, 6502 Assembly, MIPS assembly]
 
   small_categories:
     Databases:
@@ -182,19 +180,22 @@ skills:
       - SPARQL
       - ElasticSearch
 
-    Editors: [Vim, IntelliJ Platform, Visual Studio Code, Atom, Eclipse]
+    Editors: [Vim, IntelliJ, Visual Studio Code, Eclipse]
 
     OSs:
       - macOS
       - Ubuntu/Debian Linux
       - OpenBSD
-      - Other Linux distributions
+      - other Linux distributions
 
     Version Control: [Git, Mercurial]
 
     Miscellaneous:
      - Docker
      - Vagrant
+     - HTML
+     - CSS
+     - LaTeX
 
 publications:
   - title: "G<sub>i</sub>2P<sub>i</sub>: Rule-based, index-preserving grapheme-to-phoneme transformations"
@@ -271,7 +272,7 @@ publications:
       - Santos, E. A.
     venue: 3rd Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-3)
     pages: 4
-    url: https://scholar.colorado.edu/cgi/viewcontent.cgi?article=1008&context=scil-cmel
+    url: https://aclanthology.org/W19-6004.pdf
 
   - title: How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers
     year: 2018
@@ -342,6 +343,7 @@ publications:
     url: http://dl.acm.org/citation.cfm?id=2901766
     pages: 10
 
+
 hobbies:
   - title: >
       [Ada's Team](https://adasteam.ca) tutor; leader of the [Git Workshop](https://docs.google.com/presentation/d/1_q9iprlHnUVg_lQB9wsOwd5EyUCeDnKyGmJouu8u4Mk).
@@ -369,23 +371,68 @@ hobbies:
   - title: >
       [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252)
 
+
 # TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
 # NRC open source award, NRC Early Achievement award, Open source award
 awards:
   - title: 2016 MSR Mining Challenge
     url: 'https://2017.msrconf.org/#:~:text=judging%20a%20commit%20by%20its%20cover%3A%20correlating%20commit%20message%20entropy%20with%20build%20status%20on%20travis-ci'
-  - title: MSc Early Acheivement Award
+  - title: MSc Early Achievement Award
     url: https://www.ualberta.ca/computing-science/research/awards-and-accolades.html
   - title: NRC IP Award
     contributors: (ILT team!)
+
+
+presentations:
+  # There are definitely presentations I'm forgetting here...
+  - title: Why are there so many programming languages?
+    venue: Dr. Catherine Mooney's 2022 COMP1001J Introduction to Software Engineering class
+    year: 2022
+    slides_url: https://docs.google.com/presentation/d/1PYuYqD2N3AjuKvMuyqus7ZasEti7CdK7/edit?usp=sharing&ouid=114580936140511467597&rtpof=true&sd=true
+  - title: How to be a time-traveller with git (Git Workshop)
+    venue: Ada's Team special workshop
+    year: 2020
+    slides_url: https://docs.google.com/presentation/d/1bcnsDn-jUYFVYTERw9SC5nzMH7q1OryjC6O_qfCmO8A/edit?usp=sharing
+  - title: Deploying static websites on Zeit (now Vercel) with Parcel
+    venue: Exchange.js
+    year: 2020
+    video_url: https://youtu.be/xgU5fb_OgXE?t=460
+  - title: Pipenv vs. Poetry
+    venue: EdmontonPy
+    year: 2020
+    slides_url: https://docs.google.com/presentation/d/1EhUtS2_HlN8JMojgJwAmO7HB7CKbe_DNwgUFQFty89A/edit?usp=sharing
+    video_url: https://www.youtube.com/watch?v=1GIIaGbL9qQ&t=412s
+  - title: Demystifying CPython Bytecode
+    venue: EdmontonPy
+    year: 2019
+    slides_url: https://docs.google.com/presentation/d/1MGq2FtT-EtXwNb1uvM0NL2Kq4XzwUnvYzKzkB50Wve8/edit?usp=sharing
+    video_url: https://youtu.be/5yqUTJuFuUk?t=431
+  - title: "What is a __repr__?"
+    year: 2019
+    venue: EdmontonPy
+    video_url: https://youtu.be/zztvUZGa1DA?t=1709
+    slides_url: https://colab.research.google.com/drive/121TA0oMcXFBvvO7ENuGiNMUf4f3H_8x-
+  - title: Statically-typed Python
+    venue: EdmontonPy
+    year: 2019
+    slides_url: https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub?slide=id.p
+  - title: Advanced Unicode (for people who skipped Introduction to Unicode)
+    year: 2019
+    slides_url: https://docs.google.com/presentation/d/1P8zOT51DdRg0gM0Clt4UNYkGe3in1lPgqMBREjMGAi0/edit?usp=sharing
+  - title: Unicode and You!
+    venue: EdmontonPy
+    year: 2018
+    slides_url: https://eddieantonio.ca/py-unicode/#/
+  - title: "Prototypes: A beginner's guide"
+    venue: ExchangeJS
+    year: 2016
+    slides_url: https://eddieantonio.ca/ExchangeJS-Prototypes/#/
+  - title: Unicode! (And how ES6 can help!)
+    venue: ExchangeJS
+    year: 2016
+    slides_url: https://eddieantonio.ca/unicode-es6/#/
 
 # TODO: language technology
 # e.g., keyboards for Plains Cree, Makah, Piaroa
 # predictive text for SENĆOŦEN
 # itwêwina
-
-presentations:
-  - title: Why are there so many programming languages?
-    year: 2022
-  #  slides_url:
-  #  video_url:
