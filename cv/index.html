@@ -47,7 +47,7 @@ redirect_from: "/resume/"
           <h2>Education</h2>
         </header>
 
-        {% for ed in site.data.resume.education %}
+        {% for ed in site.data.cv.education %}
         <section class="title-location-block">
           <hgroup>
             <h3 class="title">{{ ed.program }}</h3>
@@ -74,7 +74,7 @@ redirect_from: "/resume/"
           <h3> Programming languages </h3>
 
           <ul class="lang-list">
-          {% for tier in site.data.resume.skills.languages %}
+          {% for tier in site.data.cv.skills.languages %}
             {% assign tier_no = forloop.index %}
             {% for lang in tier %}
             <li class="lang-tier-{{ tier_no }}
@@ -86,7 +86,7 @@ redirect_from: "/resume/"
 
         <section>
           <dl>
-            {% for category in site.data.resume.skills.small_categories %}
+            {% for category in site.data.cv.skills.small_categories %}
               <dt> {{ category[0] }} </dt>
               <dd> {{ category[1] | join: ', ' | markdownify }} </dd>
             {% endfor %}
@@ -109,7 +109,7 @@ redirect_from: "/resume/"
           <h2> Work Experience </h2>
         </header>
 
-        {% for job in site.data.resume.experience %}
+        {% for job in site.data.cv.experience %}
         <section class="title-location-block">
           {% capture job_employer %}{% if job.employer %}{{ job.employer }}{% else %}{{ job.location }}{% endif %}{% endcapture %}
           <hgroup>
@@ -139,7 +139,7 @@ redirect_from: "/resume/"
         <p> My OCRID: <a href="https://orcid.org/0000-0001-5337-715X"> orcid.org/0000-0001-5337-715X </a>
 
         <ul>
-          {% for paper in site.data.resume.publications %}
+          {% for paper in site.data.cv.publications %}
             <li>
               <span class="publication-authors">{{ paper.authors | join: ', ' }}</span>,
               <span class="publication-title">
@@ -158,7 +158,7 @@ redirect_from: "/resume/"
         <h2>Hobbies and Volunteering</h2>
 
         <dl>
-          {% for hobby in site.data.resume.hobbies %}
+          {% for hobby in site.data.cv.hobbies %}
             <dt> {{ hobby.title | markdownify }} </dt>
           {% endfor %}
         </dl>
