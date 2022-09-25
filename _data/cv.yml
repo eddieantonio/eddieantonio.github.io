@@ -350,26 +350,15 @@ hobbies:
   - title: >
       [Canada Learning Code](https://www.canadalearningcode.ca/) lead instructor and mentor.
   - title: >
-      [Open source maintainer and contributor](https://github.com/eddieantonio).
-  - title: >
       Teach Python as part of [Edmonton Public Library's Community Expert program](https://www.epl.ca/community-expert-program/).
-  # TODO: move all of these to a dedicated "presentations" section
-  - title: >
-      Creator of presentations on several technical topics.
-      <span class="no-print">
-      [[1]](https://eddieantonio.ca/unicode-es6/#/),
-      [[2]](https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub),
-      [[3]](https://eddieantonio.ca/ExchangeJS-Prototypes/#/),
-      [[4]](https://eddieantonio.ca/py-unicode/#/)
-      [[5]](https://www.youtube.com/watch?v=1GIIaGbL9qQ&t=6m52s)
-      [[6]](https://www.youtube.com/watch?v=xgU5fb_OgXE&t=7m45s)
-      </span>
   - title: >
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
   - title: >
-      Created [syllabics.app](https://syllabics.app/) — a Cree syllabics converter
+      Created [syllabics.app](https://syllabics.app/) — a Western Cree syllabics converter
   - title: >
       [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252)
+  - title: >
+      [Open source maintainer and contributor](https://github.com/eddieantonio).
 
 
 # TODO: add achievements like MSR Mining Challenge, MSc Early Achievement,
@@ -393,7 +382,7 @@ presentations:
     venue: Ada's Team special workshop
     year: 2020
     slides_url: https://docs.google.com/presentation/d/1bcnsDn-jUYFVYTERw9SC5nzMH7q1OryjC6O_qfCmO8A/edit?usp=sharing
-  - title: Deploying static websites on Zeit (now Vercel) with Parcel
+  - title: Deploying static websites on Zeit and Parcel
     venue: Exchange.js
     year: 2020
     video_url: https://youtu.be/xgU5fb_OgXE?t=460
@@ -407,7 +396,7 @@ presentations:
     year: 2019
     slides_url: https://docs.google.com/presentation/d/1MGq2FtT-EtXwNb1uvM0NL2Kq4XzwUnvYzKzkB50Wve8/edit?usp=sharing
     video_url: https://youtu.be/5yqUTJuFuUk?t=431
-  - title: "What is a __repr__?"
+  - title: What is a __repr__?
     year: 2019
     venue: EdmontonPy
     video_url: https://youtu.be/zztvUZGa1DA?t=1709
