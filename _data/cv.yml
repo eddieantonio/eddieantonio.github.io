@@ -30,11 +30,11 @@ experience:
     employer: National Research Council Canada (NRC-CNRC)
     time: { start: June 2018, end: August 2021 }
     responsibilities:
-      - Work on the [Indigenous Languages Technology Project](https://nrc.canada.ca/en/research-development/research-collaboration/programs/canadian-indigenous-languages-technology-project)
+      - Work on the [Indigenous Languages Technology Project](https://nrc.canada.ca/en/research-development/research-collaboration/programs/canadian-indigenous-languages-technology-project).
       - Develop open source applications for Indigenous languages (e.g., Plains Cree, SENĆOŦEN, Michif, Tsuut'ina, Makah, Piaroa).
       - Collaborate with representatives from language communities and linguists.
       - Implement morphological computational modelling and predictive text for polysynthetic languages.
-      - Supervise student interns
+      - Supervise student interns.
 
   - title: Software Developer
     employer: Dr. Antti Arppe
@@ -60,7 +60,7 @@ experience:
     location: University of Alberta
     time: { start: September 2017, end: April 2018 }
     responsibilities:
-      - Write, edit, and produce video tutorials for COMPUT 175 (CS2) teaching
+      - Write, edit, and produce video tutorials for CMPUT 175 (CS2) teaching
         introductory Python and presenting fundamental computing science
         concepts.
       - Create quizzes to effectively test knowledge.
@@ -411,7 +411,7 @@ presentations:
   - title: Advanced Unicode (for people who skipped Introduction to Unicode)
     year: 2019
     slides_url: https://docs.google.com/presentation/d/1P8zOT51DdRg0gM0Clt4UNYkGe3in1lPgqMBREjMGAi0/edit?usp=sharing
-  - title: Unicode and You!
+  - title: Unicode and You! An Introduction to Unicode in Python
     venue: EdmontonPy
     year: 2018
     slides_url: https://eddieantonio.ca/py-unicode/#/
