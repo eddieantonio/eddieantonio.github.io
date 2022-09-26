@@ -7,6 +7,8 @@ education:
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc. Computing Science
+    thesis: Applications of the Naturalness of Software
+    theis_url: https://era.library.ualberta.ca/items/2d3cf508-cc17-4534-bb9c-1a0fd7e920c4
     time: { start: January 2016, end: November 2018}
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
@@ -20,7 +22,7 @@ experience:
     employer: Beijing-Dublin International College (BDIC)
     time: { start: February 2022, end: June 2022 }
     responsibilities:
-      - Lead students on software engineering projects (COMP3030J, COMP3032J).
+      - Supervise students on software engineering projects (COMP3030J, COMP3032J).
       - Create lab presentations and develop assignments for high-performance computing (COMP3036J).
       - Assist students with C programming (COMP1002J).
 
@@ -29,19 +31,19 @@ experience:
     time: { start: June 2018, end: August 2021 }
     responsibilities:
       - Work on the [Indigenous Languages Technology Project](https://nrc.canada.ca/en/research-development/research-collaboration/programs/canadian-indigenous-languages-technology-project)
-      - Collaborate with representatives from language communities and linguists.
       - Develop open source applications for Indigenous languages (e.g., Plains Cree, SENĆOŦEN, Michif, Tsuut'ina, Makah, Piaroa).
+      - Collaborate with representatives from language communities and linguists.
       - Implement morphological computational modelling and predictive text for polysynthetic languages.
+      - Supervise student interns
 
   - title: Software Developer
     employer: Dr. Antti Arppe
     location: University of Alberta
     time: { start: February 2018, end: May 2018 }
     responsibilities:
-      - Write code that cleans and organizes recording validation data.
+      - Write code that cleans and organizes field recording validation data.
       - Interpret requirements and deliver work in incremental sprints.
-      - Create a web application in Flask/SQLAlchemy to assist in manual
-        recordings validation.
+      - Create a web application in Flask/SQLAlchemy to assist in manual recordings validation.
 
   - title: Teaching assistant
     employer: Hazel Campbell
@@ -58,8 +60,9 @@ experience:
     location: University of Alberta
     time: { start: September 2017, end: April 2018 }
     responsibilities:
-      - Write, edit, and produce video tutorials teaching introductory Python
-        and presenting fundamental computing science concepts.
+      - Write, edit, and produce video tutorials for COMPUT 175 (CS2) teaching
+        introductory Python and presenting fundamental computing science
+        concepts.
       - Create quizzes to effectively test knowledge.
 
   - title: Teaching assistant
@@ -88,7 +91,7 @@ experience:
       - Collaborate intensively with colleagues in medicine on a virtual
         patient simulation platform.
       - Research, evaluate, and integrate medical ontologies.
-      - Write a web application using PHP, JavaScript (with React).
+      - Write a web application using PHP, JavaScript, and React.
       - Experiment with databases such as Virtuoso, Neo4j and MongoDB.
       - Support and maintain a legacy PHP web application.
 
@@ -317,7 +320,7 @@ publications:
       - Lachler, J.
       - Santos, E. A.
     venue: Language Resources and Evaluation Conference 2016, Portoroz, Slovenia
-    url: https://www.ualberta.ca/~isabell/files/publications/HubertArppeLachlerSantos_2016_LREC.pdf
+    url: https://aclanthology.org/L16-1514.pdf
     pages: 8
 
   - title: Judging a commit by its cover; correlating commit message entropy with build status on Travis-CI
@@ -346,7 +349,7 @@ publications:
 
 hobbies:
   - title: >
-      [Ada's Team](https://adasteam.ca) tutor; leader of the [Git Workshop](https://docs.google.com/presentation/d/1_q9iprlHnUVg_lQB9wsOwd5EyUCeDnKyGmJouu8u4Mk).
+      Computer science tutor for [Ada's Team](https://adasteam.ca); leader of the [Git Workshop](https://docs.google.com/presentation/d/1_q9iprlHnUVg_lQB9wsOwd5EyUCeDnKyGmJouu8u4Mk).
   - title: >
       [Canada Learning Code](https://www.canadalearningcode.ca/) lead instructor and mentor.
   - title: >
@@ -354,9 +357,9 @@ hobbies:
   - title: >
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
   - title: >
-      Created [syllabics.app](https://syllabics.app/) — a Western Cree syllabics converter
+      Created [syllabics.app](https://syllabics.app/) — a Western Cree syllabics converter.
   - title: >
-      [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252)
+      [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252).
   - title: >
       [Open source maintainer and contributor](https://github.com/eddieantonio).
 
@@ -382,7 +385,7 @@ presentations:
     venue: Ada's Team special workshop
     year: 2020
     slides_url: https://docs.google.com/presentation/d/1bcnsDn-jUYFVYTERw9SC5nzMH7q1OryjC6O_qfCmO8A/edit?usp=sharing
-  - title: Deploying static websites on Zeit and Parcel
+  - title: Deploying static websites with Zeit and Parcel
     venue: Exchange.js
     year: 2020
     video_url: https://youtu.be/xgU5fb_OgXE?t=460
@@ -416,7 +419,7 @@ presentations:
     venue: ExchangeJS
     year: 2016
     slides_url: https://eddieantonio.ca/ExchangeJS-Prototypes/#/
-  - title: Unicode! (And how ES6 can help!)
+  - title: Unicode! (And how ES6 can help)
     venue: ExchangeJS
     year: 2016
     slides_url: https://eddieantonio.ca/unicode-es6/#/
