@@ -37,6 +37,7 @@ body {
 
     @media screen {
       max-width: 40em;
+      padding-inline: 0.5rem;
     }
   }
 }
@@ -186,6 +187,7 @@ main > article > section {
 
   & > hgroup {
     display: flex;
+    align-items: baseline;
 
     .title {
       flex: 1;
