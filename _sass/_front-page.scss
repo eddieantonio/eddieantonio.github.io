@@ -1,17 +1,19 @@
 /*
  * Styles for my front-page.
  *
- * 2015-2017 © Eddie Antonio Santos.
+ * 2015-2022 © Eddie Antonio Santos.
  */
 
 // Colors
 
 $highlight-colour: #909090;
 $main-colour: #666;
-$background-color: #fafcff;
+// This colour was artfully sampled from the background image:
+$background-color: #AA9C8C;
 $banner-color: fade-out(white, 0.15);
 
-$background-image: url(./bg/barco-atitlan.jpg);
+$background-image-jpg: url(./bg/barco-atitlan.jpg);
+$background-image-webp: url(./bg/barco-atitlan.webp);
 
 // Main font styles.
 
@@ -36,7 +38,10 @@ a:hover { color: $highlight-colour; }
 // Home page styles
 
 html {
-  background: $background-image 50% / cover fixed no-repeat $background-color;
+  background: $background-image-jpg 50% / cover fixed no-repeat $background-color;
+}
+html.webp {
+  background-image: $background-image-webp;
 }
 
 body {
