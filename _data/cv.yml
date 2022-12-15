@@ -201,6 +201,25 @@ skills:
      - LaTeX
 
 publications:
+  - title: "What makes a programming error message good?"
+    year: 2022
+    authors:
+      - Santos, E. A.
+    venue: Proceedings of the 2022 Conference on United Kingdom & Ireland Computing Education Research
+    pages: 1
+    url: https://dl.acm.org/doi/abs/10.1145/3555009.3555032
+
+  - title: "The Human Factors Impact of Programming Error Messages (Dagstuhl Seminar 22052)"
+    year: 2022
+    authors:
+      - Becker, B. A.
+      - Denny, P.
+      - Siegmund, J.
+      - Stefik, A.
+      - Santos, E. A.
+    venue: Dagstuhl Reports}
+    url: https://drops.dagstuhl.de/opus/volltexte/2022/16924/
+
   - title: "G<sub>i</sub>2P<sub>i</sub>: Rule-based, index-preserving grapheme-to-phoneme transformations"
     year: 2022
     authors:
@@ -428,3 +447,40 @@ presentations:
 # e.g., keyboards for Plains Cree, Makah, Piaroa
 # predictive text for SENĆOŦEN
 # itwêwina
+language_tech:
+  keyboards:
+    - name: Cree Syllabics “build-a-syllable” mobile keyboard
+      bcp47: crk-Cans
+      form_factor: mobile
+      url:
+      notes: Atticus Harrigan
+      publication:
+    - name: Cree syllabics keyboard for Chromebook
+      bcp47: crk-Cans
+      form_factor: desktop
+      url:
+      notes: In collaboration with Craig Cornelius
+    - name: Makah keyboard for Chromebook
+      bcp47: myh
+      form_factor: desktop
+      url:
+      notes: In collaboration with Craig Cornelius
+    - name: Makah keyboard for smartphones
+      bcp47: myh
+      form_factor: mobile
+      url:
+      notes: With contributions from Conor Quinn
+    - name: Piaroa keyboard
+      bcp47: pid
+      form_factor: desktop
+      url:
+      notes: On behalf of Jorge Emilio Rosés Labrada
+    - name: Sáliba keyboard
+      bcp47: slc
+      form_factor: desktop
+      url: https://keyman.com/keyboards/slc_saliba
+      notes: On behalf of Jorge Emilio Rosés Labrada
+
+# Somehow add newsworth research:
+# https://www.theregister.com/2022/10/20/ai_programming_tools_mean_rethinking/
+# https://www.theregister.com/2017/05/05/docker_docks_wallets_with_delays/
