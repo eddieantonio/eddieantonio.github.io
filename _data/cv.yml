@@ -18,6 +18,13 @@ education:
 
 
 experience:
+  - title: Assistant Lecturer
+    employer: Technological University Dublin
+    time: { start: October 2022 }
+    responsibilities:
+      - Create syllabi, lecture slides, assignments
+      - Deliver lectures in person
+
   - title: Lead Teaching Assistant
     employer: Beijing-Dublin International College (BDIC)
     time: { start: February 2022, end: June 2022 }
