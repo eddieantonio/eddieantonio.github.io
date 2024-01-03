@@ -1,21 +1,23 @@
 education:
   - institution: University College Dublin
     location: Dublin, Ireland
-    program: PhD. Computer Science
+    program: PhD Computer Science
     time: { start: September 2021, expected: 2025 }
     in_progress: true
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
-    program: MSc. Computing Science
+    program: MSc Computing Science
     thesis: Applications of the Naturalness of Software
     theis_url: https://era.library.ualberta.ca/items/2d3cf508-cc17-4534-bb9c-1a0fd7e920c4
     time: { start: January 2016, end: November 2018}
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
-    program: BSc. Computing Science
+    program: BSc Computing Science
     title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
+# TODO: create a teaching section?
+# TUDublin: Advanced Database Systems and Software Localization
 
 experience:
   - title: Assistant Lecturer
@@ -172,15 +174,17 @@ experience:
 
 
 skills:
+  # I will probably phase out this section soon -- I mostly keep it here to
+  # remind MYSELF of what I have learned.
   languages:
     # "Tier 1" -- the languages that I spend a bunch of time programming.
-    - [Python, JavaScript, C, TypeScript, Rust, Java]
+    - [Python, C, Rust, JavaScript, TypeScript, Java]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Erlang, Ruby, PHP, Perl, POSIX shell script, Awk, R,  C++]
+    - [Erlang, Ruby, PHP, Perl, POSIX shell script, Awk, C++, PL/SQL]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have knowledge of 'em because I'm a freak.
-    - [Scheme, C#, Scala, Haskell, 6502 Assembly, MIPS assembly]
+    - [R, Scheme, C#, Scala, Haskell, 6502 Assembly, MIPS assembly]
 
   small_categories:
     Databases:
@@ -208,6 +212,84 @@ skills:
      - LaTeX
 
 publications:
+  - title: "Always Provide Context: The Effects of Code Context on Programming Error Message Enhancement"
+    year: 2023
+    authors:
+      - Santos, E. A.
+      - Prasad, P.
+      - Becker, B. A.
+    booktitle: "Proceedings of the ACM Conference on Global Computing Education Vol 1"
+    pages: 7
+    url: https://doi.org/10.1145/3576882.3617909
+
+  - title: "Teaching Students To Use Programming Error Messages"
+    year: 2023
+    authors:
+      - Bouvier, D. J.
+      - Lovellette, E.
+      - Santos, E. A.
+      - Becker, B. A.
+      - Crick, T.
+      - Dasigi, V. G.
+      - Forden, J.
+      - Glebova, O.
+      - Joshi, S.
+      - Kurkovsky, S.
+    booktitle: "Proceedings of the ACM Conference on Global Computing Education Vol 2"
+    pages: 3
+    url: https://doi.org/10.1145/3617650.3624950
+
+  - title: '“It’s Weird That it Knows What I Want”: Usability and Interactions with Copilot for Novice Programmers"'
+    year: 2023
+    authors:
+      - Prather, J.
+      - Reeves, B. N.
+      - Denny, P.
+      - Becker, B. A.
+      - Leinonen, J.
+      - Luxton-Reilly, A.
+      - Powell, G.
+      - Finnie-Ansley, J.
+      - Santos, E. A.
+    venue: "ACM Transactions on Computer-Human Interaction"
+    url: https://doi.org/10.1145/3617367
+
+  - title: "Applying Software Engineering Anti-patterns to Programming Error Messages"
+    year: 2023
+    authors:
+      - Santos, E. A.
+      - Karvelas, I.
+      - Becker, B. A.
+    venue: "Proceedings of the 54th ACM Technical Symposium on Computer Science Education"
+    pages: 1
+    url: https://doi.org/10.1145/3545947.3576243
+
+  - title: "Programming is hard—or at least it used to be: Educational opportunities and challenges of AI code generation"
+    year: 2023
+    authors:
+      - Becker, B. A.
+      - Denny, P.
+      - Finnie-Ansley, J.
+      - Luxton-Reilly, A.
+      - Prather, J.
+      - Santos, E. A.
+    venue: "Proceedings of the 54th ACM Technical Symposium on Computer Science Education"
+    pages: 7
+    url: https://doi.org/10.1145/3545945.3569759
+
+  - title: "My AI Wants to Know if This Will Be on the Exam: Testing OpenAI’s Codex on CS2 Programming Exercises"
+    year: 2023
+    authors:
+      - Finnie-Ansley, J.
+      - Denny, P.
+      - Luxton-Reilly, A.
+      - Santos, E. A.
+      - Prather, J.
+      - Becker, B. A.
+    venue: "Proceedings of the 25th Australasian Computing Education Conference"
+    pages: 8
+    url: https://doi.org/10.1145/3576123.3576134
+
   - title: "What makes a programming error message good?"
     year: 2022
     authors:
@@ -224,7 +306,7 @@ publications:
       - Siegmund, J.
       - Stefik, A.
       - Santos, E. A.
-    venue: Dagstuhl Reports}
+    venue: Dagstuhl Reports
     url: https://drops.dagstuhl.de/opus/volltexte/2022/16924/
 
   - title: "G<sub>i</sub>2P<sub>i</sub>: Rule-based, index-preserving grapheme-to-phoneme transformations"
