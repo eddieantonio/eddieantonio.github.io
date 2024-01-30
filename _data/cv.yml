@@ -212,6 +212,23 @@ skills:
      - LaTeX
 
 publications:
+  - title: "Computing Education in the Era of Generative AI"
+    year: 2024
+    authors:
+      - Denny, P.
+      - Prather, J.
+      - Becker, B. A.
+      - Finnie-Ansley, J.
+      - Hellas, A.
+      - Leinonen, J.
+      - Luxton-Reilly, A.
+      - Reeves, B. N.
+      - Santos, E. A.
+      - Sarsa, S.
+    booktitle: "Communications of the ACM"
+    pages: 12
+    url: https://doi.org/10.1145/3624720
+
   - title: "Always Provide Context: The Effects of Code Context on Programming Error Message Enhancement"
     year: 2023
     authors:
