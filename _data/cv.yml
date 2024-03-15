@@ -16,8 +16,15 @@ education:
     title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
-# TODO: create a teaching section?
-# TUDublin: Advanced Database Systems and Software Localization
+lecturing:
+  - name: Software Localisation
+    institute: Technological University Dublin
+    offered:
+      - Spring 2023
+  - name: Advanced Database Systems
+    institute: Technological University Dublin
+    offered:
+      - Autumn 2023
 
 experience:
   - title: Assistant Lecturer
@@ -27,9 +34,9 @@ experience:
       - Create syllabi, lecture slides, assignments
       - Deliver lectures in person and online
 
-  - title: Lead Teaching Assistant
+  - title: Teaching Assistant
     employer: Beijing-Dublin International College (BDIC)
-    time: { start: February 2022, end: June 2022 }
+    time: { start: February 2022 }
     responsibilities:
       - Supervise students on software engineering projects (COMP3030J, COMP3032J).
       - Create lab presentations and develop assignments for high-performance computing (COMP3036J).
@@ -178,10 +185,10 @@ skills:
   # remind MYSELF of what I have learned.
   languages:
     # "Tier 1" -- the languages that I spend a bunch of time programming.
-    - [Python, C, Rust, JavaScript, TypeScript, Java]
+    - [Python, C, Rust, JavaScript, TypeScript]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Erlang, Ruby, PHP, Perl, POSIX shell script, Awk, C++, PL/SQL]
+    - [Erlang, Java, Ruby, PHP, Perl, POSIX shell script, Awk, C++, PL/SQL]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have knowledge of 'em because I'm a freak.
     - [R, Scheme, C#, Scala, Haskell, 6502 Assembly, MIPS assembly]
@@ -290,6 +297,10 @@ publications:
       - Luxton-Reilly, A.
       - Prather, J.
       - Santos, E. A.
+    awards:
+      # Position Papers and Curriculum Initiatives
+      # https://sigcse.org/events/symposia/2023.html
+      - "Best paper, Position Papers and Curriculum Initiatives, SIGCSE TS '2023"
     venue: "Proceedings of the 54th ACM Technical Symposium on Computer Science Education"
     pages: 7
     url: https://doi.org/10.1145/3545945.3569759
@@ -304,6 +315,8 @@ publications:
       - Prather, J.
       - Becker, B. A.
     venue: "Proceedings of the 25th Australasian Computing Education Conference"
+    awards:
+      - "Best paper, Australasian Computing Education Conference 2023"
     pages: 8
     url: https://doi.org/10.1145/3576123.3576134
 
@@ -453,7 +466,7 @@ publications:
     authors:
       - Santos, E. A.
       - Hindle, A.
-    accolades:
+    awards:
       - MSR 2016 Mining Challenge Winner
     venue: Proceedings of the 13th International Workshop on Mining Software Repositories
     pages: 4
@@ -499,9 +512,20 @@ awards:
   - title: NRC IP Award
     contributors: (ILT team!)
 
-
 presentations:
   # There are definitely presentations I'm forgetting here...
+  - title: Introduction to Rust
+    venue: UCD Netsoc workshop
+    year: 2024
+    slides_url: https://docs.google.com/presentation/d/1chtREzJCWObd62LnfyzY_zFcWvVmfMX-kjlemlYJBmA/edit?usp=sharing
+  - title: You don't know LaTeX
+    venue: UCD School of Computer Science Research Lunch
+    year: 2023
+    slides_url: https://docs.google.com/presentation/d/12iSchAqVQVTsyTy_q0Szo267qxwv7Uin/edit?usp=drive_link&ouid=115474153240468082156&rtpof=true&sd=true
+  - title: Introduction to Unicode
+    venue: PyLadies Dublin
+    year: 2023
+    slides_url: https://es.slideshare.net/EddieAntonioSantos/introduction-to-unicode-that-you-never-got-pyladies-dublin-august-2023
   - title: Why are there so many programming languages?
     venue: Dr. Catherine Mooney's 2022 COMP1001J Introduction to Software Engineering class
     year: 2022
@@ -559,27 +583,27 @@ language_tech:
       bcp47: crk-Cans
       form_factor: mobile
       url:
-      notes: Atticus Harrigan
+      notes: With assistance from Atticus Harrigan
       publication:
     - name: Cree syllabics keyboard for Chromebook
       bcp47: crk-Cans
       form_factor: desktop
-      url:
+      url: https://www.google.com/inputtools/try/
       notes: In collaboration with Craig Cornelius
     - name: Makah keyboard for Chromebook
       bcp47: myh
       form_factor: desktop
-      url:
+      url: https://www.google.com/inputtools/try/
       notes: In collaboration with Craig Cornelius
     - name: Makah keyboard for smartphones
       bcp47: myh
       form_factor: mobile
-      url:
+      url: https://keyman.com/keyboards/nrc_makah
       notes: With contributions from Conor Quinn
     - name: Piaroa keyboard
       bcp47: pid
       form_factor: desktop
-      url:
+      url: https://keyman.com/keyboard/pid_piaroa
       notes: On behalf of Jorge Emilio Rosés Labrada
     - name: Sáliba keyboard
       bcp47: slc
