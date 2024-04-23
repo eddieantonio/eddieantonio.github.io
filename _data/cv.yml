@@ -530,6 +530,10 @@ presentations:
     venue: Dr. Catherine Mooney's 2022 COMP1001J Introduction to Software Engineering class
     year: 2022
     slides_url: https://docs.google.com/presentation/d/1PYuYqD2N3AjuKvMuyqus7ZasEti7CdK7/edit?usp=sharing&ouid=114580936140511467597&rtpof=true&sd=true
+  - title: Stop Writing JavaScript! Or; how to use plaing HTML and CSS to impress your friends and vanquish your enemies!
+    venue: ExchangeJS
+    year: 2021
+    slides_url: https://eddieantonio.ca/stop-writing-javascript/
   - title: How to be a time-traveller with git (Git Workshop)
     venue: Ada's Team special workshop
     year: 2020
