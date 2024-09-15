@@ -2,7 +2,7 @@ education:
   - institution: University College Dublin
     location: Dublin, Ireland
     program: PhD Computer Science
-    time: { start: September 2021, expected: 2025 }
+    time: { start: September 2021, expected: 'June 2025' }
     in_progress: true
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
@@ -31,16 +31,17 @@ experience:
     employer: Technological University Dublin
     time: { start: October 2022 }
     responsibilities:
-      - Create syllabi, lecture slides, assignments
-      - Deliver lectures in person and online
+      - Create syllabi, lecture slides, assignments and exams (Software Localisation)
+      - Deliver lectures, in person and online (Advanced Database Technologies; Software Localisation)
+      - Assist lecturer in laboratories (Advanced Database Technologies; Operating System Fundamentals; Software Quality Assurance and Testing)
 
   - title: Teaching Assistant
     employer: Beijing-Dublin International College (BDIC)
     time: { start: February 2022 }
     responsibilities:
       - Supervise students on software engineering projects (COMP3030J, COMP3032J).
-      - Create lab presentations and develop assignments for high-performance computing (COMP3036J).
-      - Assist students with C programming (COMP1002J).
+      - Create/deliver lectures and develop assignments for Parallel and Cluster Computing (COMP3036J).
+      - Tutor students in introductory C programming (COMP1002J).
 
   - title: Application Development Specialist
     employer: National Research Council Canada (NRC-CNRC)
@@ -213,12 +214,39 @@ skills:
 
     Miscellaneous:
      - Docker
-     - Vagrant
      - HTML
      - CSS
      - LaTeX
 
 publications:
+  - title: "Not the Silver Bullet: LLM-enhanced Programming Error Messages are Ineffective in Practice"
+    year: 2024
+    authors:
+      - Santos, E. A.
+      - Becker, B. A.
+    venue: Proceedings of the 2024 Conference on United Kingdom & Ireland Computing Education Research
+    pages: 7
+    url: https://doi.org/10.1145/3689535.3689554
+    awards:
+      - "Best paper, UKICER '24"
+
+  - title: "Teaching Programming Error Message Understanding"
+    year: 2024
+    authors:
+      - Bouvier, D. J.
+      - Lovellette, E.
+      - Santos, E. A.
+      - Becker, B. A.
+      - Dasigi, V. G.
+      - Forden, J.
+      - Glebova, O.
+      - Joshi, S.
+      - Kurkovsky, S.
+      - Russell, S.
+    venue: Proceedings of the 2023 ACM Global Computing Education Conference
+    pages: 30
+    url: https://doi.org/10.1145/3598579.3689377
+
   - title: "Computing Education in the Era of Generative AI"
     year: 2024
     authors:
@@ -487,17 +515,23 @@ publications:
 
 hobbies:
   - title: >
+      National Subject Matter Expert, [ISO/IEC JTC 1/SC 2](https://www.iso.org/committee/45050.html), Standards Council of Canada
+  - title: >
+      [Instructor, CS Sparks](https://cssparks.ucd.ie/cs-sparks-ucd-all-summer-school-2023/)
+  - title: >
+      [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252).
+  - title: >
+      [Treasurer, UCD PhD Society](https://linktr.ee/phducd).
+  - title: >
       Computer science tutor for [Ada's Team](https://adasteam.ca); leader of the [Git Workshop](https://docs.google.com/presentation/d/1_q9iprlHnUVg_lQB9wsOwd5EyUCeDnKyGmJouu8u4Mk).
   - title: >
       [Canada Learning Code](https://www.canadalearningcode.ca/) lead instructor and mentor.
   - title: >
-      Teach Python as part of [Edmonton Public Library's Community Expert program](https://www.epl.ca/community-expert-program/).
-  - title: >
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
   - title: >
-      Created [syllabics.app](https://syllabics.app/) — a Western Cree syllabics converter.
+      Teach Python as part of [Edmonton Public Library's Community Expert program](https://www.epl.ca/community-expert-program/).
   - title: >
-      [BuddyCoders Mentor for UCD Women@Compsci](https://women.cs.ucd.ie/?page_id=252).
+      Created [syllabics.app](https://syllabics.app/) — a Western Cree syllabics converter.
   - title: >
       [Open source maintainer and contributor](https://github.com/eddieantonio).
 

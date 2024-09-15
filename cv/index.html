@@ -64,6 +64,83 @@ redirect_from: "/resume/"
         </section>
         {% endfor %}
       </section>
+      <section class="experience">
+        <header>
+          <h2> Work Experience </h2>
+        </header>
+
+        {% for job in site.data.cv.experience %}
+        <section class="title-location-block">
+          {% capture job_employer %}{% if job.employer %}{{ job.employer }}{% else %}{{ job.location }}{% endif %}{% endcapture %}
+          <hgroup>
+            <h3 class="title">{{ job.title }}</h3>
+            <div class="time">
+              {% if job.time.start == job.time.end
+                %}{{ job.time.start }}{%
+                else
+                %}{{ job.time.start }}–{% if job.time.end %}{{ job.time.end }}{% endif %}
+              {% endif %}
+            </div>
+          </hgroup>
+          <div class="location">{{ job_employer }}</div>
+
+          <ul class="responsibilities">
+            {% for item in job.responsibilities %}
+              <li> {{ item | markdownify }} </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endfor %}
+      </section>
+
+      <section class='publications'>
+        <h2>Publications</h2>
+
+        <p> <a href="https://orcid.org/0000-0001-5337-715X">ORCID</a>,
+            <a href="https://scholar.google.com/citations?user=yfNIOX0AAAAJ">Google Scholar</a>,
+            <a href="https://dl.acm.org/profile/99659028456">ACM Digital Library</a>
+        </p>
+
+        <ul>
+          {% for paper in site.data.cv.publications %}
+            <li>
+              <span class="publication-authors">{{ paper.authors | join: ', ' }}</span>,
+              <span class="publication-title">
+                {% if paper.url %}
+                  “<a href="{{ paper.url }}">{{ paper.title }}</a>,”
+                {% else %}
+                  “{{ paper.title }},”
+                {% endif %}
+              </span>
+              <span class="publication-year">{{ paper.year }}</span>.
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class='presentations'>
+        <h2>Presentations and Lectures</h2>
+        <ul>
+          {% for prez in site.data.cv.presentations %}
+            <li>
+              {% if prez.video_url %}<a href="{{ prez.video_url }}">{% endif %}{{ prez.title }}{% if prez.video_url %}</a>{% endif %}
+              ({{ prez.year }})
+              {% if prez.slides_url %}
+                <a href="{{ prez.slides_url }}">[Slides]</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class='hobbies'>
+        <h2>Service and Volunteering</h2>
+
+        <dl>
+          {% for hobby in site.data.cv.hobbies %}
+            <dt> {{ hobby.title | markdownify }} </dt>
+          {% endfor %}
+        </dl>
+      </section>
 
       <section class="skills">
         <header>
@@ -98,85 +175,9 @@ redirect_from: "/resume/"
           <dl>
             <dt> English <dd> fluent reading, speaking, writing
             <dt> Spanish <dd> fluent reading; semi-fluent speaking, writing
-            <dt> nêhiyawêwin (Plains Cree) <dd> beginner reading, speaking, writing
+            <!--dt> nêhiyawêwin (Plains Cree) <dd> beginner reading, speaking, writing-->
           </dl>
         </section>
-
-      </section>
-
-      <section class="experience">
-        <header>
-          <h2> Work Experience </h2>
-        </header>
-
-        {% for job in site.data.cv.experience %}
-        <section class="title-location-block">
-          {% capture job_employer %}{% if job.employer %}{{ job.employer }}{% else %}{{ job.location }}{% endif %}{% endcapture %}
-          <hgroup>
-            <h3 class="title">{{ job.title }}</h3>
-            <div class="time">
-              {% if job.time.start == job.time.end
-                %}{{ job.time.start }}{%
-                else
-                %}{{ job.time.start }}–{% if job.time.end %}{{ job.time.end }}{% endif %}
-              {% endif %}
-            </div>
-          </hgroup>
-          <div class="location">{{ job_employer }}</div>
-
-          <ul class="responsibilities">
-            {% for item in job.responsibilities %}
-              <li> {{ item | markdownify }} </li>
-            {% endfor %}
-          </ul>
-        </section>
-        {% endfor %}
-      </section>
-
-      <section class='publications'>
-        <h2>Publications</h2>
-
-        <p> My OCRID: <a href="https://orcid.org/0000-0001-5337-715X"> orcid.org/0000-0001-5337-715X </a>
-
-        <ul>
-          {% for paper in site.data.cv.publications %}
-            <li>
-              <span class="publication-authors">{{ paper.authors | join: ', ' }}</span>,
-              <span class="publication-title">
-                {% if paper.url %}
-                  “<a href="{{ paper.url }}">{{ paper.title }}</a>,”
-                {% else %}
-                  “{{ paper.title }},”
-                {% endif %}
-              </span>
-              <span class="publication-year">{{ paper.year }}</span>.
-          {% endfor %}
-        </ul>
-      </section>
-
-      <section class='presentations'>
-        <h2>Presentations and Lectures</h2>
-        <ul>
-          {% for prez in site.data.cv.presentations %}
-            <li>
-              {% if prez.video_url %}<a href="{{ prez.video_url }}">{% endif %}{{ prez.title }}{% if prez.video_url %}</a>{% endif %}
-              ({{ prez.year }})
-              {% if prez.slides_url %}
-                <a href="{{ prez.slides_url }}">[Slides]</a>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-
-      <section class='hobbies'>
-        <h2>Hobbies and Volunteering</h2>
-
-        <dl>
-          {% for hobby in site.data.cv.hobbies %}
-            <dt> {{ hobby.title | markdownify }} </dt>
-          {% endfor %}
-        </dl>
       </section>
       </article>
     </main>
