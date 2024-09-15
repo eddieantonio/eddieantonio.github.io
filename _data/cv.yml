@@ -291,7 +291,7 @@ publications:
     pages: 3
     url: https://doi.org/10.1145/3617650.3624950
 
-  - title: '“It’s Weird That it Knows What I Want”: Usability and Interactions with Copilot for Novice Programmers"'
+  - title: '“It’s Weird That it Knows What I Want”: Usability and Interactions with Copilot for Novice Programmers'
     year: 2023
     authors:
       - Prather, J.
@@ -530,8 +530,8 @@ hobbies:
       Mentor for [DiscoverE Summer Camps](http://discovere.ualberta.ca/).
   - title: >
       Teach Python as part of [Edmonton Public Library's Community Expert program](https://www.epl.ca/community-expert-program/).
-  - title: >
-      Created [syllabics.app](https://syllabics.app/) — a Western Cree syllabics converter.
+  #- title: >
+  #    Created [syllabics.app](https://syllabics.app/) — a Western Cree syllabics converter.
   - title: >
       [Open source maintainer and contributor](https://github.com/eddieantonio).
 
