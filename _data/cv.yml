@@ -2,7 +2,7 @@ education:
   - institution: University College Dublin
     location: Dublin, Ireland
     program: PhD Computer Science
-    time: { start: September 2021, expected: 'June 2025' }
+    time: { start: September 2021, expected: June 2025 }
     in_progress: true
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
@@ -16,15 +16,15 @@ education:
     title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
-lecturing:
-  - name: Software Localisation
-    institute: Technological University Dublin
-    offered:
-      - Spring 2023
-  - name: Advanced Database Systems
-    institute: Technological University Dublin
-    offered:
-      - Autumn 2023
+teaching:
+  - institution: Technological University Dublin
+    courses:
+      - title: Software Localisation
+        term: Spring 2023
+        level: undergraduate
+      - title: Advanced Database Technologies
+        term: Autumn 2023
+        level: undergraduate
 
 experience:
   - title: Assistant Lecturer
@@ -37,7 +37,7 @@ experience:
 
   - title: Teaching Assistant
     employer: Beijing-Dublin International College (BDIC)
-    time: { start: February 2022 }
+    time: { start: February 2022, end: June 2024 }
     responsibilities:
       - Supervise students on software engineering projects (COMP3030J, COMP3032J).
       - Create/deliver lectures and develop assignments for Parallel and Cluster Computing (COMP3036J).

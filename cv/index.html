@@ -93,6 +93,23 @@ redirect_from: "/resume/"
         {% endfor %}
       </section>
 
+      <section class="teaching">
+        <header>
+          <h2> Lecturing </h2>
+        </header>
+
+        {% for institution in site.data.cv.teaching %}
+          <section>
+            <p> <i> For {{ institution.institution }} </i>
+            <ul>
+            {% for course in institution.courses %}
+              <li> {{ course.title }}, {{ course.term}}
+            {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </section>
+
       <section class='publications'>
         <h2>Publications</h2>
 
