@@ -93,23 +93,6 @@ redirect_from: "/resume/"
         {% endfor %}
       </section>
 
-      <section class="teaching">
-        <header>
-          <h2> Lecturing </h2>
-        </header>
-
-        {% for institution in site.data.cv.teaching %}
-          <section>
-            <p> <i> For {{ institution.institution }} </i>
-            <ul>
-            {% for course in institution.courses %}
-              <li> {{ course.title }}, {{ course.term}}
-            {% endfor %}
-            </ul>
-          </section>
-        {% endfor %}
-      </section>
-
       <section class='publications'>
         <h2>Publications</h2>
 
@@ -146,6 +129,40 @@ redirect_from: "/resume/"
             </li>
           {% endfor %}
         </ul>
+      </section>
+
+      <section class="teaching">
+        <header>
+          <h2> Lecturing </h2>
+        </header>
+
+        {% for institution in site.data.cv.teaching %}
+          <section>
+            <p> <i> For {{ institution.institution }} </i>
+            <ul>
+            {% for course in institution.courses %}
+              <li> {{ course.title }}, {{ course.term}}
+            {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </section>
+
+      <section class="supervision">
+        <header>
+          <h2> Supervision </h2>
+        </header>
+
+        {% for level in site.data.cv.supervision %}
+          <section>
+            <h3> {{ level.level }} </h3>
+            <ul>
+            {% for student in level.students %}
+              <li> {{ student.name }} ({{ student.period }})
+            {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
       </section>
 
       <section class='hobbies'>

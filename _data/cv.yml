@@ -16,16 +16,6 @@ education:
     title: BSc. with specialization in Computing Science with distinction
     time: { start: September 2010, end: December 2015}
 
-teaching:
-  - institution: Technological University Dublin
-    courses:
-      - title: Software Localisation
-        term: Spring 2023
-        level: undergraduate
-      - title: Advanced Database Technologies
-        term: Autumn 2023
-        level: undergraduate
-
 experience:
   - title: Assistant Lecturer
     employer: Technological University Dublin
@@ -180,6 +170,31 @@ experience:
       - Created an MySQL backed game server.
       - Linux system administration.
 
+teaching:
+  - institution: Technological University Dublin
+    courses:
+      - title: Software Localisation
+        term: Spring 2023
+        level: undergraduate
+      - title: Advanced Database Technologies
+        term: Autumn 2023
+        level: undergraduate
+
+supervision:
+  - level: Undergraduate students
+    students:
+      - name: Audrey Salmon
+        period: Summer 2024
+      - name: Katie Hammer
+        period: Summer 2024
+      - name: Brij Howard-Sarin
+        period: Summer 2023
+      - name: Byron Hart
+        period: Summer 2023
+      - name: Pranav Khare
+        period: Summer 2023
+      - name: Ashley Francis
+        period: Summer 2022
 
 skills:
   # I will probably phase out this section soon -- I mostly keep it here to
