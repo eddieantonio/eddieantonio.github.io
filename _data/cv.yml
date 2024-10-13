@@ -17,7 +17,8 @@ education:
     time: { start: September 2010, end: December 2015}
 
 experience:
-  - title: Assistant Lecturer
+  - title: Assistant lecturer
+    category: teaching
     employer: Technological University Dublin
     time: { start: October 2022 }
     responsibilities:
@@ -25,7 +26,8 @@ experience:
       - Deliver lectures, in person and online (Advanced Database Technologies; Software Localisation)
       - Assist lecturer in laboratories (Advanced Database Technologies; Operating System Fundamentals; Software Quality Assurance and Testing)
 
-  - title: Teaching Assistant
+  - title: Teaching assistant
+    category: teaching
     employer: Beijing-Dublin International College (BDIC)
     time: { start: February 2022, end: June 2024 }
     responsibilities:
@@ -33,7 +35,8 @@ experience:
       - Create/deliver lectures and develop assignments for Parallel and Cluster Computing (COMP3036J).
       - Tutor students in introductory C programming (COMP1002J).
 
-  - title: Application Development Specialist
+  - title: Application development specialist
+    category: software
     employer: National Research Council Canada (NRC-CNRC)
     time: { start: June 2018, end: August 2021 }
     responsibilities:
@@ -43,7 +46,8 @@ experience:
       - Implement morphological computational modelling and predictive text for polysynthetic languages.
       - Supervise student interns.
 
-  - title: Software Developer
+  - title: Software developer
+    category: software
     employer: Dr. Antti Arppe
     location: University of Alberta
     time: { start: February 2018, end: May 2018 }
@@ -53,6 +57,7 @@ experience:
       - Create a web application in Flask/SQLAlchemy to assist in manual recordings validation.
 
   - title: Teaching assistant
+    category: teaching
     employer: Hazel Campbell
     location: University of Alberta
     time: { start: January 2018, end: April 2018 }
@@ -63,6 +68,7 @@ experience:
       - Support and mentor students learning the material.
 
   - title: Course design assistant
+    category: teaching
     employer: Dr. Osmar Zaïane
     location: University of Alberta
     time: { start: September 2017, end: April 2018 }
@@ -73,6 +79,7 @@ experience:
       - Create quizzes to effectively test knowledge.
 
   - title: Teaching assistant
+    category: teaching
     employer: Dr. Abram Hindle
     location: University of Alberta
     time: { start: September 2016, end: December 2016 }
@@ -84,6 +91,7 @@ experience:
       - Support and mentor students learning the material.
 
   - title: Research assistant
+    category: software
     employer: BioWare ULC
     time: { start: January 2016, end: August 2016 }
     responsibilities:
@@ -92,6 +100,7 @@ experience:
       - Write, test, and deploy production-quality implementations of novel algorithms.
 
   - title: Lead developer
+    category: software
     employer: Dr. Eleni Stroulia, Patrick von Hauff
     time: { start: May 2015, end: September 2015 }
     responsibilities:
@@ -103,6 +112,7 @@ experience:
       - Support and maintain a legacy PHP web application.
 
   - title: Computing Science tutor
+    category: teaching
     employer: Self-employed
     time: { start: 2014, end: 2017 }
     responsibilities:
@@ -113,6 +123,7 @@ experience:
       - Promote active thinking rather than rote memorization.
 
   - title: Teaching assistant
+    category: teaching
     employer: University of Alberta
     time: { start: 2012, end: 2014 }
     responsibilities:
@@ -121,6 +132,7 @@ experience:
       - Evaluate student coursework.
 
   - title: Lead developer
+    category: software
     location: Alberta School of Business
     employer: Dr. Joel Gehman and Dr. Matthew Grimes
     time: { start: 2013, end: 2014 }
@@ -137,6 +149,7 @@ experience:
         server program.
 
   - title: Web developer
+    category: software
     employer: Dr. Denilson Barbosa
     location: University of Alberta
     time: { start: 2013, end: 2013 }
@@ -150,6 +163,7 @@ experience:
         to the text processing tools.
 
   - title: Web developer
+    category: software
     location: University of Alberta
     employer: Dr. Greg Goss
     time: { start: 2012, end: 2013 }
@@ -162,6 +176,7 @@ experience:
       - Design simple, clean CSS for the website.
 
   - title: Web developer
+    category: software
     employer: Dr. Davood Rafiei
     location: University of Alberta
     time: { start: 2012, end: 2012 }
