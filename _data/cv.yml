@@ -219,10 +219,10 @@ skills:
     - [Python, C, Rust, JavaScript, TypeScript]
     # "Tier 2" -- I don't program these often as often as the others but can
     # just "pick 'em up" and start programming.
-    - [Erlang, Java, Ruby, PHP, Perl, POSIX shell script, Awk, C++, PL/SQL]
+    - [Erlang, Java, Ruby, PHP, Perl, POSIX shell script, Awk, C++, R]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have knowledge of 'em because I'm a freak.
-    - [R, Scheme, C#, Scala, Haskell, 6502 Assembly, MIPS assembly]
+    - [PL/SQL, Scheme, C#, Scala, Haskell, assembly (6502, MIPS, AArch64, x86)]
 
   small_categories:
     Databases:
