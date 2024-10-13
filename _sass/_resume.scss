@@ -269,3 +269,24 @@ main > article > section {
     }
   }
 }
+
+.publications-list {
+  font-size: small;
+}
+
+ol.publications-list {
+  counter-reset: pub-counter 0;
+  padding-inline-start: 2.5em;
+}
+
+.publication {
+  counter-increment: pub-counter;
+
+  &::marker {
+    content: "[" counter(pub-counter) "] ";
+  }
+}
+
+
+.publication::marker::before { content: "["; }
+.publication::marker::after { content: "["; }

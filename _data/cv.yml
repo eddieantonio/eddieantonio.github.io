@@ -252,8 +252,8 @@ publications:
   - title: "Not the Silver Bullet: LLM-enhanced Programming Error Messages are Ineffective in Practice"
     year: 2024
     authors:
-      - Santos, E. A.
-      - Becker, B. A.
+      - Eddie Antonio Santos
+      - Brett A. Becker
     venue: Proceedings of the 2024 Conference on United Kingdom & Ireland Computing Education Research
     pages: 7
     url: https://doi.org/10.1145/3689535.3689554
@@ -263,85 +263,86 @@ publications:
   - title: "Teaching Programming Error Message Understanding"
     year: 2024
     authors:
-      - Bouvier, D. J.
-      - Lovellette, E.
-      - Santos, E. A.
-      - Becker, B. A.
-      - Dasigi, V. G.
-      - Forden, J.
-      - Glebova, O.
-      - Joshi, S.
-      - Kurkovsky, S.
-      - Russell, S.
+      - Dennis J. Bouvier
+      - Ellie Lovellette
+      - Eddie Antonio Santos
+      - Brett A. Becker
+      - Venu G. Dasigi
+      - Jack Forden
+      - Olga Glebova
+      - Swaroop Joshi
+      - Stan Kurkovsky
+      - Seán Russell
     venue: Proceedings of the 2023 ACM Global Computing Education Conference
     pages: 30
-    url: https://doi.org/10.1145/3598579.3689377
+    url: https://dl.acm.org/doi/10.1145/3598579.3689377
 
   - title: "Computing Education in the Era of Generative AI"
     year: 2024
     authors:
-      - Denny, P.
-      - Prather, J.
-      - Becker, B. A.
-      - Finnie-Ansley, J.
-      - Hellas, A.
-      - Leinonen, J.
-      - Luxton-Reilly, A.
-      - Reeves, B. N.
-      - Santos, E. A.
-      - Sarsa, S.
-    booktitle: "Communications of the ACM"
+      - Paul Denny
+      - James Prather
+      - Brett A. Becker
+      - James Finnie-Ansley
+      - Arto Hellas
+      - Juho Leinonen
+      - Andrew Luxton-Reilly
+      - Brent N. Reeves
+      - Eddie Antonio Santos
+      - Sami Sarsa
+    venue: "Communications of the ACM"
     pages: 12
-    url: https://doi.org/10.1145/3624720
+    url: https://dl.acm.org/doi/10.1145/3624720
 
   - title: "Always Provide Context: The Effects of Code Context on Programming Error Message Enhancement"
     year: 2023
     authors:
-      - Santos, E. A.
-      - Prasad, P.
-      - Becker, B. A.
-    booktitle: "Proceedings of the ACM Conference on Global Computing Education Vol 1"
+      - Eddie Antonio Santos
+      - Prajish Prasad
+      - Brett A. Becker
+    venue: "Proceedings of the ACM Conference on Global Computing Education Vol 1"
     pages: 7
     url: https://doi.org/10.1145/3576882.3617909
 
   - title: "Teaching Students To Use Programming Error Messages"
     year: 2023
     authors:
-      - Bouvier, D. J.
-      - Lovellette, E.
-      - Santos, E. A.
-      - Becker, B. A.
-      - Crick, T.
-      - Dasigi, V. G.
-      - Forden, J.
-      - Glebova, O.
-      - Joshi, S.
-      - Kurkovsky, S.
-    booktitle: "Proceedings of the ACM Conference on Global Computing Education Vol 2"
+      - Dennis J. Bouvier
+      - Ellie Lovellette
+      - Eddie Antonio Santos
+      - Brett A. Becker
+      - Venu G. Dasigi
+      - Jack Forden
+      - Olga Glebova
+      - Swaroop Joshi
+      - Stan Kurkovsky
+      - Seán Russell
+      - Tom Crick
+    venue: "Proceedings of the ACM Conference on Global Computing Education Vol 2"
     pages: 3
     url: https://doi.org/10.1145/3617650.3624950
 
   - title: '“It’s Weird That it Knows What I Want”: Usability and Interactions with Copilot for Novice Programmers'
     year: 2023
     authors:
-      - Prather, J.
-      - Reeves, B. N.
-      - Denny, P.
-      - Becker, B. A.
-      - Leinonen, J.
-      - Luxton-Reilly, A.
-      - Powell, G.
-      - Finnie-Ansley, J.
-      - Santos, E. A.
+      - James Prather
+      - Brent N. Reeves
+      - Paul Denny
+      - Brett A. Becker
+      - Juho Leinonen
+      - Andrew Luxton-Reilly
+      - Garrett Powell
+      - James Finnie-Ansley
+      - Eddie Antonio Santos
     venue: "ACM Transactions on Computer-Human Interaction"
     url: https://doi.org/10.1145/3617367
 
   - title: "Applying Software Engineering Anti-patterns to Programming Error Messages"
     year: 2023
     authors:
-      - Santos, E. A.
-      - Karvelas, I.
-      - Becker, B. A.
+      - Eddie Antonio Santos
+      - Ioannis Karvelas
+      - Brett A. Becker
     venue: "Proceedings of the 54th ACM Technical Symposium on Computer Science Education"
     pages: 1
     url: https://doi.org/10.1145/3545947.3576243
@@ -349,12 +350,12 @@ publications:
   - title: "Programming is hard—or at least it used to be: Educational opportunities and challenges of AI code generation"
     year: 2023
     authors:
-      - Becker, B. A.
-      - Denny, P.
-      - Finnie-Ansley, J.
-      - Luxton-Reilly, A.
-      - Prather, J.
-      - Santos, E. A.
+      - Brett A. Becker
+      - Paul Denny
+      - James Finnie-Ansley
+      - Andrew Luxton-Reilly
+      - James Prather
+      - Eddie Antonio Santos
     awards:
       # Position Papers and Curriculum Initiatives
       # https://sigcse.org/events/symposia/2023.html
@@ -366,12 +367,12 @@ publications:
   - title: "My AI Wants to Know if This Will Be on the Exam: Testing OpenAI’s Codex on CS2 Programming Exercises"
     year: 2023
     authors:
-      - Finnie-Ansley, J.
-      - Denny, P.
-      - Luxton-Reilly, A.
-      - Santos, E. A.
-      - Prather, J.
-      - Becker, B. A.
+      - James Finnie-Ansley
+      - Paul Denny
+      - Andrew Luxton-Reilly
+      - Eddie Antonio Santos
+      - James Prather
+      - Brett A. Becker
     venue: "Proceedings of the 25th Australasian Computing Education Conference"
     awards:
       - "Best paper, Australasian Computing Education Conference 2023"
@@ -381,7 +382,7 @@ publications:
   - title: "What makes a programming error message good?"
     year: 2022
     authors:
-      - Santos, E. A.
+      - Eddie Antonio Santos
     venue: Proceedings of the 2022 Conference on United Kingdom & Ireland Computing Education Research
     pages: 1
     url: https://dl.acm.org/doi/abs/10.1145/3555009.3555032
@@ -389,37 +390,37 @@ publications:
   - title: "The Human Factors Impact of Programming Error Messages (Dagstuhl Seminar 22052)"
     year: 2022
     authors:
-      - Becker, B. A.
-      - Denny, P.
-      - Siegmund, J.
-      - Stefik, A.
-      - Santos, E. A.
+      - Brett A. Becker
+      - Paul Denny
+      - Janet Siegmund
+      - Andrea Stefik
+      - Eddie Antonio Santos
     venue: Dagstuhl Reports
     url: https://drops.dagstuhl.de/opus/volltexte/2022/16924/
 
   - title: "G<sub>i</sub>2P<sub>i</sub>: Rule-based, index-preserving grapheme-to-phoneme transformations"
     year: 2022
     authors:
-      - Pine, A.
-      - Littell, P.
-      - Joanis, E.
-      - Huggins-Daines, D.
-      - Cox, C.
-      - Davis, F.
-      - Santos, E. A.
-      - Srikanth, S.
-      - Torkornoo, D.
-      - Yu, S.
+      - Aiden Pine
+      - Patrick Littell
+      - Eric Joanis
+      - David Huggins-Daines
+      - Christopher Cox
+      - Fineen Davis
+      - Eddie Antonio Santos
+      - Shankhalika Srikanth
+      - Delasie Torkornoo
+      - Sabrina Yu
     venue: Proceedings of the Fifth Workshop on the Use of Computational Methods in the Study of Endangered Languages
     pages: 9
     url: https://aclanthology.org/2022.computel-1.7/
 
-  - title: On the Computational Modelling of Michif Verbal Morphology
+  - title: "On the Computational Modelling of Michif Verbal Morphology"
     year: 2021
     authors:
-      - Davis, F.
-      - Santos, E. A.
-      - Souter, H.
+      - Fineen Davis
+      - Eddie Antonio Santos
+      - Heather Souter
     venue: "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume"
     pages: 5
     url: https://aclanthology.org/2021.eacl-main.226.pdf
@@ -427,40 +428,40 @@ publications:
   - title: "The Indigenous Languages Technology project at NRC Canada: An empowerment-oriented approach to developing language software"
     year: 2020
     authors:
-      - Kuhn, R.
-      - Davis, F.
-      - Désilets, A.
-      - Joanis, E.
-      - Kazantseva, A.
-      - Knowles, R.
-      - Littell, P.
-      - Lothian, D.
-      - Pine, A.
-      - Running Wolf, C.
-      - Santos, E. A.
-      - Stewart, D.
-      - Boulianne, G.
-      - Gupta, V.
-      - Maracle, O. B.
-      - Martin, A
-      - Cox, C.
-      - Junker, M.-O.
-      - Sammons, O.
-      - Torkornoo, D.
-      - Brinklow, N. T.
-      - Child, S.
-      - Farley, B.
-      - Huggins-Daines, D.
-      - Rosenblum, D.
-      - Souter, H.
+      - Roland Kuhn
+      - Fineen Davis
+      - Alain Désilets
+      - Eric Joanis
+      - Anna Kazantseva
+      - Rebecca Knowles
+      - Patrick Littell
+      - Delanie Lothian
+      - Aidan Pine
+      - Caroline Running Wolf
+      - Eddie Antonio Santos
+      - Darlene Stewart
+      - Gilles Boulianne
+      - Vishwa Gupta
+      - Owennatékha Brian Maracle
+      - Akwiratékha' Martin
+      - Christopher Cox
+      - Marie-Odile Junker
+      - Olivia Sammons
+      - Delasie Torkornoo
+      - Nathan Thanyehténhas Brinklow
+      - Sara Child
+      - Benoît Farley
+      - David Huggins-Daines
+      - Daisy Rosenblum
+      - Heather Souter
     venue: Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020)
     url: https://www.aclweb.org/anthology/2020.coling-main.516/
 
-  - title: Design and evaluation of a smartphone keyboard for Plains Cree syllabics
+  - title: "Design and evaluation of a smartphone keyboard for Plains Cree syllabics"
     year: 2020
     authors:
-      - Santos, E. A.
-      - Harrigan, A. G.
+      - Eddie Antonio Santos
+      - Atticus G. Harrigan
     venue: Proceedings of the 1st Joint Workshop on Spoken Language Technologies for Under-resourced languages (SLTU) and Collaboration and Computing for Under-Resourced Languages (CCURL)
     pages: 9
     url: https://www.aclweb.org/anthology/2020.sltu-1.12.pdf
@@ -468,7 +469,7 @@ publications:
   - title: OCR evaluation for the 21st century
     year: 2019
     authors:
-      - Santos, E. A.
+      - Eddie Antonio Santos
     venue: 3rd Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-3)
     pages: 4
     url: https://aclanthology.org/W19-6004.pdf
@@ -476,33 +477,33 @@ publications:
   - title: How does Docker affect energy consumption? Evaluating workloads in and out of Docker containers
     year: 2018
     authors:
-      - Santos, E. A.
-      - McLean, C.
-      - Solinas, C.
-      - Hindle, A.
+      - Eddie Antonio Santos
+      - Carson McLean
+      - Christopher Solinas
+      - Abram Hindle
     venue: The Journal of Systems and Software
     pages: 17
-    url: https://arxiv.org/pdf/1705.01176.pdf
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0164121218301456
 
   - title: "Syntax and Sensibility: Using language models to detect and correct syntax errors"
     year: 2018
     authors:
-      - Santos, E. A.
-      - Campbell, H. V.
-      - Patel, D.
-      - Hindle, A.
-      - Amaral, J. N.
-    venue: 25th IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER 2018)}
+      - Eddie Antonio Santos
+      - Hazel Victoria Campbell
+      - Dhvani Patel
+      - Abram Hindle
+      - J. Nelson Amaral
+    venue: 25th IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER 2018)
     pages: 12
-    url: https://eddieantonio.keybase.pub/santos2018syntax.pdf
+    url: https://ieeexplore.ieee.org/abstract/document/8330219
 
   - title: Visualizing Project Evolution through Abstract Syntax Tree Analysis
     year: 2016
     authors:
-      - Feist, M. D.
-      - Santos, E. A.
-      - Watts, I.
-      - Hindle, A.
+      - Michael D. Feist
+      - Eddie Antonio Santos
+      - Ian Watts
+      - Abram Hindle
     venue: Proceedings of the 2016 IEEE Working Conference on Software Visualization
     pages: 10
     doi: 10.1109/VISSOFT.2016.6
@@ -511,10 +512,10 @@ publications:
   - title: Training & Quality Assessment of an OCR Model for Northern Haida
     year: 2016
     authors:
-      - Hubert, I.
-      - Arppe, A.
-      - Lachler, J.
-      - Santos, E. A.
+      - Isabell Hubert
+      - Antti Arppe
+      - Jordan Lachler
+      - Eddie Antonio Santos
     venue: Language Resources and Evaluation Conference 2016, Portoroz, Slovenia
     url: https://aclanthology.org/L16-1514.pdf
     pages: 8
@@ -522,24 +523,22 @@ publications:
   - title: Judging a commit by its cover; correlating commit message entropy with build status on Travis-CI
     year: 2016
     authors:
-      - Santos, E. A.
-      - Hindle, A.
+      - Eddie Antonio Santos
+      - Abram Hindle
     awards:
       - MSR 2016 Mining Challenge Winner
     venue: Proceedings of the 13th International Workshop on Mining Software Repositories
     pages: 4
-    doi: https://doi.org/10.1145/2901739.2903493
-    url: http://dl.acm.org/citation.cfm?id=2903493
+    url: https://dl.acm.org/doi/10.1145/2901739.2903493
 
   - title: The unreasonable effectiveness of traditional information retrieval in crash report deduplication
     year: 2016
     authors:
-      - Campbell, H. V.
-      - Santos, E. A.
-      - Hindle, A.
+      - Hazel Victoria Campbell
+      - Eddie Antonio Santos
+      - Abram Hindle
     venue: Proceedings of the 13th International Workshop on Mining Software Repositories
-    doi: https://doi.org/10.1145/2901739.2901766
-    url: http://dl.acm.org/citation.cfm?id=2901766
+    url: https://dl.acm.org/doi/10.1145/2901739.2901766
     pages: 10
 
 
