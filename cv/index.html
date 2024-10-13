@@ -112,6 +112,9 @@ redirect_from: "/resume/"
               {% endif %}
               In {{ pub.venue }}{% if pub.pages %},
                 {{ pub.pages }} pages{% endif %}.
+              {% if pub.awards %}
+                <br>🏆 {{ pub.awards | join: ", " }}
+              {% endif %}
             </li>
           {% endfor %}
         </ol>
