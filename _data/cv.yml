@@ -22,9 +22,9 @@ experience:
     employer: Technological University Dublin
     time: { start: October 2022 }
     responsibilities:
-      - Create syllabi, lecture slides, assignments and exams (Software Localisation)
-      - Deliver lectures, in person and online (Advanced Database Technologies; Software Localisation)
-      - Assist lecturer in laboratories (Advanced Database Technologies; Operating System Fundamentals; Software Quality Assurance and Testing)
+      - Create syllabi, lecture slides, assignments, and exams (Software Localisation).
+      - Deliver lectures, in person and online (Advanced Database Technologies; Software Localisation).
+      - Assist lecturer in laboratories (Advanced Database Technologies; Operating System Fundamentals; Software Quality Assurance and Testing).
 
   - title: Teaching assistant
     category: teaching
@@ -168,7 +168,7 @@ experience:
     employer: Dr. Greg Goss
     time: { start: 2012, end: 2013 }
     responsibilities:
-      - Update a legacy PHP web application
+      - Update a legacy PHP web application.
       - Create database migration tools to transition from a SQL
         database schema to a more maintainable (i.e., normalized) schema.
       - Employ the use of full-text indices for measurably faster text
@@ -222,7 +222,7 @@ skills:
     - [Erlang, Java, Ruby, PHP, Perl, POSIX shell script, Awk, C++, R]
     # Less useful, or far less proficient; I don't really program them often
     # or haven't recently, but I have knowledge of 'em because I'm a freak.
-    - [PL/SQL, Scheme, C#, Scala, Haskell, assembly (6502, MIPS, AArch64, x86)]
+    - [PL/SQL, Scheme, C#, Scala, Haskell, assembly (AArch64, MIPS, x86, 6502)]
 
   small_categories:
     Databases:
