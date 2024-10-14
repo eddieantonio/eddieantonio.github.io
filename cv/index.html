@@ -42,6 +42,7 @@ redirect_from: "/resume/"
       </header>
 
       <article>
+
       <section class="education">
         <header>
           <h2>Education</h2>
@@ -64,6 +65,7 @@ redirect_from: "/resume/"
         </section>
         {% endfor %}
       </section>
+
       <section class="experience">
         <header>
           <h2> Work Experience </h2>
@@ -120,21 +122,6 @@ redirect_from: "/resume/"
         </ol>
       </section>
 
-      <section class='presentations'>
-        <h2>Presentations and Lectures</h2>
-        <ul>
-          {% for prez in site.data.cv.presentations %}
-            <li>
-              {% if prez.video_url %}<a href="{{ prez.video_url }}">{% endif %}{{ prez.title }}{% if prez.video_url %}</a>{% endif %}
-              ({{ prez.year }})
-              {% if prez.slides_url %}
-                <a href="{{ prez.slides_url }}">[Slides]</a>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-
       <section class="teaching">
         <header>
           <h2> Lecturing </h2>
@@ -167,6 +154,21 @@ redirect_from: "/resume/"
             </ul>
           </section>
         {% endfor %}
+      </section>
+
+      <section class='presentations'>
+        <h2>Presentations and Lectures</h2>
+        <ul>
+          {% for prez in site.data.cv.presentations %}
+            <li>
+              {% if prez.video_url %}<a href="{{ prez.video_url }}">{% endif %}{{ prez.title }}{% if prez.video_url %}</a>{% endif %}
+              ({{ prez.year }})
+              {% if prez.slides_url %}
+                <a href="{{ prez.slides_url }}">[Slides]</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
       </section>
 
       <section class='hobbies'>
