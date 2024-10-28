@@ -17,6 +17,7 @@ education:
     time: { start: September 2010, end: December 2015}
 
 experience:
+
   - title: Assistant lecturer
     category: teaching
     employer: Technological University Dublin
@@ -25,6 +26,15 @@ experience:
       - Create syllabi, lecture slides, assignments, and exams (Software Localisation).
       - Deliver lectures, in person and online (Advanced Database Technologies; Software Localisation).
       - Assist lecturer in laboratories (Advanced Database Technologies; Operating System Fundamentals; Software Quality Assurance and Testing).
+
+  - title: Head Teaching Assistant
+    category: teaching
+    employer: University College Dublin
+    time: { start: September 2024 }
+    responsibilities:
+      - Manage teams of teaching assistants, across multiple class sections
+      - Deliver in-lab presentations in COMP10290 (Computation for Scientists) and COMP30640 (Operating System Fundamentals)
+      - Tutor students in introductory Python programming, and Bash scripting
 
   - title: Teaching assistant
     category: teaching
