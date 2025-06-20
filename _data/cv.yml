@@ -2,7 +2,7 @@ education:
   - institution: University College Dublin
     location: Dublin, Ireland
     program: PhD Computer Science
-    time: { start: September 2021, expected: June 2025 }
+    time: { start: September 2021, expected: August 2025 }
     in_progress: true
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
@@ -21,7 +21,7 @@ experience:
   - title: Assistant lecturer
     category: teaching
     employer: Technological University Dublin
-    time: { start: October 2022 }
+    time: { start: October 2022, end: December 2024 }
     responsibilities:
       - Create syllabi, lecture slides, assignments, and exams (Software Localisation).
       - Deliver lectures, in person and online (Advanced Database Technologies; Software Localisation).
