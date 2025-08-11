@@ -2,8 +2,8 @@ education:
   - institution: University College Dublin
     location: Dublin, Ireland
     program: PhD Computer Science
-    time: { start: September 2021, expected: August 2025 }
-    in_progress: true
+    thesis: "Novice Programmers' Use of Large Language Models to Resolve Programming Error Messages"
+    time: { start: September 2021, end: August 2025 }
   - institution: University of Alberta
     location: Edmonton, Alberta, Canada
     program: MSc Computing Science
