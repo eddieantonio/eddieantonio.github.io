@@ -20,6 +20,13 @@ experience:
 
   - title: Assistant lecturer
     category: teaching
+    employer: Department of Computing Science, University of Alberta
+    time: { start: September 2025 }
+    responsibilities:
+      - Teach Introduction to Computing
+
+  - title: Assistant lecturer
+    category: teaching
     employer: Technological University Dublin
     time: { start: October 2022, end: December 2024 }
     responsibilities:
