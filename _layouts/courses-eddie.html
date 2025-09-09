@@ -1,0 +1,27 @@
+---
+# Derived from: https://github.com/LeNPaul/academic/blob/gh-pages/_layouts/courses.html
+layout: default
+---
+
+{{ content }}
+
+<div class="row g-5 mb-5">
+  <h2> Teaching </h2>
+  <div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Current Courses</h3>
+    <p><i>For the Department of Computing Science, University of Alberta</i></p>
+    {% for course in site.data.settings.courses.current %}
+      <p><b>{{ course.id }}</b>: {{ course.name }}<br>
+      {% for term in course.terms %}{{ term }}{% endfor %}</p>
+    {% endfor %}
+  </div>
+
+  <div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Past Courses</h3>
+    <p><i>For the Technological University Dublin</i></p>
+    {% for course in site.data.settings.courses.past %}
+      <p><b>{{ course.name }}</b><br>
+      {% for term in course.terms %}{{ term }}{% endfor %}</p>
+    {% endfor %}
+  </div>
+</div>

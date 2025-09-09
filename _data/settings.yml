@@ -1,0 +1,21 @@
+menu:
+- { name: 'Teaching', url: '/teaching' }
+- { name: 'CV', url: '/cv' }
+
+courses:
+  current:
+  - id: 'CMPUT 101'
+    name: 'Introduction to Computing'
+    terms: ['Fall 2025']
+  past:
+  - name: 'Advanced Database Technologies'
+    terms: ['Fall 2023']
+  - name: 'Software Localisation'
+    terms: ['Winter 2023']
+
+social:
+- { icon: 'github', link: 'https://github.com/eddieantonio' }
+#- { icon: 'bluesky', link: 'https://bsky.app/profile/eddieantonio.ca' }
+- { icon: 'orcid', link: 'https://orcid.org/0000-0001-5337-715X' }
+- { icon: 'google', link: 'https://scholar.google.com/citations?user=yfNIOX0AAAAJ' }
+- { icon: 'linkedin', link: 'https://www.linkedin.com/in/eddieantonio/' }

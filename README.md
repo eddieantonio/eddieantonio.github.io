@@ -10,11 +10,12 @@ My blog is maintained separately: <https://github.com/eddieantonio/blog>.
 > — [@clegoues](https://twitter.com/clegoues/status/1573310365269647360)
 
 To develop on a local machine, make sure you have an up-to-date version
-of Ruby (use a Ruby version manager like [rvm][] or [frum][]). On my M1
-MacBook, I used [frum][], but I had to provide `./configure` options to
-get it working properly:
+of Ruby (use a Ruby version manager like [rvm][] or [frum][]).
+For the versions used by GitHub, see [this page][ghpages].
+On my M1 MacBook, I used [frum][], but I had to provide `./configure`
+options to get it working properly:
 
-    furm install 3.1.2 --enable-shared
+    furm install 3.3.4 --enable-shared
 
 Once you have the right Ruby, you can install GitHub Page's version of
 Jekyll (obtained from the `Gemfile`):
@@ -27,3 +28,4 @@ Finally, you can build or serve the website locally!
 
 [frum]: https://github.com/TaKO8Ki/frum
 [rvm]: https://rvm.io/
+[ghpages]: https://pages.github.com/versions.json
