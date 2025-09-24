@@ -266,6 +266,16 @@ skills:
      - LaTeX
 
 publications:
+  - title: "It’s Dangerous to Prompt Alone! Exploring how Fine-tuning GPT-4o Affects Novices’ Programming Error Resolution"
+    year: 2025
+    authors:
+      - Eddie Antonio Santos
+      - Audrey Salmon
+      - Katie Hammer
+    venue: IEEE Access
+    pages: 17
+    url: https://doi.org/10.1109/ACCESS.2025.3613500
+
   - title: "Not the Silver Bullet: LLM-enhanced Programming Error Messages are Ineffective in Practice"
     year: 2024
     authors:
