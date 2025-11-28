@@ -23,7 +23,7 @@ experience:
     employer: Department of Computing Science, University of Alberta
     time: { start: September 2025 }
     responsibilities:
-      - Teach Introduction to Computing
+      - "Teach CMPUT 101: Introduction to Computing"
 
   - title: Assistant lecturer
     category: teaching
@@ -203,6 +203,12 @@ experience:
       - Linux system administration.
 
 teaching:
+  - institution: University of Alberta
+    courses:
+      - title: "CMPUT 101: Introduction to Computing"
+        term: Fall 2025
+        level: undergraduate
+
   - institution: Technological University Dublin
     courses:
       - title: Software Localisation
