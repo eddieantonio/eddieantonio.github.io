@@ -206,7 +206,10 @@ teaching:
   - institution: University of Alberta
     courses:
       - title: "CMPUT 101: Introduction to Computing"
-        term: Fall 2025
+        term: "Fall 2025, Winter 2026"
+        level: undergraduate
+      - title: "CMPUT 302: Human Computer Interaction"
+        term: Winter 2026
         level: undergraduate
 
   - institution: Technological University Dublin
