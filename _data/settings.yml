@@ -6,7 +6,10 @@ courses:
   current:
   - id: 'CMPUT 101'
     name: 'Introduction to Computing'
-    terms: ['Fall 2025']
+    terms: ['Fall 2025', 'Winter 2026']
+  - id: 'CMPUT 302'
+    name: 'Introduction to Human-Computer Interaction'
+    terms: ['Winter 2026']
   past:
   - name: 'Advanced Database Technologies'
     terms: ['Fall 2023']
