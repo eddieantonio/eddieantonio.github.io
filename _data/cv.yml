@@ -18,7 +18,7 @@ education:
 
 experience:
 
-  - title: Assistant lecturer
+  - title: Assistant Lecturer
     category: teaching
     employer: Department of Computing Science, University of Alberta
     time: { start: September 2025 }
@@ -26,7 +26,7 @@ experience:
       - "Teach CMPUT 101: Introduction to Computing"
       - "Teach CMPUT 101: Introduction to Human-Computer Interaction"
 
-  - title: Assistant lecturer
+  - title: Assistant Lecturer
     category: teaching
     employer: Technological University Dublin
     time: { start: October 2022, end: December 2024 }
@@ -44,7 +44,7 @@ experience:
       - Deliver in-lab presentations in COMP10290 (Computation for Scientists) and COMP30640 (Operating System Fundamentals)
       - Tutor students in introductory Python programming, and Bash scripting
 
-  - title: Teaching assistant
+  - title: Teaching Assistant
     category: teaching
     employer: Beijing-Dublin International College (BDIC)
     time: { start: February 2022, end: June 2024 }
@@ -53,7 +53,7 @@ experience:
       - Create/deliver lectures and develop assignments for Parallel and Cluster Computing (COMP3036J).
       - Tutor students in introductory C programming (COMP1002J).
 
-  - title: Application development specialist
+  - title: Application Development Specialist
     category: software
     employer: National Research Council Canada (NRC-CNRC)
     time: { start: June 2018, end: August 2021 }
@@ -64,7 +64,7 @@ experience:
       - Implement morphological computational modelling and predictive text for polysynthetic languages.
       - Supervise student interns.
 
-  - title: Software developer
+  - title: Software Developer
     category: software
     employer: Dr. Antti Arppe
     location: University of Alberta
@@ -74,7 +74,7 @@ experience:
       - Interpret requirements and deliver work in incremental sprints.
       - Create a web application in Flask/SQLAlchemy to assist in manual recordings validation.
 
-  - title: Teaching assistant
+  - title: Teaching Assistant
     category: teaching
     employer: Hazel Campbell
     location: University of Alberta
@@ -85,7 +85,7 @@ experience:
       - Mark lab assignments.
       - Support and mentor students learning the material.
 
-  - title: Course design assistant
+  - title: Course Design Assistant
     category: teaching
     employer: Dr. Osmar Zaïane
     location: University of Alberta
@@ -96,7 +96,7 @@ experience:
         concepts.
       - Create quizzes to effectively test knowledge.
 
-  - title: Teaching assistant
+  - title: Teaching Assistant
     category: teaching
     employer: Dr. Abram Hindle
     location: University of Alberta
@@ -108,7 +108,7 @@ experience:
       - Mark lab assignments.
       - Support and mentor students learning the material.
 
-  - title: Research assistant
+  - title: Research Assistant
     category: software
     employer: BioWare ULC
     time: { start: January 2016, end: August 2016 }
@@ -117,7 +117,7 @@ experience:
       - Perform experiments and empirical evaluations of technologies.
       - Write, test, and deploy production-quality implementations of novel algorithms.
 
-  - title: Lead developer
+  - title: Lead Developer
     category: software
     employer: Dr. Eleni Stroulia, Patrick von Hauff
     time: { start: May 2015, end: September 2015 }
@@ -129,7 +129,7 @@ experience:
       - Experiment with databases such as Virtuoso, Neo4j and MongoDB.
       - Support and maintain a legacy PHP web application.
 
-  - title: Computing Science tutor
+  - title: Computing Science Tutor
     category: teaching
     employer: Self-employed
     time: { start: 2014, end: 2017 }
@@ -140,7 +140,7 @@ experience:
       - Guide students to find the answer for themselves.
       - Promote active thinking rather than rote memorization.
 
-  - title: Teaching assistant
+  - title: Teaching Assistant
     category: teaching
     employer: University of Alberta
     time: { start: 2012, end: 2014 }
@@ -149,7 +149,7 @@ experience:
       - Assist students learning Python as their first programming language (CS1).
       - Evaluate student coursework.
 
-  - title: Lead developer
+  - title: Lead Developer
     category: software
     location: Alberta School of Business
     employer: Dr. Joel Gehman and Dr. Matthew Grimes
@@ -166,7 +166,7 @@ experience:
         Driver](https://github.com/eddieantonio/mongodb-erlang)) used in a
         server program.
 
-  - title: Web developer
+  - title: Web Developer
     category: software
     employer: Dr. Denilson Barbosa
     location: University of Alberta
@@ -180,7 +180,7 @@ experience:
       - Develop a simple CoffeeScript Node.js app for bridging the web demos
         to the text processing tools.
 
-  - title: Web developer
+  - title: Web Developer
     category: software
     location: University of Alberta
     employer: Dr. Greg Goss
@@ -193,7 +193,7 @@ experience:
         search queries.
       - Design simple, clean CSS for the website.
 
-  - title: Web developer
+  - title: Web Developer
     category: software
     employer: Dr. Davood Rafiei
     location: University of Alberta
