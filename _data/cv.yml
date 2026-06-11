@@ -18,10 +18,18 @@ education:
 
 experience:
 
+  - title: Postdoctoral Scholar
+    category: academic
+    employer: Dr. Carrie Demmans Epp, Department of Computing Science, University of Alberta
+    time: { start: May 2026 }
+    responsibilities:
+      - Contribute and complete to ongoing research projects
+      - Assist in functioning of lab
+
   - title: Assistant Lecturer
     category: teaching
     employer: Department of Computing Science, University of Alberta
-    time: { start: September 2025 }
+    time: { start: September 2025, end: May 2026 }
     responsibilities:
       - "Teach CMPUT 101: Introduction to Computing"
       - "Teach CMPUT 302: Introduction to Human-Computer Interaction"
