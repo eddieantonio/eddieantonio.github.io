@@ -12,7 +12,7 @@ layout: default
     <p><i>For the Department of Computing Science, University of Alberta</i></p>
     {% for course in site.data.settings.courses.current %}
       <p><b>{{ course.id }}</b>: {{ course.name }}<br>
-      {% for term in course.terms %}{{ term }}{% endfor %}</p>
+      {{ course.terms | join: ", " }}</p>
     {% endfor %}
   </div>
 

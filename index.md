@@ -9,7 +9,7 @@ Science][uofa-cs] at the [University of Alberta][uofa].
 Teaching
 --------
 
-**Winter 2026**: I am teaching a section of [CMPUT 101][] and [CMPUT 302].
+**Fall 2026**: I am teaching a section of [CMPUT 101][] and [CMPUT 174][].
 
 **Students**: please contact me at my `@ualberta.ca` email, which you
 can find in the “Meet your Instructors” section of [Canvas][].
@@ -18,4 +18,5 @@ can find in the “Meet your Instructors” section of [Canvas][].
 [uofa-cs]: https://www.ualberta.ca/en/computing-science/
 [Canvas]: https://canvas.ualberta.ca/
 [CMPUT 101]: https://apps.ualberta.ca/catalogue/course/cmput/101
+[CMPUT 174]: https://apps.ualberta.ca/catalogue/course/cmput/174
 [CMPUT 302]: https://apps.ualberta.ca/catalogue/course/cmput/302
