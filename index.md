@@ -3,7 +3,7 @@ layout: home-eddie
 title: "Eddie Antonio Santos"
 ---
 
-Hello! I an Assistant Lecturer in the [Department of Computing
+Hello! I am an Assistant Lecturer in the [Department of Computing
 Science][uofa-cs] at the [University of Alberta][uofa].
 
 Teaching
